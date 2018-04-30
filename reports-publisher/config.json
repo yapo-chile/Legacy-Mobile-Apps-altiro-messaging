@@ -1,0 +1,15 @@
+{
+  "Actions": [
+    {
+      "Name": "CoberturaHTMLJS",
+      "Matcher": {
+        "Name": "FolderThatContains",
+        "Args": ["/test/unit/coverage/"]
+      },
+      "Publisher": {
+        "Name": "HTMLDirectoryPublisher",
+        "Args": ["/test/unit/coverage/", "cobertura"]
+      }
+    }
+  ]
+}

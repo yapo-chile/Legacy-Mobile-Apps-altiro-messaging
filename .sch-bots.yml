@@ -1,0 +1,6 @@
+qualityGate:
+  coverage:
+      acceptedDeltaPercentage: 5
+      enabled: true
+  JIRA:
+      enabled: false
