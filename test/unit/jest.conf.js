@@ -11,7 +11,6 @@ module.exports = {
   ],
   moduleNameMapper: {
     '^cross-storage$': '<rootDir>/__mocks__/cross-storage.js',
-    '@/services/favorites/FavoriteService': '<rootDir>/test/unit/specs/services/favorites/__mocks__/FavoriteService.js',
     '@/ds/rest': '<rootDir>/test/unit/specs/ds/__mocks__/RestDS.js',
     '^@/(.*)$': '<rootDir>/src/$1',
     '^@nomock/(.*)$': '<rootDir>/src/$1',
