@@ -120,7 +120,7 @@ export default class StorageDS implements CRUD {
         case 'removeItem':
           return await this.storage.removeItem(key);
         case 'key':
-          return await this.storage.key(Number(key));
+          return await this.storage.key(parseInt(key, 10));
         case 'length':
           return await this.storage.length();
         case 'clear':
