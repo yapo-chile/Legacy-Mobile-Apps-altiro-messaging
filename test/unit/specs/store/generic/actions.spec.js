@@ -1,4 +1,6 @@
+import 'jest-localstorage-mock';
 import store from '@/store/modules/generic';
+
 
 describe('Actions of Generic module', () => {
   const mockCommit = (event, payload) => ({ event, payload });

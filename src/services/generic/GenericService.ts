@@ -1,6 +1,5 @@
 import {CRUD} from '@/ds/CRUD';
 import StorageDS from '@/ds/storage/index';
-import 'jest-localstorage-mock';
 
 export default class GenericService {
   private ls: CRUD;
