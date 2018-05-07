@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import StorageDS from '@/ds/storage';
+import StorageDS from '@/ds/storage/index.ts';
 import 'jest-localstorage-mock';
 
 const typeStorage = 'LocalStorage';

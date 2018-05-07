@@ -1,5 +1,5 @@
-import WebStorage from "./WebStorage";
 import DSUtils from '../ds-utils';
+import WebStorage from './WebStorage';
 
 /**
  * Class to save to cache info
@@ -7,20 +7,20 @@ import DSUtils from '../ds-utils';
  * @desc A Storage class to save data into localStorage
  */
 export default class LocalStorage implements WebStorage {
-  localStorage: Storage;
+  private localStorage: Storage;
   constructor() {
     if (this.checkAvailability()) {
       this.localStorage = window.localStorage;
     } else {
-      throw 'localStorage is not available.'
+      throw new Error('localStorage is not available.');
     }
   }
 
-  setItem(key: string, value: string) {
+  public setItem(key: string, value: string) {
     this.localStorage.setItem(key, value);
   }
 
-  getItem(key: string): any {
+  public getItem(key: string): any {
     const result = this.localStorage.getItem(key);
     try {
       if (result !== null) {
@@ -32,23 +32,23 @@ export default class LocalStorage implements WebStorage {
     }
   }
 
-  removeItem(key: string) {
+  public removeItem(key: string) {
     this.localStorage.removeItem(key);
   }
 
-  key(key: number): string | null {
+  public key(key: number): string | null {
     return this.localStorage.key(key);
   }
 
-  length(): number {
+  public length(): number {
     return this.localStorage.length;
   }
 
-  clear(): void {
+  public clear(): void {
     this.localStorage.clear();
   }
 
-  async checkAvailability() {
+  public async checkAvailability() {
     return DSUtils.storageAvailable('localStorage');
   }
 }

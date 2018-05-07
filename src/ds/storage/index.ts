@@ -1,11 +1,17 @@
-import LocalStorage from './LocalStorage.ts';
+import {CRUD} from '../CRUD';
+import LocalStorage from './LocalStorage';
+import WebStorage from './WebStorage';
 
 /**
  * @class Storage
  * @desc A CRUD wrapper of the localStorage web api.
  */
-export default class StorageDS {
-  constructor(type) {
+export default class StorageDS implements CRUD {
+  private storage: WebStorage;
+
+  constructor(type?: string) {
+    // TODO: implementar factory para lógica de Storage
+    // https://github.schibsted.io/Yapo/altiro/pull/19#discussion_r448585
     if (type === 'LocalStorage') {
       this.storage = new LocalStorage();
     } else {
@@ -19,8 +25,8 @@ export default class StorageDS {
    * @param key String Name of the item
    * @returns {Promise<Object>} Should return a JSON object or an Error.
    */
-  async $read(key) {
-    return this.$storage('getItem', key);
+  public async $read(key: string): Promise<any> {
+    return this.$storage('getItem', key, {});
   }
 
   /**
@@ -31,7 +37,7 @@ export default class StorageDS {
    * @param body Object Object to be persisted. Should be always an Object.
    * @returns {Promise<*>} On success returns nothing or an Error.
    */
-  async $create(key, body) {
+  public async $create(key: string, body: object): Promise<any> {
     return this.$storage('setItem', key, body);
   }
 
@@ -43,7 +49,7 @@ export default class StorageDS {
    * @param body Object Object to be updated. Should be always an Object.
    * @returns {Promise<*>} On success returns nothing or an Error.
    */
-  async $update(key, body) {
+  public async $update(key: string, body: object): Promise<any> {
     try {
       const storedItem = await this.$read(key);
       if (storedItem) {
@@ -61,11 +67,11 @@ export default class StorageDS {
    * @param key String Name of the item
    * @returns {Promise<*>} On success returns nothing or an Error.
    */
-  async $delete(key) {
+  public async $delete(key: string): Promise<any> {
     try {
       const storedItem = await this.$read(key);
       if (storedItem) {
-        return this.$storage('removeItem', key);
+        return this.$storage('removeItem', key, {});
       }
       throw Error('LOCALSTORAGEDS: Cant delete item because the key doesnt exists.');
     } catch (error) {
@@ -79,8 +85,8 @@ export default class StorageDS {
    * This function will deletes all the keys and values stored.
    * @returns {Promise<*>} A if everything goes ok, should return a fulfilled promise.
    */
-  async $clear() {
-    return this.$storage('clear');
+  public async $clear(): Promise<any> {
+    return this.$storage('clear', '', {});
   }
 
   /**
@@ -89,8 +95,8 @@ export default class StorageDS {
    * This function will deletes all the keys and values stored.
    * @returns {Promise<Number>} The number of values stored in the storage (quantity of keys).
    */
-  async $length() {
-    return this.$storage('length');
+  public async $length(): Promise<number> {
+    return this.$storage('length', '', {});
   }
 
   /**
@@ -101,7 +107,7 @@ export default class StorageDS {
    * @param body payload Array|Object of data to be inserted
    * @returns {Promise<*>} Result, in case of the 'getItem' returns a json.
    */
-  async $storage(method, key, body) {
+  public async $storage(method: string, key: string, body: object): Promise<any> {
     try {
       switch (method) {
         case 'getItem':
@@ -114,7 +120,7 @@ export default class StorageDS {
         case 'removeItem':
           return await this.storage.removeItem(key);
         case 'key':
-          return await this.storage.key(key);
+          return await this.storage.key(Number(key));
         case 'length':
           return await this.storage.length();
         case 'clear':
@@ -132,7 +138,7 @@ export default class StorageDS {
    * @desc tests if the storage is available or not.
    * @returns boolean TRUE if the storage is available in this browser.
    */
-  async checkAvailability() {
+  public async checkAvailability(): Promise<boolean> {
     return this.storage.checkAvailability();
   }
 }
