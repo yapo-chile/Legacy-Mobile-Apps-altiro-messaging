@@ -12,6 +12,7 @@ The following are the necessary steps to create a new repository based on this.
 2. Change the name in package.json
 3. Change the name in README.md
 4. Change the name in .travis.yml
+5. Change the name in build/deploy/default.conf
 
 ## Build Setup
 
