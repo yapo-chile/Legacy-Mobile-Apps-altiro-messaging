@@ -19,3 +19,4 @@ selenium-debug.log
 /test-report.xml
 /coverage/
 /dist
+/test/e2e/videos/

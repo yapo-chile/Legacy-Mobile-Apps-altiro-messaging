@@ -1,12 +1,15 @@
 <template>
     <div>
         <div>
-            <input type="text" v-model="input">
+            <h1 class="title">Bienvenido a sitio genérico</h1>
         </div>
         <div>
-            <button @click="saveText(input)">Guardar</button>
+            <input class="generic-input" type="text" v-model="input">
         </div>
         <div>
+            <button class="generic-button" @click="saveText(input)">Guardar</button>
+        </div>
+        <div class="generic-result">
             resultado: {{text}}
         </div>
     </div>

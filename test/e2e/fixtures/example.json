@@ -1,5 +1,18 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "projectName": "Altiro Seed",
+  "proyectNamespace": "altiro-seed",
+  "env": {
+    "dev": {
+      "url": "https://localhost:8080"
+    },
+    "poya1": {
+      "url": "https://www.poya1.cl"
+    },
+    "stg": {
+      "url": "https://www.yapo.cl"
+    },
+    "prod": {
+      "url": "https://www.yapo.cl"
+    }
+  }
 }
