@@ -4,3 +4,6 @@ qualityGate:
       enabled: true
   JIRA:
       enabled: false
+tricklerDowner:
+  enabled: true
+
