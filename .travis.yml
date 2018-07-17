@@ -1,10 +1,9 @@
-sudo: false
-os: trusty
 language: node_js
 node_js: '10'
 cache:
   directories:
     - ~/.cache
+
 env:
   global:
     - DOCKER_REGISTRY="containers.schibsted.io"
@@ -14,11 +13,13 @@ before_script:
   - export BUILD_NAME=$(if [ -n "$TRAVIS_TAG" ]; then echo $TRAVIS_TAG; else echo ${TRAVIS_BRANCH//\//_}; fi)
   - echo $BUILD_NAME
 
-script:
+install:
   - yarn install --frozen-lockfile
-  - yarn lint
-  - yarn run unit
-  - yarn run build
+
+script:
+  - yarn lint --fix
+  - yarn test:unit
+  - yarn build
 
 after_failure:
   - reports-publisher

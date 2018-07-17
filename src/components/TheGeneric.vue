@@ -7,52 +7,48 @@
             <input class="generic-input" type="text" v-model="input">
         </div>
         <div>
-            <button class="generic-button" @click="saveText(input)">Guardar</button>
+            <button class="generic-button" @click="save(input)">Guardar</button>
         </div>
         <div class="generic-result">
-            resultado: {{text}}
+            resultado: {{generic.text}}
         </div>
     </div>
 </template>
+<script lang="ts">
+    import {Component, Vue} from 'vue-property-decorator';
+    import {Action, State} from 'vuex-class';
+    import {GenericState} from '@/store/modules/generic/types';
 
-<script>
-  import { mapGetters } from 'vuex';
+    const namespace: string = 'generic';
 
-  export default {
-    name: 'TheGeneric',
-    data() {
-      return {
-        input: '',
-      };
-    },
-    created() {
-      this.checkStore().then((resp) => {
-        if (resp) {
-          this.getText();
-        } else {
-          this.saveText('');
+    @Component
+    export default class TheGeneric extends Vue {
+        @State('generic') public generic!: GenericState;
+
+        @Action('checkStore', {namespace})
+        private checkStore: any;
+
+        @Action('getText', {namespace})
+        private getText: any;
+
+        @Action('setText', {namespace})
+        private setText: any;
+
+        private created() {
+            this.checkStore();
         }
-      });
-    },
-    methods: {
-      checkStore() {
-        return this.$store.dispatch('checkStore').then(resp => resp.payload);
-      },
-      getText() {
-        return this.$store.dispatch('getText').then(() => true);
-      },
-      saveText(data) {
-        return this.$store.dispatch('setText', data).then(() => true);
-      },
-    },
-    computed: {
-      ...mapGetters({
-        text: 'text',
-      }),
-    },
-  };
+
+        private save(input: string) {
+            this.setText(input);
+        }
+
+        private data() {
+            return {
+                input: '',
+            };
+        }
+
+    }
 </script>
-
-<style scoped type="text/css">
-
+<style scoped>
 </style>

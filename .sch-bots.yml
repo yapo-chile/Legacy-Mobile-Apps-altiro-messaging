@@ -1,6 +1,6 @@
 qualityGate:
   coverage:
-      acceptedDeltaPercentage: 5
+      acceptedDeltaPercentage: 25
       enabled: true
   JIRA:
       enabled: false

@@ -4,11 +4,11 @@
       "Name": "CoberturaHTMLJS",
       "Matcher": {
         "Name": "FolderThatContains",
-        "Args": ["/test/unit/coverage/"]
+        "Args": ["/coverage/"]
       },
       "Publisher": {
         "Name": "HTMLDirectoryPublisher",
-        "Args": ["/test/unit/coverage/", "cobertura"]
+        "Args": ["/coverage/", "cobertura"]
       }
     }
   ]
