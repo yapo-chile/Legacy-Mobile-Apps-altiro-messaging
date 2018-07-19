@@ -25,9 +25,6 @@
     export default class TheGeneric extends Vue {
         @State('generic') public generic!: GenericState;
 
-        @Action('checkStore', {namespace})
-        private checkStore: any;
-
         @Action('getText', {namespace})
         private getText: any;
 
@@ -35,7 +32,7 @@
         private setText: any;
 
         private created() {
-            this.checkStore();
+            this.getText();
         }
 
         private save(input: string) {
