@@ -1,17 +1,17 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import TheGeneric from '@/components/TheGeneric.vue';
+import TheLanding from '@/components/TheLanding.vue';
 
 Vue.use(Router);
 
 export default new Router({
   mode: 'history',
-  base: '/altiro-seed/',
+  base: 'messaging-center/',
   routes: [
     {
-      path: '/generic',
-      name: 'the-generic',
-      component: TheGeneric,
+      path: '/app',
+      name: 'the-landing',
+      component: TheLanding,
     },
   ],
 });

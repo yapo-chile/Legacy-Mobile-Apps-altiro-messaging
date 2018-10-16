@@ -680,6 +680,12 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
+"@faast/faast-client@^0.7.0":
+  version "0.7.0"
+  resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/@faast/faast-client/-/@faast/faast-client-0.7.0.tgz#6891329faa9dbc8dbf11c2ea831bb1976483401a"
+  dependencies:
+    promise-polyfill "^6.0.2"
+
 "@intervolga/optimize-cssnano-plugin@^1.0.5":
   version "1.0.5"
   resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/@intervolga/optimize-cssnano-plugin/-/optimize-cssnano-plugin-1.0.5.tgz#fec0c0075c2d409071913aeca887e4b0f5aeb1af"
@@ -7597,6 +7603,10 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
 
+promise-polyfill@^6.0.2:
+  version "6.1.0"
+  resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/promise-polyfill/-/promise-polyfill-6.1.0.tgz#dfa96943ea9c121fca4de9b5868cb39d3472e057"
+
 prompts@^0.1.9:
   version "0.1.12"
   resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/prompts/-/prompts-0.1.12.tgz#39dc42de7d2f0ec3e2af76bf40713fcb8726090d"
@@ -9103,7 +9113,7 @@ tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.9.3"
   resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
 
-tslint@^5.10.0:
+tslint@^5.10.0, tslint@^5.11.0:
   version "5.11.0"
   resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/tslint/-/tslint-5.11.0.tgz#98f30c02eae3cde7006201e4c33cb08b48581eed"
   dependencies:

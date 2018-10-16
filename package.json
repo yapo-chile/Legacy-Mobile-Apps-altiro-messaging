@@ -1,9 +1,9 @@
 {
-  "name": "altiro-seed",
+  "name": "altiro-messaging",
   "version": "2.0.0",
   "private": true,
-  "description": "Seed project.",
-  "author": "Danilo Velasquez <danilo.velasquez@schibsted.com>",
+  "description": "Messaging microsite.",
+  "author": "Renato Hormazabal <renato.hormazabal@schibsted.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -25,6 +25,7 @@
     "vuex-i18n": "^1.10.5"
   },
   "devDependencies": {
+    "@faast/faast-client": "^0.7.0",
     "@types/jest": "^23.1.3",
     "@types/vuex-i18n": "^1.7.0",
     "@vue/cli-plugin-babel": "^3.0.0-beta.15",
@@ -41,6 +42,7 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "standard-version": "^4.4.0",
+    "tslint": "^5.11.0",
     "ts-jest": "^22.4.6",
     "vue-template-compiler": "^2.5.16"
   },
