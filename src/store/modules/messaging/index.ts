@@ -1,7 +1,7 @@
 import { Module } from 'vuex';
-import { actions } from '@/store/modules/generic/actions';
-import { getters } from '@/store/modules/generic/getters';
-import { mutations } from '@/store/modules/generic/mutations';
+// import { actions } from '@/store/modules/messaging/actions';
+import { getters } from '@/store/modules/messaging/getters';
+import { mutations } from '@/store/modules/messaging/mutations';
 import { MessagingState } from '@/store/modules/messaging/types';
 import { RootState } from '@/store/types';
 
@@ -57,4 +57,5 @@ const namespaced: boolean = true;
 export const messaging: Module<MessagingState, RootState> = {
   namespaced,
   state,
+  mutations,
 };

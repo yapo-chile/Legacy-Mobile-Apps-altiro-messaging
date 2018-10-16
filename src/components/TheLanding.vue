@@ -20,21 +20,6 @@
     @State('messaging')
     public messaging!: MessagingState;
 
-    @Action('getText', { namespace })
-    private getText: any;
-
-    @Action('setText', { namespace })
-    private setText: any;
-
-
-    private created() {
-      this.getText();
-    }
-
-    private save(input: string) {
-      this.setText(input);
-    }
-
     private data() {
       return {
         input: '',
