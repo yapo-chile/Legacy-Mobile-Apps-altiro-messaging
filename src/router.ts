@@ -1,15 +1,20 @@
 import Vue from 'vue';
-import Router from 'vue-router';
+import Router, { RouterOptions } from 'vue-router';
 import TheLanding from '@/components/TheLanding.vue';
 
 Vue.use(Router);
 
 export default new Router({
   mode: 'history',
-  base: 'messaging-center/',
+  base: '/messaging-center/app',
   routes: [
     {
-      path: '/app',
+      path: '/',
+      name: 'the-landing',
+      component: TheLanding,
+    },
+    {
+      path: '/index',
       name: 'the-landing',
       component: TheLanding,
     },
