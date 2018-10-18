@@ -8,7 +8,7 @@ import { getters } from '@/store/modules/messaging/getters';
 const localVue = createLocalVue();
 localVue.use(Vuex);
 
-describe('TheGeneric test', () => {
+describe('TheLanding test', () => {
   let state: MessagingState;
   let actions: any;
   let store: any;

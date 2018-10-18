@@ -3,7 +3,6 @@
   </div>
 </template>
 <script lang="ts">
-  import { Action, State } from 'vuex-class';
   import { Component, Vue, Prop } from 'vue-property-decorator';
   import faast from '@faast/faast-client';
 
