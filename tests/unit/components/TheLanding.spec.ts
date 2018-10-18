@@ -38,17 +38,8 @@ describe('TheGeneric test', () => {
     });
     wrapper = shallowMount(TheLanding, { store, localVue });
   });
-  it('should have a h1 element', () => {
-    expect(wrapper.contains('h1')).toBeTruthy();
+  it('should have a messaging-widget element', () => {
+    expect(wrapper.contains('.landing-messaging')).toBeTruthy();
   });
-
-  it('should have an input', () => {
-    expect(wrapper.contains('.generic-input')).toBeTruthy();
-  });
-
-  it('should have a button', () => {
-    expect(wrapper.contains('.generic-button')).toBeTruthy();
-  });
-
 });
 

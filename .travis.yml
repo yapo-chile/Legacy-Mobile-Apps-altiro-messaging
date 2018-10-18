@@ -18,6 +18,7 @@ install:
 
 script:
   - yarn lint --fix
+  - yarn test:unit
   - yarn build
 
 after_failure:

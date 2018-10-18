@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>HEADER</header>
-    <MessagingWidget :widgetParams="messaging.config" :faast="messaging.config" /> 
+    <MessagingWidget class="landing-messaging" :widgetParams="messaging.config" :faast="messaging.config" /> 
   </div>
 </template>
 <script lang="ts">
