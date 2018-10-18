@@ -1,5 +1,3 @@
-import {GenericEntity} from '@/domain/entities/GenericEntity';
-
 export interface StoreError {
     state: boolean;
     name?: string;
@@ -7,6 +5,6 @@ export interface StoreError {
     stack?: string;
 }
 
-export interface MessagingState extends GenericEntity {
+export interface MessagingState {
     config: object;
 }
