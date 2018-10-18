@@ -7,7 +7,7 @@ cache:
 env:
   global:
     - DOCKER_REGISTRY="containers.schibsted.io"
-    - DOCKER_IMAGE="${DOCKER_REGISTRY}/yapo/altiro-seed"
+    - DOCKER_IMAGE="${DOCKER_REGISTRY}/yapo/altiro-messaging"
 
 before_script:
   - export BUILD_NAME=$(if [ -n "$TRAVIS_TAG" ]; then echo $TRAVIS_TAG; else echo ${TRAVIS_BRANCH//\//_}; fi)
