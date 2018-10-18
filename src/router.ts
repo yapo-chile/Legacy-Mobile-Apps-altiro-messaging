@@ -6,7 +6,7 @@ Vue.use(Router);
 
 export default new Router({
   mode: 'history',
-  base: '/messaging-center/app',
+  base: '/messaging/app',
   routes: [
     {
       path: '/',
