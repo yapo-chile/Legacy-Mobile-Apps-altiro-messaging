@@ -9,7 +9,7 @@ export default new Router({
   base: '/',
   routes: [
     {
-      path: '/',
+      path: '/index',
       name: 'the-landing',
       component: TheLanding,
     },
