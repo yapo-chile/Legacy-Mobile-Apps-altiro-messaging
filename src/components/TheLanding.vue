@@ -1,6 +1,8 @@
 <template>
   <div>
-    <header>HEADER</header>
+    <header>
+      <button @click="clickEvent('link_header')">> link Header</button>
+    </header>
     <MessagingWidget class="landing-messaging" :widgetParams="messaging.config" :faast="messaging.config" /> 
   </div>
 </template>
@@ -24,6 +26,12 @@
       return {
         input: '',
       };
+    }
+
+    private clickEvent(type: string) {
+      utag.link({
+        event_name: 'messaging_center_click',
+      });
     }
   }
 </script>

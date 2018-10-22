@@ -1,5 +1,5 @@
 module.exports = {
-  assetsDir: './messaging/app/static',
+  assetsDir: './static',
   runtimeCompiler: undefined,
   productionSourceMap: undefined,
   parallel: undefined,
