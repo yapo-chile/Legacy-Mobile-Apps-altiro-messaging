@@ -10,4 +10,11 @@ declare global {
       [elem: string]: any;
     }
   }
+
+  interface TealiumOptions {
+    event_name: string;
+  }
+  namespace utag {
+    function link(opts: TealiumOptions): any;
+  }
 }

@@ -6,13 +6,8 @@ Vue.use(Router);
 
 export default new Router({
   mode: 'history',
-  base: '/messaging/app',
+  base: process.env.VUE_APP_BASE_URL,
   routes: [
-    {
-      path: '/',
-      name: 'the-landing',
-      component: TheLanding,
-    },
     {
       path: '/index',
       name: 'the-landing',

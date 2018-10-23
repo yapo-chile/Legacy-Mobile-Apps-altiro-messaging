@@ -7,7 +7,7 @@ import { RootState } from '@/store/types';
 
 export const state: MessagingState = {
   config: {
-    apiUrl: '/messaging-center/api/v1',
+    apiUrl: '/messaging/api/v1',
     itemUrl: 'ss',
     userId: 'xuser',
     lang: 'es_ES',
@@ -36,13 +36,10 @@ export const state: MessagingState = {
       /* override translations */
     },
     headers: {
-      Authorization: 'Bearer <myToken>',
     },
     integrations: {
-      '<integration-name>': '<custom-icon>',
     },
     highlights: {
-      'com.schibsted.messaging.p2pmock': 'Click me, I am super cool!',
     },
     interaction: {
       alert: (config: object, success: () => void, error: () => void) => {
