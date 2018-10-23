@@ -36,13 +36,10 @@ export const state: MessagingState = {
       /* override translations */
     },
     headers: {
-      // Authorization: 'Bearer <myToken>',
     },
     integrations: {
-      // '<integration-name>': '<custom-icon>',
     },
     highlights: {
-      // 'com.schibsted.messaging.p2pmock': 'Click me, I am super cool!',
     },
     interaction: {
       alert: (config: object, success: () => void, error: () => void) => {
