@@ -5,4 +5,4 @@ declare module '*.vue' {
 
 declare module '@Yapo/altiro-i18n';
 declare module '@faast/faast-client';
-
+declare module 'vue-rollbar';
