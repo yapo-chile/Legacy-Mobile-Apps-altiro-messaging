@@ -9,7 +9,7 @@ export default new Router({
   base: process.env.VUE_APP_BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/:hash*',
       name: 'the-landing',
       component: TheLanding,
     },
