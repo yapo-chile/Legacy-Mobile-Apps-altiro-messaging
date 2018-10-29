@@ -3,7 +3,7 @@ export const config = {
     itemUrl: '/',
     userId: 'xuser',
     lang: 'es_ES',
-    baseUrl: process.env.VUE_APP_BASE_URL,
+    baseUrl: process.env.VUE_APP_BASE_URL || '',
     mode: 'history',
     maxInputLength: 5000,
     features: {
