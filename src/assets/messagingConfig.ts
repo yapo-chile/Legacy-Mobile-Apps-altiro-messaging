@@ -1,6 +1,6 @@
 export const config = {
     apiUrl: '/messaging/api/v1',
-    itemUrl: 'ss',
+    itemUrl: '/',
     userId: 'xuser',
     lang: 'es_ES',
     baseUrl: '/',
