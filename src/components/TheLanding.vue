@@ -10,6 +10,9 @@
   import { Component, Vue } from 'vue-property-decorator';
   import { Action, State } from 'vuex-class';
   import { MessagingState } from '@/store/modules/messaging/types';
+  import { config } from '@/assets/messagingConfig';
+  import { messaging } from '@/store/modules/messaging';
+  import { MessagingConfig } from '@/domain/entities/MessagingEntity';
   import MessagingWidget from './MessagingWidget.vue';
   const namespace: string = 'the-landing';
 
@@ -21,11 +24,12 @@
   export default class TheLanding extends Vue {
     @State('messaging')
     public messaging!: MessagingState;
+  
+    @Action('setConfig', { namespace: 'messaging' })
+    private setConfig: any;
 
-    private data() {
-      return {
-        input: '',
-      };
+    private async created() {
+      await this.setConfig({ ... config, userId: this.$route.query.id});
     }
 
     private clickEvent(type: string) {

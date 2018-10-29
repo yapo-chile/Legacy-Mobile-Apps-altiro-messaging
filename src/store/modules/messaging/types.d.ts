@@ -1,3 +1,5 @@
+import { MessagingConfig } from '@/domain/entities/MessagingEntity';
+
 export interface StoreError {
     state: boolean;
     name?: string;
@@ -6,5 +8,5 @@ export interface StoreError {
 }
 
 export interface MessagingState {
-    config: object;
+    config: MessagingConfig;
 }

@@ -3,7 +3,8 @@
   </div>
 </template>
 <script lang="ts">
-  import { Component, Vue, Prop } from 'vue-property-decorator';
+  import { Component, Vue, Prop, Watch } from 'vue-property-decorator';
+  import { MessagingConfig } from '@/domain/entities/MessagingEntity';
   import faast from '@faast/faast-client';
 
   declare var Messaging: any;
@@ -24,11 +25,15 @@
   export default class MessagingWidget extends Vue {
     @Prop()
     public widgetParams!: object;
+
     @Prop()
     public faastParams!: object;
 
-    private created() {
-      this.getFaast();
+    @Watch('widgetParams')
+    private onConfigChanged(val: MessagingConfig, oldVal: MessagingConfig) {
+      if (val.userId) {
+        this.getFaast();
+      }
     }
 
     private async getFaast() {

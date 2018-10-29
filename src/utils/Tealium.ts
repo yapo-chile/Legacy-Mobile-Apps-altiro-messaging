@@ -19,7 +19,7 @@ export default {
   install(eventName: string) {
     if (JSON.parse(process.env.VUE_APP_TEALIUM_ENABLED || 'false')) {
       // tslint:disable-next-line:variable-name
-      const utag_data = {
+      (window as any).utag_data = {
         event_name: eventName,
       };
       load(!checkEnv ? 'prod' : 'dev');
