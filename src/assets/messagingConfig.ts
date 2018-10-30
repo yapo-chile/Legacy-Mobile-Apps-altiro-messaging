@@ -1,6 +1,6 @@
 export const config = {
     apiUrl: '/messaging/api/v1',
-    itemUrl: '/',
+    itemUrl: 'https://www2.poya1.cl/mc_widget/get_ads_list_data',
     userId: 'xuser',
     lang: 'es_ES',
     baseUrl: process.env.VUE_APP_BASE_URL || '',

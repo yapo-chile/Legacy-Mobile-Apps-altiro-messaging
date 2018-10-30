@@ -22,13 +22,13 @@ export interface MessagingConfig {
   userId: string;
   lang?: string;
   baseUrl: string;
-  mode: string;
-  maxInputLength: number;
-  features: MessagingFeatures;
-  format: MessagingFormat;
-  translations: object;
-  headers: object;
-  integrations: object;
-  highlights: object;
-  interaction: MessagingInteraction;
+  mode?: string;
+  maxInputLength?: number;
+  features?: MessagingFeatures;
+  format?: MessagingFormat;
+  translations?: object;
+  headers?: object;
+  integrations?: object;
+  highlights?: object;
+  interaction?: MessagingInteraction;
 }
