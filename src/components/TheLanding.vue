@@ -14,6 +14,7 @@
   import { messaging } from '@/store/modules/messaging';
   import { MessagingConfig } from '@/domain/entities/MessagingEntity';
   import MessagingWidget from './MessagingWidget.vue';
+  import { AuthState } from '@/store/modules/auth/types';
   const namespace: string = 'the-landing';
 
   @Component({
@@ -24,12 +25,17 @@
   export default class TheLanding extends Vue {
     @State('messaging')
     public messaging!: MessagingState;
+
+    @State('auth')
+    public auth!: AuthState;
   
     @Action('setConfig', { namespace: 'messaging' })
     private setConfig: any;
 
     private async created() {
-      await this.setConfig({ ... config, userId: this.$route.query.id});
+      await this.setConfig({ ... config, headers: {
+        Authorization: this.auth.accSession,
+      }});
     }
 
     private clickEvent(type: string) {

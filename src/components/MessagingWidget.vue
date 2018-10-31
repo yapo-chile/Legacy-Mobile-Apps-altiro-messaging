@@ -24,20 +24,41 @@
   @Component
   export default class MessagingWidget extends Vue {
     @Prop()
-    public widgetParams!: object;
+    public widgetParams!: any;
 
     @Prop()
     public faastParams!: object;
 
+    private messaging: any;
+
     @Watch('widgetParams')
     private onConfigChanged(val: MessagingConfig, oldVal: MessagingConfig) {
-      if (val.userId) {
-        this.getFaast();
+      if (val.userId && (window as any).Messaging) {
+        this.initMessaging();
       }
     }
 
-    private async getFaast() {
-      const fun = await faast(
+    private async created() {
+      await this.getMessaging();
+      if (this.widgetParams.userId) {
+        this.initMessaging();
+      }
+    }
+
+    private initMessaging() {
+      if (this.messaging) {
+        this.messaging.destroy();
+      }
+      const params = objectAssign(
+        {},
+        { selector: this.$refs.widget },
+        this.widgetParams,
+      );
+      this.messaging = new Messaging.Widget(params);
+    }
+
+    private async getMessaging() {
+      await faast(
         'messaging-widget',
         'pre',
         {
@@ -48,12 +69,6 @@
         },
         {},
       );
-      const params = objectAssign(
-        {},
-        { selector: this.$refs.widget },
-        this.widgetParams,
-      );
-      const msg = new Messaging.Widget(params);
     }
   }
 </script>
