@@ -31,18 +31,9 @@
 
     private messaging: any;
 
-    @Watch('widgetParams')
-    private onConfigChanged(val: MessagingConfig, oldVal: MessagingConfig) {
-      if (val.userId && (window as any).Messaging) {
-        this.initMessaging();
-      }
-    }
-
     private async created() {
       await this.getMessaging();
-      if (this.widgetParams.userId) {
-        this.initMessaging();
-      }
+      this.initMessaging();
     }
 
     private initMessaging() {
