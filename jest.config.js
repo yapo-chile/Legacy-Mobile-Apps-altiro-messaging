@@ -28,6 +28,6 @@ module.exports = {
   collectCoverage: true,
   coverageDirectory: '<rootDir>/coverage',
   coverageReporters: ['json', 'lcov', 'html', 'cobertura'],
-  reporters:['jest-junit'],
+  reporters:['jest-junit', 'default'],
   verbose: true,
 };

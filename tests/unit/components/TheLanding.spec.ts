@@ -4,6 +4,7 @@ import TheLanding from '@/components/TheLanding.vue';
 import { MessagingState } from '@/store/modules/messaging/types';
 import { mutations } from '@/store/modules/messaging/mutations';
 import { getters } from '@/store/modules/messaging/getters';
+import { config } from '@/assets/messagingConfig';
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
@@ -17,7 +18,7 @@ describe('TheLanding test', () => {
 
   beforeEach(() => {
     state = {
-      config: {},
+      config,
     };
     actions = {
       setText: jest.fn(),

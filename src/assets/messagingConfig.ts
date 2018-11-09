@@ -1,17 +1,9 @@
-import { Module } from 'vuex';
-import { actions } from '@/store/modules/messaging/actions';
-import { getters } from '@/store/modules/messaging/getters';
-import { mutations } from '@/store/modules/messaging/mutations';
-import { MessagingState } from '@/store/modules/messaging/types';
-import { RootState } from '@/store/types';
-
-export const state: MessagingState = {
-  config: {
+export const config = {
     apiUrl: '/messaging/api/v1',
-    itemUrl: 'ss',
+    itemUrl: 'https://www2.poya1.cl/mc_widget/get_ads_list_data',
     userId: 'xuser',
     lang: 'es_ES',
-    baseUrl: '/',
+    baseUrl: process.env.VUE_APP_BASE_URL || '',
     mode: 'history',
     maxInputLength: 5000,
     features: {
@@ -44,19 +36,9 @@ export const state: MessagingState = {
     highlights: {
     },
     interaction: {
-      alert: (config: object, success: () => void, error: () => void) => {
+      // tslint:disable-next-line:variable-name
+      alert: (_config: object, success: () => void, error: () => void) => {
         /* custom alert logic */
       },
     },
-  },
-};
-
-const namespaced: boolean = true;
-
-export const messaging: Module<MessagingState, RootState> = {
-  namespaced,
-  state,
-  mutations,
-  getters,
-  actions,
 };

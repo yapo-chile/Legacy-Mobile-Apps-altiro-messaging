@@ -3,7 +3,7 @@ import { MessagingState, StoreError} from '@/store/modules/messaging/types';
 
 
 export const mutations: MutationTree<MessagingState> = {
-    CONFIG_UPDATE(state, payload: string) {
-        state.config = state.config;
+    CONFIG_UPDATED(state, payload: any) {
+      state.config = payload;
     },
 };
