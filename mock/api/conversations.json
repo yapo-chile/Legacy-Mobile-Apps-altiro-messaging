@@ -1,0 +1,439 @@
+{
+  "_links": {
+    "conversation": [
+      {
+        "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/{conversationId}",
+        "templated": true
+      }
+    ],
+    "first": [
+      {
+        "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+      }
+    ],
+    "previous": [
+      {
+        "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations?pageHash=cu5mjAotfSAfIq6nW9ldsZCRO_KeMaliftGrxPw2YCgd8Wizh6gydudfsRX3uc9Ku0NeV3D_r80r5nKn3spMa0Y13YRYYJWtgzkeN6YVoC6aTO9w9CEVDODVIfeOmycbQnaRUa3wfggYj4oH_shVWijhGhOqY7sTrorB0bH-w5QXDaQQfk9Q7UudCxd_HyH74_IHDOKc15YW70k2VbA0rw&next=false&size=12"
+      }
+    ],
+    "self": {
+      "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations?size=12&presenceStatus=true&ts=1542055455251"
+    }
+  },
+  "_embedded": {
+    "conversations": [
+      {
+        "_links": {
+          "conversations": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+            }
+          ],
+          "messages": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"
+            }
+          ],
+          "self": {
+            "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"
+          }
+        },
+        "conversationId": "xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI",
+        "itemId": "4950883",
+        "itemType": "ad",
+        "lastMessageAttachmentsCount": 1,
+        "lastMessageDate": "2018-11-12T19:02:32+0000",
+        "lastMessagePreview": "",
+        "pageHash": "PJ4j6dxuexDKROxEnI1r8qg8XzP9xwLjiL2_F9ulY7xWo-_xhMl5azxU6hDKbNUeHa0OCicQ_Ixv2suxXVkE_tJSUjcjPkQIb-uRTzmqkJTnVb_wYHKBkEdOctKkL3GXhTe71guStTmy_C4RYw8ZihMZCgwrASTcXycPKrMbEJGEHDf3QmIe20hrD5Nf1OgcrtT2ovamAKMPTc9RRgjR9g",
+        "partnerId": "c5469b4f-ae66-4a5a-8df0-d397013f0499",
+        "partnerName": "Usersincuenta",
+        "partnerProfilePictureUrl": null,
+        "subject": "Vuelves a mi",
+        "unseenCounter": 0,
+        "integrations": [],
+        "realtimeContext": {
+          "presenceStatus": "OFFLINE",
+          "jid": null
+        }
+      },
+      {
+        "_links": {
+          "conversations": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+            }
+          ],
+          "messages": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/pXFxGkHlPUem2hX1tvLtYQBA9iZdsKEpG1vXH7fQdHVDjOfEw6ZIhPJYjd22KIXyknFNt-Us6Bq27qEBtWsB3sop1U8XClQZwfD9T5aYi7Xn1LR5rFwOFbqfCQySr7SP-GS6pn2r-bufglHgKcNbJJoNTQOvjkG67mKnU-QnAFI/messages"
+            }
+          ],
+          "self": {
+            "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/pXFxGkHlPUem2hX1tvLtYQBA9iZdsKEpG1vXH7fQdHVDjOfEw6ZIhPJYjd22KIXyknFNt-Us6Bq27qEBtWsB3sop1U8XClQZwfD9T5aYi7Xn1LR5rFwOFbqfCQySr7SP-GS6pn2r-bufglHgKcNbJJoNTQOvjkG67mKnU-QnAFI"
+          }
+        },
+        "conversationId": "pXFxGkHlPUem2hX1tvLtYQBA9iZdsKEpG1vXH7fQdHVDjOfEw6ZIhPJYjd22KIXyknFNt-Us6Bq27qEBtWsB3sop1U8XClQZwfD9T5aYi7Xn1LR5rFwOFbqfCQySr7SP-GS6pn2r-bufglHgKcNbJJoNTQOvjkG67mKnU-QnAFI",
+        "itemId": "4964184",
+        "itemType": "ad",
+        "lastMessageAttachmentsCount": 0,
+        "lastMessageDate": "2018-09-26T19:19:52+0000",
+        "lastMessagePreview": "Estoy interesada",
+        "pageHash": "lKaNBBLy1yOU-yBTdkRLFfTanjCL7SD74Y-jeT2hqfXRwNVkbYLKsGla-FdRbeWETjJF_5CD7-IYr_274QVda4YqbySTDoxmCOQH_-SUOc42Jccis2TXVXuR-hhpayBjqnlJTHKwiuFcR0NgT75A_wNZb1qKouueKzKqwt8WFVbDrmy0gUK8xCplvS2xMA2NRo51Cv8-BC1tyIhveEIV7Q",
+        "partnerId": "8ef22236-d036-49d1-a458-9177bd4afeb8",
+        "partnerName": "priusere2e@mailinator.com",
+        "partnerProfilePictureUrl": null,
+        "subject": "Profesional Jornada completa",
+        "unseenCounter": 0,
+        "integrations": [],
+        "realtimeContext": {
+          "presenceStatus": "OFFLINE",
+          "jid": null
+        }
+      },
+      {
+        "_links": {
+          "conversations": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+            }
+          ],
+          "messages": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/_KwhWkXdVvQwqbqAuiWyMgjFhZc8JiXu3l67MqAcCPUJgtCeNBZ4WvQkyvWjkoV42Y84xvma-zgPhVSi_WIDeuipi_9sn8HbQ22Kyz7RcvvOjKyXYQYk1w-mkbMe_2XdAJycw3uUuEGbdfr6YGUkNQMFdyVkpDhq5WewEWbSXuQ/messages"
+            }
+          ],
+          "self": {
+            "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/_KwhWkXdVvQwqbqAuiWyMgjFhZc8JiXu3l67MqAcCPUJgtCeNBZ4WvQkyvWjkoV42Y84xvma-zgPhVSi_WIDeuipi_9sn8HbQ22Kyz7RcvvOjKyXYQYk1w-mkbMe_2XdAJycw3uUuEGbdfr6YGUkNQMFdyVkpDhq5WewEWbSXuQ"
+          }
+        },
+        "conversationId": "_KwhWkXdVvQwqbqAuiWyMgjFhZc8JiXu3l67MqAcCPUJgtCeNBZ4WvQkyvWjkoV42Y84xvma-zgPhVSi_WIDeuipi_9sn8HbQ22Kyz7RcvvOjKyXYQYk1w-mkbMe_2XdAJycw3uUuEGbdfr6YGUkNQMFdyVkpDhq5WewEWbSXuQ",
+        "itemId": "4965002",
+        "itemType": "ad",
+        "lastMessageAttachmentsCount": 0,
+        "lastMessageDate": "2018-09-26T19:19:01+0000",
+        "lastMessagePreview": "Estoy interesada",
+        "pageHash": "Kvp49aynTSRZCODDFCpRPKMJgTMH4YQIri29q7CGI8WjMg7cxsQYRTy830lPU6_mBWRzcFtwoKt88-qr3_5qoeXeskHcpkZi8OJMFWM-kBwjPtm51dPjSCbciQHPeMytZW0mSxM2ju5KGZRM0WhpI3sEDIf6vCh7HRbZ3WPLcLPpOtvPWI32-6gTZIsVDDZZma8GtimHl77Vr2qbF7nENQ",
+        "partnerId": "c69e16fb-1827-42d6-8e1e-5523bda79879",
+        "partnerName": "Fuenzalida Propiedades - Vicuña Mackenna",
+        "partnerProfilePictureUrl": null,
+        "subject": "Casa en Jardín Alto - Enrique Olivares, Santa Ines",
+        "unseenCounter": 0,
+        "integrations": [],
+        "realtimeContext": {
+          "presenceStatus": "OFFLINE",
+          "jid": null
+        }
+      },
+      {
+        "_links": {
+          "conversations": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+            }
+          ],
+          "messages": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/dbAQ1wgeRRMfg0WMXPXB4mAXrgRw4vv-zdhnmAgAlQEOUy8hcgwgxVGeXmmjZvrzZiAOKlraA3GaFrkgGlW5EDgp9Q0bLQq5Da1D0RjV0B1L5S5bXkh_7Ku0o7KLwCBUI0fGYs_ReAWt7lV1w4x2piryC_43HqEPk4u8lggHi-U/messages"
+            }
+          ],
+          "self": {
+            "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/dbAQ1wgeRRMfg0WMXPXB4mAXrgRw4vv-zdhnmAgAlQEOUy8hcgwgxVGeXmmjZvrzZiAOKlraA3GaFrkgGlW5EDgp9Q0bLQq5Da1D0RjV0B1L5S5bXkh_7Ku0o7KLwCBUI0fGYs_ReAWt7lV1w4x2piryC_43HqEPk4u8lggHi-U"
+          }
+        },
+        "conversationId": "dbAQ1wgeRRMfg0WMXPXB4mAXrgRw4vv-zdhnmAgAlQEOUy8hcgwgxVGeXmmjZvrzZiAOKlraA3GaFrkgGlW5EDgp9Q0bLQq5Da1D0RjV0B1L5S5bXkh_7Ku0o7KLwCBUI0fGYs_ReAWt7lV1w4x2piryC_43HqEPk4u8lggHi-U",
+        "itemId": "4964952",
+        "itemType": "ad",
+        "lastMessageAttachmentsCount": 0,
+        "lastMessageDate": "2018-09-26T19:18:40+0000",
+        "lastMessagePreview": "Estoy interesada",
+        "pageHash": "tkbXGC2rgBi96zvPcM12pHcxyrKxkj-VLiXwtkOVoxRQ59q7ueoo3QGdWiPP5SLUvZvP7AziUW85HlWUWENdXXEKz6kAce5y-bPv4_JV0097ETHtEQRMwEh4gUb81eXrmQJTjQfKzJtJ3uD6hoTu_AIhwbEsw1gs1qTIaol7TFgkSWgfhiVh7wR8May0_Ge3DiRsUbWuDb5SHWKYrK9-nA",
+        "partnerId": "cdb23b2f-f5c6-4e63-95fc-8f8a938efd17",
+        "partnerName": "Bastian Véliz Vega ",
+        "partnerProfilePictureUrl": null,
+        "subject": "Aviso de empleo",
+        "unseenCounter": 0,
+        "integrations": [],
+        "realtimeContext": {
+          "presenceStatus": "OFFLINE",
+          "jid": null
+        }
+      },
+      {
+        "_links": {
+          "conversations": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+            }
+          ],
+          "messages": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/t52gk0V870r8_qPPLyhVzLpauEdfYSTyi9ff7pkV7RsfDTmFSXGjOV5IBceKwbpvO63Vx6G8a8pdJnHP0JTA71hLkhamgoxB9hmtit93Wn00IsQ3C2UpjjxfGJkL6-GqqrDQu9I_iK1Uk_vb1MIba6HixxafN6BHyWWwno9f4U4/messages"
+            }
+          ],
+          "self": {
+            "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/t52gk0V870r8_qPPLyhVzLpauEdfYSTyi9ff7pkV7RsfDTmFSXGjOV5IBceKwbpvO63Vx6G8a8pdJnHP0JTA71hLkhamgoxB9hmtit93Wn00IsQ3C2UpjjxfGJkL6-GqqrDQu9I_iK1Uk_vb1MIba6HixxafN6BHyWWwno9f4U4"
+          }
+        },
+        "conversationId": "t52gk0V870r8_qPPLyhVzLpauEdfYSTyi9ff7pkV7RsfDTmFSXGjOV5IBceKwbpvO63Vx6G8a8pdJnHP0JTA71hLkhamgoxB9hmtit93Wn00IsQ3C2UpjjxfGJkL6-GqqrDQu9I_iK1Uk_vb1MIba6HixxafN6BHyWWwno9f4U4",
+        "itemId": "4952382",
+        "itemType": "ad",
+        "lastMessageAttachmentsCount": 0,
+        "lastMessageDate": "2018-07-18T19:15:44+0000",
+        "lastMessagePreview": "Prueba",
+        "pageHash": "jRkX_awkapO2SS1sHD527q6CeH9bQARUYjwUv0E38aaoj-6eddycDXkWcKphcMsEChEoYEWB4bi6ZHAxSRMvzbH6EN1ssbW3VY9WDbNEE9NG5svAxliN7w0w9TVF8QW_VULtwGQGN38zcjoLiBfD7Wx0sfoZgJEu67OUbcJllBF5QR397qdLNWXJ3x__BgvMZBdR24-b6hs8UjhWv0KaSg",
+        "partnerId": "1f77e17b-0769-41c5-aa8e-9fc96cce4005",
+        "partnerName": "pack auto",
+        "partnerProfilePictureUrl": null,
+        "subject": "Prueba rechazo",
+        "unseenCounter": 0,
+        "integrations": [],
+        "realtimeContext": {
+          "presenceStatus": "OFFLINE",
+          "jid": null
+        }
+      },
+      {
+        "_links": {
+          "conversations": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+            }
+          ],
+          "messages": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/tyXoBGEfgd9P-AIUUHmUQBUoM72J6rJpWAEZd2CucdREZknPCtQIiScquDBXgQNuq2CMBhS5OhzaqWsdGfkdq2UABSxRSW731eBmGB-846rV_u1hT5JeNgKxrYZrYKGIJiYHNlVJ7SzxRYoceL31euJBCrJfOrwsPJkp78hS04E/messages"
+            }
+          ],
+          "self": {
+            "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/tyXoBGEfgd9P-AIUUHmUQBUoM72J6rJpWAEZd2CucdREZknPCtQIiScquDBXgQNuq2CMBhS5OhzaqWsdGfkdq2UABSxRSW731eBmGB-846rV_u1hT5JeNgKxrYZrYKGIJiYHNlVJ7SzxRYoceL31euJBCrJfOrwsPJkp78hS04E"
+          }
+        },
+        "conversationId": "tyXoBGEfgd9P-AIUUHmUQBUoM72J6rJpWAEZd2CucdREZknPCtQIiScquDBXgQNuq2CMBhS5OhzaqWsdGfkdq2UABSxRSW731eBmGB-846rV_u1hT5JeNgKxrYZrYKGIJiYHNlVJ7SzxRYoceL31euJBCrJfOrwsPJkp78hS04E",
+        "itemId": "4950722",
+        "itemType": "ad",
+        "lastMessageAttachmentsCount": 0,
+        "lastMessageDate": "2018-07-17T20:49:40+0000",
+        "lastMessagePreview": "Hizo",
+        "pageHash": "RyXdGFPcLwn3_VnF6aj2EDQHpmZDAIT3KVRgi1ItYNWkZHIENzGfGJCF2kPjDxIRZ1FaqoCwHYg46WLL-3rtZTuish85dKlHGDKS4PBqXn7E6OWnaurkD2bQNCcuDJovlJLWNpB6wdoXFCd3SfkgQiZKol7Aj0lBD_dKEIqX49PhaqIv3Cqv9CPooY3KqiKEGR51idjuf1mvCznMNRHhGg",
+        "partnerId": "0f7390c1-af6a-4443-b8ff-3519b0d52622",
+        "partnerName": "jbjbjv",
+        "partnerProfilePictureUrl": null,
+        "subject": "Dpto en providencia",
+        "unseenCounter": 0,
+        "integrations": [],
+        "realtimeContext": {
+          "presenceStatus": "OFFLINE",
+          "jid": null
+        }
+      },
+      {
+        "_links": {
+          "conversations": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+            }
+          ],
+          "messages": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/1fhKPHSxkknmMXtio5PfPU7QX5Fc-bbd-_ZicyUgBBpqIGJIZX7ivgHh5oLvueveZeCGCLFQfkvek6IkIZFNxOBYTvbOgCGUm0It7R2K88ln-Mu76Ao80Gj0_HRL08JoLG02ZzhrJEVekS-Js_GrNcnBMLINUwS-f5qsZaTmgXA/messages"
+            }
+          ],
+          "self": {
+            "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/1fhKPHSxkknmMXtio5PfPU7QX5Fc-bbd-_ZicyUgBBpqIGJIZX7ivgHh5oLvueveZeCGCLFQfkvek6IkIZFNxOBYTvbOgCGUm0It7R2K88ln-Mu76Ao80Gj0_HRL08JoLG02ZzhrJEVekS-Js_GrNcnBMLINUwS-f5qsZaTmgXA"
+          }
+        },
+        "conversationId": "1fhKPHSxkknmMXtio5PfPU7QX5Fc-bbd-_ZicyUgBBpqIGJIZX7ivgHh5oLvueveZeCGCLFQfkvek6IkIZFNxOBYTvbOgCGUm0It7R2K88ln-Mu76Ao80Gj0_HRL08JoLG02ZzhrJEVekS-Js_GrNcnBMLINUwS-f5qsZaTmgXA",
+        "itemId": "4950722",
+        "itemType": "ad",
+        "lastMessageAttachmentsCount": 0,
+        "lastMessageDate": "2018-07-17T20:29:23+0000",
+        "lastMessagePreview": "Hdjdjdjd",
+        "pageHash": "wEeUG4B5y76zA1ZPiEQroETZVA6V1oP9dAt3W9DE1-be2ZbreMrUv_ZlgPnFMMgS2wsMJgWjn8T7jke7tZaXzBsekRF-0NNoTVu53XguMr_cQRuCIoFP1dx3hbJ_K5UrW3Oh3bKSxyiAJXUJ8cmX--Ra-_MXNI3uk7ZHTlgupgBY_gWsYOXCIB_wNPc-LtKLlR8LnWAqshiM4S3GdYXq-w",
+        "partnerId": "ee8d6a11-c3fc-4c8d-9e66-90746a9386de",
+        "partnerName": "Lilibeth Achji M ",
+        "partnerProfilePictureUrl": null,
+        "subject": "Dpto en providencia",
+        "unseenCounter": 0,
+        "integrations": [],
+        "realtimeContext": {
+          "presenceStatus": "OFFLINE",
+          "jid": null
+        }
+      },
+      {
+        "_links": {
+          "conversations": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+            }
+          ],
+          "messages": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/wSnItQLZO35C_CCDtGRb67OgDAxNxj36u7nON61482_4raW5JBQVdr7IZ_j0iq39r7WbHxsRBjFITIU-r__MhEqChiv0jiwbLPNdI0_HT_BKZlfVjqNAu7_jjORa69S0UnxyypRF4al9DzGEvJR1me-DBJBFGOgIVUoBRroS44w/messages"
+            }
+          ],
+          "self": {
+            "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/wSnItQLZO35C_CCDtGRb67OgDAxNxj36u7nON61482_4raW5JBQVdr7IZ_j0iq39r7WbHxsRBjFITIU-r__MhEqChiv0jiwbLPNdI0_HT_BKZlfVjqNAu7_jjORa69S0UnxyypRF4al9DzGEvJR1me-DBJBFGOgIVUoBRroS44w"
+          }
+        },
+        "conversationId": "wSnItQLZO35C_CCDtGRb67OgDAxNxj36u7nON61482_4raW5JBQVdr7IZ_j0iq39r7WbHxsRBjFITIU-r__MhEqChiv0jiwbLPNdI0_HT_BKZlfVjqNAu7_jjORa69S0UnxyypRF4al9DzGEvJR1me-DBJBFGOgIVUoBRroS44w",
+        "itemId": "4964880",
+        "itemType": "ad",
+        "lastMessageAttachmentsCount": 0,
+        "lastMessageDate": "2018-07-17T16:08:23+0000",
+        "lastMessagePreview": "Bdjdjdbdnfnd",
+        "pageHash": "AIT0vCNWz8hIUV5TQ38zPZjIGLyiqsg5NA8OrdxrUa2a4Oww-Ww4JDLvoQMqZtdGZt4aIJHZZzxd1yt0HckQMG1LhnU99r7nuChrkqH6XhRsGhC-AAJypoPi0x2qCsFAHnA0WVZpHP1i99L4UH1N_S_IUC8d9o4pFKd6SD9_McUHjnKeiUpfBQBXpBqCau245aQP_6d1DgPUAypE6e4RIw",
+        "partnerId": "ee8d6a11-c3fc-4c8d-9e66-90746a9386de",
+        "partnerName": "Lilibeth Achji M ",
+        "partnerProfilePictureUrl": null,
+        "subject": "Descripción larga",
+        "unseenCounter": 0,
+        "integrations": [],
+        "realtimeContext": {
+          "presenceStatus": "OFFLINE",
+          "jid": null
+        }
+      },
+      {
+        "_links": {
+          "conversations": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+            }
+          ],
+          "messages": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/XuuP3_3UMNFR_rg0nYY5SSApB48LURIwClGWlQPOPXCYei4hf_fMI11dZuSNT0XRO0__5NfV02P2Z57LFx2phwn4mW3hnwhlRELXq8fbfEu5a6L_BQ8yrKU-dpTcnX-gOMZWIxTQBsxs30rRNGEZKnaYo4OXOKcBezZeNOZj2OU/messages"
+            }
+          ],
+          "self": {
+            "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/XuuP3_3UMNFR_rg0nYY5SSApB48LURIwClGWlQPOPXCYei4hf_fMI11dZuSNT0XRO0__5NfV02P2Z57LFx2phwn4mW3hnwhlRELXq8fbfEu5a6L_BQ8yrKU-dpTcnX-gOMZWIxTQBsxs30rRNGEZKnaYo4OXOKcBezZeNOZj2OU"
+          }
+        },
+        "conversationId": "XuuP3_3UMNFR_rg0nYY5SSApB48LURIwClGWlQPOPXCYei4hf_fMI11dZuSNT0XRO0__5NfV02P2Z57LFx2phwn4mW3hnwhlRELXq8fbfEu5a6L_BQ8yrKU-dpTcnX-gOMZWIxTQBsxs30rRNGEZKnaYo4OXOKcBezZeNOZj2OU",
+        "itemId": "4952539",
+        "itemType": "ad",
+        "lastMessageAttachmentsCount": 0,
+        "lastMessageDate": "2018-07-13T19:55:15+0000",
+        "lastMessagePreview": "1233456",
+        "pageHash": "g8O5EqJ4yMc3BRDH69VpAt31aj1jrGiBz-QC40Z0Y_I48s81kU87ds4Wf1U4folG6Sdh4nzeauIQd6klcVedQwZgQonwICo8-lSFdnBtzDejTWRb0cha_CFmp58il_W51s_7aHPyllFcrz6iz77NGu2mU_magy5OJ740PSpg2LItp5epzOBaKD8gmFXi0U58cyzYi3vFGAuzP-Q59QtBEA",
+        "partnerId": "1f77e17b-0769-41c5-aa8e-9fc96cce4005",
+        "partnerName": "pack auto",
+        "partnerProfilePictureUrl": null,
+        "subject": "Cabaña embrujada",
+        "unseenCounter": 0,
+        "integrations": [],
+        "realtimeContext": {
+          "presenceStatus": "OFFLINE",
+          "jid": null
+        }
+      },
+      {
+        "_links": {
+          "conversations": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+            }
+          ],
+          "messages": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/6-Bui7oLSh2k1GFqX7Xe7eklToLoXX7JSYgrhpCj9DJvfVonnhPEm6JKTBvSgLPdAMR1fljEtRGt8QiaZYfpfp_vpatzKWV2bK4aCuappIUNoV_-Z5IFiT6lT_9rvEcaKCiN_WXrReZkWUq3Lc6wb5GNJ8jE8Tn0XbfHnriGAZc/messages"
+            }
+          ],
+          "self": {
+            "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/6-Bui7oLSh2k1GFqX7Xe7eklToLoXX7JSYgrhpCj9DJvfVonnhPEm6JKTBvSgLPdAMR1fljEtRGt8QiaZYfpfp_vpatzKWV2bK4aCuappIUNoV_-Z5IFiT6lT_9rvEcaKCiN_WXrReZkWUq3Lc6wb5GNJ8jE8Tn0XbfHnriGAZc"
+          }
+        },
+        "conversationId": "6-Bui7oLSh2k1GFqX7Xe7eklToLoXX7JSYgrhpCj9DJvfVonnhPEm6JKTBvSgLPdAMR1fljEtRGt8QiaZYfpfp_vpatzKWV2bK4aCuappIUNoV_-Z5IFiT6lT_9rvEcaKCiN_WXrReZkWUq3Lc6wb5GNJ8jE8Tn0XbfHnriGAZc",
+        "itemId": "4961673",
+        "itemType": "ad",
+        "lastMessageAttachmentsCount": 0,
+        "lastMessageDate": "2018-07-12T16:15:51+0000",
+        "lastMessagePreview": "Jsksksksks",
+        "pageHash": "F8PHb8Y9QO5paFdzOZQT6jYLD8rrBuxDlF2hAjtOaHokUDhqNoCe_q0Q48h_R6Xc-FvONK7T1MupE2PV_ao9xc0XKJz5aEtGs3diJFFfM3oxoUBAY0CzozVF_vCVBpB8s5ZmM-yyb-yrm6Rf4ECFpeTZQyPB7iRWBR79r_qgb7Yw9E6eU2lFZ66y_cEz5GUyhie4BF_vr2jWdtr0GFAECg",
+        "partnerId": "b386f497-c3d5-4e83-965e-8ba10eb37944",
+        "partnerName": "pack inmo",
+        "partnerProfilePictureUrl": null,
+        "subject": "Jobs inserting fee",
+        "unseenCounter": 0,
+        "integrations": [],
+        "realtimeContext": {
+          "presenceStatus": "OFFLINE",
+          "jid": null
+        }
+      },
+      {
+        "_links": {
+          "conversations": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+            }
+          ],
+          "messages": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/7Xoz1XxebZqySyYLTkg9VyhXHoXgekPrUvF0MSAYbNUJZTVt_KAKqXxCv0glcBr1zWNU9o3V8v7wky8rRnCfwzx_-K8SPGQvYNhY1uiH6On6Jj5Tbpw7-f8klT60I03-kZVCsBVZUQDZTSf1HHeTWyBXFUu1yFg8qiZp9KCyvy8/messages"
+            }
+          ],
+          "self": {
+            "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/7Xoz1XxebZqySyYLTkg9VyhXHoXgekPrUvF0MSAYbNUJZTVt_KAKqXxCv0glcBr1zWNU9o3V8v7wky8rRnCfwzx_-K8SPGQvYNhY1uiH6On6Jj5Tbpw7-f8klT60I03-kZVCsBVZUQDZTSf1HHeTWyBXFUu1yFg8qiZp9KCyvy8"
+          }
+        },
+        "conversationId": "7Xoz1XxebZqySyYLTkg9VyhXHoXgekPrUvF0MSAYbNUJZTVt_KAKqXxCv0glcBr1zWNU9o3V8v7wky8rRnCfwzx_-K8SPGQvYNhY1uiH6On6Jj5Tbpw7-f8klT60I03-kZVCsBVZUQDZTSf1HHeTWyBXFUu1yFg8qiZp9KCyvy8",
+        "itemId": "4950722",
+        "itemType": "ad",
+        "lastMessageAttachmentsCount": 0,
+        "lastMessageDate": "2018-07-11T14:47:09+0000",
+        "lastMessagePreview": "Jsjsjs la mañana",
+        "pageHash": "s01tcHTY1xI-4ggDIEHshKtvSIZDPzSDZ9n8cm93uoJAP85QjnkSjEs7WuOShBG7poNh3lne8smDedzueck1mzvCWq8GTw8z2vzHqrrywStJT6KFIGjUuyj7juPWXfZf5diqhVYHnN9BgddE4uE78MslpnehMzyXtDvv_avHxPnr3wHewxBNXZrv4gwvrxPULXnlATP2Uv6di5BWN3hevw",
+        "partnerId": "9c3c02a2-d2de-4732-aee8-e7b19cf8e53e",
+        "partnerName": "jesi",
+        "partnerProfilePictureUrl": null,
+        "subject": "Dpto en providencia",
+        "unseenCounter": 0,
+        "integrations": [],
+        "realtimeContext": {
+          "presenceStatus": "OFFLINE",
+          "jid": null
+        }
+      },
+      {
+        "_links": {
+          "conversations": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations"
+            }
+          ],
+          "messages": [
+            {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/n5S3gElBnXDhaVH1ZKEv2TVIfk4uRPvtA9YVFNYmxXHf1kWTerGOAV__HSNVuJ6-YD8N8v4BZLs1-oi1lfVpwLhVeGybhYGQrEgTQjKPfm8zrgFQuUScKIS9qDZLTuE7Y_bAwHMAusYpXxUyZZbpLUqQRHnnr2MT9qva7exy6Kk/messages"
+            }
+          ],
+          "self": {
+            "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/n5S3gElBnXDhaVH1ZKEv2TVIfk4uRPvtA9YVFNYmxXHf1kWTerGOAV__HSNVuJ6-YD8N8v4BZLs1-oi1lfVpwLhVeGybhYGQrEgTQjKPfm8zrgFQuUScKIS9qDZLTuE7Y_bAwHMAusYpXxUyZZbpLUqQRHnnr2MT9qva7exy6Kk"
+          }
+        },
+        "conversationId": "n5S3gElBnXDhaVH1ZKEv2TVIfk4uRPvtA9YVFNYmxXHf1kWTerGOAV__HSNVuJ6-YD8N8v4BZLs1-oi1lfVpwLhVeGybhYGQrEgTQjKPfm8zrgFQuUScKIS9qDZLTuE7Y_bAwHMAusYpXxUyZZbpLUqQRHnnr2MT9qva7exy6Kk",
+        "itemId": "4964884",
+        "itemType": "ad",
+        "lastMessageAttachmentsCount": 0,
+        "lastMessageDate": "2018-06-29T15:41:07+0000",
+        "lastMessagePreview": "prueba jesi ejemplo",
+        "pageHash": "vRUlJTLaxgizt3gpoEhijI_zGMYpvukqmFWu8V_nkRIxqLJWg9d2sAAYCa5lM6z4KzLJXj7HEtKYYfLAlMilnk_QW1jJuF5fCov6MmoThGTH9o_AjuDZYp9qov1ml2RH2LUeCWuzON-zHMMREBCR7pj5yeNDP4kWrWXZy9NAURVEWGyq9zYFrw-ssfaYPWF_gAuSGR-ZQImaCI2pNZ7t1w",
+        "partnerId": "bba72da4-f4a4-4c5d-81f3-b0eb596925e0",
+        "partnerName": "Renato",
+        "partnerProfilePictureUrl": null,
+        "subject": "Aviso sin teléfono",
+        "unseenCounter": 0,
+        "integrations": [],
+        "realtimeContext": {
+          "presenceStatus": "OFFLINE",
+          "jid": null
+        }
+      }
+    ]
+  },
+  "items": 12,
+  "previousParams": "pageHash=cu5mjAotfSAfIq6nW9ldsZCRO_KeMaliftGrxPw2YCgd8Wizh6gydudfsRX3uc9Ku0NeV3D_r80r5nKn3spMa0Y13YRYYJWtgzkeN6YVoC6aTO9w9CEVDODVIfeOmycbQnaRUa3wfggYj4oH_shVWijhGhOqY7sTrorB0bH-w5QXDaQQfk9Q7UudCxd_HyH74_IHDOKc15YW70k2VbA0rw&next=false&size=12",
+  "size": 12,
+  "userId": "bd169779-37d3-4bdc-8f63-eaca8a5b273c"
+}

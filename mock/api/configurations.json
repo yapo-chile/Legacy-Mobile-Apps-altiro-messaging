@@ -1,0 +1,128 @@
+{
+  "_links": {
+    "self": {
+      "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/configurations"
+    }
+  },
+  "description": "Schibsted Messaging API Site Configuration",
+  "imageServiceConfiguration": {
+    "images": [
+      {
+        "mimeType": "image/jpeg",
+        "extensions": [
+          ".jpg",
+          ".jpeg",
+          ".jpe",
+          ".jif",
+          ".jfif",
+          ".jfi"
+        ]
+      },
+      {
+        "mimeType": "image/png",
+        "extensions": [
+          ".png"
+        ]
+      },
+      {
+        "mimeType": "image/gif",
+        "extensions": [
+          ".gif"
+        ]
+      },
+      {
+        "mimeType": "image/x-ms-bmp",
+        "extensions": [
+          ".bmp",
+          ".dib"
+        ]
+      },
+      {
+        "mimeType": "image/tiff",
+        "extensions": [
+          ".tiff",
+          ".tif"
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "mimeType": "application/pdf",
+        "extensions": [
+          ".pdf"
+        ]
+      },
+      {
+        "mimeType": "text/plain",
+        "extensions": [
+          ".txt",
+          ".text",
+          ".conf",
+          ".cfg",
+          ".def",
+          ".list",
+          ".in",
+          ".aart",
+          ".ac",
+          ".am",
+          ".classpath",
+          ".cmd",
+          ".config",
+          ".cwiki",
+          ".data",
+          ".dcl",
+          ".egrm",
+          ".ent",
+          ".ft",
+          ".fn",
+          ".fv",
+          ".grm",
+          ".g",
+          ".ihtml",
+          ".jmx",
+          ".junit",
+          ".jx",
+          ".manifest",
+          ".m4",
+          ".mf",
+          ".MF",
+          ".meta",
+          ".n3",
+          ".pen",
+          ".pod",
+          ".pom",
+          ".project",
+          ".rng",
+          ".rnx",
+          ".roles",
+          ".tld",
+          ".types",
+          ".vm",
+          ".vsl",
+          ".wsdd",
+          ".xargs",
+          ".xcat",
+          ".xconf",
+          ".xegrm",
+          ".xgrm",
+          ".xlex",
+          ".xlog",
+          ".xmap",
+          ".xroles",
+          ".xsamples",
+          ".xsp",
+          ".xweb",
+          ".xwelcome"
+        ]
+      },
+      {
+        "mimeType": "application/rtf",
+        "extensions": [
+          ".rtf"
+        ]
+      }
+    ]
+  },
+  "pollingTime": 45000,
+  "integrations": []
+}

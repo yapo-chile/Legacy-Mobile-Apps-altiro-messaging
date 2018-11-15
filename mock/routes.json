@@ -1,0 +1,6 @@
+{
+  "/messaging/api/v1/api/users/xuser/block*": "/block",
+  "/messaging/api/v1/api/hal/xuser/conversations/:id/messages?*": "/conversation/:id",
+  "/messaging/api/v1/api/hal/xuser/conversations*": "/conversations",
+  "/messaging/api/v1/api/hal/xuser/configurations*": "/configurations"
+}
