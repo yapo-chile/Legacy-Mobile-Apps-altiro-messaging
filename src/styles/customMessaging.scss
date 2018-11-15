@@ -91,7 +91,7 @@ $media_query_tablet_width: 769px;
   .msg-attachment {
     &__icon {
       background-image: url('../assets/attachment-white.svg');
-      background-size: 20px 20px;
+      background-size: 25px 25px;
     }
   }
   .msg-control_settings {
@@ -131,6 +131,12 @@ $media_query_tablet_width: 769px;
       line-height: normal;
       letter-spacing: normal;
       text-align: left;
+    }
+  }
+
+  .msg-input {
+    &__button {
+      background-color: var(--endless-blue, #4376b0);
     }
   }
 }
