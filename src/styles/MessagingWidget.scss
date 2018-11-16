@@ -1,12 +1,21 @@
 @import './customMessaging';
 
 .messaging-widget {
-  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 2200;
 }
+@media  only screen and (min-width : 768px) {
+  #widget {
+    position: absolute;
 
-@media only screen and (min-width: 769px) {
-  .messaging-widget {
-    position: relative;
-    height: 500px;
+    /* additional configuration based on the tenant site requirements */
+    top: 120px;
+    bottom: 25px;
+    margin: 0 auto;
   }
 }

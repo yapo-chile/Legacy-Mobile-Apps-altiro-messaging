@@ -58,7 +58,9 @@
             userId: 'xuser',
           },
         },
-        {},
+        {
+          cssBefore: '#before-css-faast',
+        },
       );
     }
   }

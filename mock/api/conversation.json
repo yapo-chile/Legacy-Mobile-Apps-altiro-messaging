@@ -1,10 +1,277 @@
 [
   {
-    "id":"xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI",
-    "_links":
-    {"conversation":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"}],"first":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"}],"message":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/{messageId}","templated":true}],"self":{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"}},"_embedded":{"messages":[{"_links":{"conversation":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"}],"messages":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"}],"read":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/98a546b0-cbce-11e8-b387-06f7f368c5a2/read"}],"self":{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/98a546b0-cbce-11e8-b387-06f7f368c5a2"}},"id":"98a546b0-cbce-11e8-b387-06f7f368c5a2","text":"Hola, lo vendes más barato?","type":"ApiTextMessage","typeAttributes":{},"date":"2018-10-09T14:21:21+0000","read":true,"partnerRead":true,"outgoing":false,"attachments":[]},{"_links":{"conversation":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"}],"messages":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"}],"read":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/3f744260-e6ab-11e8-bf31-02170d2da05e/read"}],"self":{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/3f744260-e6ab-11e8-bf31-02170d2da05e"}},"id":"3f744260-e6ab-11e8-bf31-02170d2da05e","text":"Hola, estoy interesado","type":"ApiTextMessage","typeAttributes":{},"date":"2018-11-12T18:46:21+0000","read":true,"partnerRead":false,"outgoing":true,"attachments":[]},{"_links":{"conversation":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"}],"messages":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"}],"read":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/f668a790-e6ab-11e8-bf31-02170d2da05e/read"}],"self":{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/f668a790-e6ab-11e8-bf31-02170d2da05e"}},"id":"f668a790-e6ab-11e8-bf31-02170d2da05e","text":"","type":"ApiTextMessage","typeAttributes":{},"date":"2018-11-12T18:51:28+0000","read":true,"partnerRead":false,"outgoing":true,"attachments":[{"path":"f3/f3fc635c-e6ab-11e8-a86b-6d139f36cad1","contentType":"image/jpeg"}]},{"_links":{"conversation":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"}],"messages":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"}],"read":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/0af2fc60-e6ac-11e8-bf31-02170d2da05e/read"}],"self":{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/0af2fc60-e6ac-11e8-bf31-02170d2da05e"}},"id":"0af2fc60-e6ac-11e8-bf31-02170d2da05e","text":"","type":"ApiTextMessage","typeAttributes":{},"date":"2018-11-12T18:52:02+0000","read":true,"partnerRead":false,"outgoing":true,"attachments":[{"path":"09/09dd959d-e6ac-11e8-a86b-6d139f36cad1","contentType":"image/png"}]},{"_links":{"conversation":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"}],"messages":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"}],"read":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/180c1ad0-e6ac-11e8-bf31-02170d2da05e/read"}],"self":{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/180c1ad0-e6ac-11e8-bf31-02170d2da05e"}},"id":"180c1ad0-e6ac-11e8-bf31-02170d2da05e","text":"","type":"ApiTextMessage","typeAttributes":{},"date":"2018-11-12T18:52:24+0000","read":true,"partnerRead":false,"outgoing":true,"attachments":[{"path":"15/15a6664e-e6ac-11e8-a86b-6d139f36cad1","contentType":"image/png"}]},{"_links":{"conversation":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"}],"messages":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"}],"read":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/3e4bf990-e6ac-11e8-bf31-02170d2da05e/read"}],"self":{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/3e4bf990-e6ac-11e8-bf31-02170d2da05e"}},"id":"3e4bf990-e6ac-11e8-bf31-02170d2da05e","text":"","type":"ApiTextMessage","typeAttributes":{},"date":"2018-11-12T18:53:28+0000","read":true,"partnerRead":false,"outgoing":true,"attachments":[{"path":"3c/3c66e6bf-e6ac-11e8-a86b-6d139f36cad1","contentType":"image/jpeg"}]},{"_links":{"conversation":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"}],"messages":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"}],"read":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/829f0370-e6ad-11e8-bf31-02170d2da05e/read"}],"self":{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/829f0370-e6ad-11e8-bf31-02170d2da05e"}},"id":"829f0370-e6ad-11e8-bf31-02170d2da05e","text":"","type":"ApiTextMessage","typeAttributes":{},"date":"2018-11-12T19:02:32+0000","read":true,"partnerRead":false,"outgoing":true,"attachments":[{"path":"80/809a5ab0-e6ad-11e8-a86b-6d139f36cad1","contentType":"application/pdf"}]}]},"items":7,"size":50},
+    "id": "xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI",
+    "_links": {
+      "conversation": [
+        {
+          "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"
+        }
+      ],
+      "first": [
+        {
+          "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"
+        }
+      ],
+      "message": [
+        {
+          "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/{messageId}",
+          "templated": true
+        }
+      ],
+      "self": {
+        "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"
+      }
+    },
+    "_embedded": {
+      "messages": [
+        {
+          "_links": {
+            "conversation": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"
+              }
+            ],
+            "messages": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"
+              }
+            ],
+            "read": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/98a546b0-cbce-11e8-b387-06f7f368c5a2/read"
+              }
+            ],
+            "self": {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/98a546b0-cbce-11e8-b387-06f7f368c5a2"
+            }
+          },
+          "id": "98a546b0-cbce-11e8-b387-06f7f368c5a2",
+          "text": "Hola, lo vendes más barato?",
+          "type": "ApiTextMessage",
+          "typeAttributes": {},
+          "date": "2018-10-09T14:21:21+0000",
+          "read": true,
+          "partnerRead": true,
+          "outgoing": false,
+          "attachments": []
+        },
+        {
+          "_links": {
+            "conversation": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"
+              }
+            ],
+            "messages": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"
+              }
+            ],
+            "read": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/3f744260-e6ab-11e8-bf31-02170d2da05e/read"
+              }
+            ],
+            "self": {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/3f744260-e6ab-11e8-bf31-02170d2da05e"
+            }
+          },
+          "id": "3f744260-e6ab-11e8-bf31-02170d2da05e",
+          "text": "Hola, estoy interesado",
+          "type": "ApiTextMessage",
+          "typeAttributes": {},
+          "date": "2018-11-12T18:46:21+0000",
+          "read": true,
+          "partnerRead": false,
+          "outgoing": true,
+          "attachments": []
+        },
+        {
+          "_links": {
+            "conversation": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"
+              }
+            ],
+            "messages": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"
+              }
+            ],
+            "read": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/f668a790-e6ab-11e8-bf31-02170d2da05e/read"
+              }
+            ],
+            "self": {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/f668a790-e6ab-11e8-bf31-02170d2da05e"
+            }
+          },
+          "id": "f668a790-e6ab-11e8-bf31-02170d2da05e",
+          "text": "",
+          "type": "ApiTextMessage",
+          "typeAttributes": {},
+          "date": "2018-11-12T18:51:28+0000",
+          "read": true,
+          "partnerRead": false,
+          "outgoing": true,
+          "attachments": [
+            {
+              "path": "f3/f3fc635c-e6ab-11e8-a86b-6d139f36cad1",
+              "contentType": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "_links": {
+            "conversation": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"
+              }
+            ],
+            "messages": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"
+              }
+            ],
+            "read": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/0af2fc60-e6ac-11e8-bf31-02170d2da05e/read"
+              }
+            ],
+            "self": {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/0af2fc60-e6ac-11e8-bf31-02170d2da05e"
+            }
+          },
+          "id": "0af2fc60-e6ac-11e8-bf31-02170d2da05e",
+          "text": "",
+          "type": "ApiTextMessage",
+          "typeAttributes": {},
+          "date": "2018-11-12T18:52:02+0000",
+          "read": true,
+          "partnerRead": false,
+          "outgoing": true,
+          "attachments": [
+            {
+              "path": "09/09dd959d-e6ac-11e8-a86b-6d139f36cad1",
+              "contentType": "image/png"
+            }
+          ]
+        },
+        {
+          "_links": {
+            "conversation": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"
+              }
+            ],
+            "messages": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"
+              }
+            ],
+            "read": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/180c1ad0-e6ac-11e8-bf31-02170d2da05e/read"
+              }
+            ],
+            "self": {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/180c1ad0-e6ac-11e8-bf31-02170d2da05e"
+            }
+          },
+          "id": "180c1ad0-e6ac-11e8-bf31-02170d2da05e",
+          "text": "",
+          "type": "ApiTextMessage",
+          "typeAttributes": {},
+          "date": "2018-11-12T18:52:24+0000",
+          "read": true,
+          "partnerRead": false,
+          "outgoing": true,
+          "attachments": [
+            {
+              "path": "15/15a6664e-e6ac-11e8-a86b-6d139f36cad1",
+              "contentType": "image/png"
+            }
+          ]
+        },
+        {
+          "_links": {
+            "conversation": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"
+              }
+            ],
+            "messages": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"
+              }
+            ],
+            "read": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/3e4bf990-e6ac-11e8-bf31-02170d2da05e/read"
+              }
+            ],
+            "self": {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/3e4bf990-e6ac-11e8-bf31-02170d2da05e"
+            }
+          },
+          "id": "3e4bf990-e6ac-11e8-bf31-02170d2da05e",
+          "text": "",
+          "type": "ApiTextMessage",
+          "typeAttributes": {},
+          "date": "2018-11-12T18:53:28+0000",
+          "read": true,
+          "partnerRead": false,
+          "outgoing": true,
+          "attachments": [
+            {
+              "path": "3c/3c66e6bf-e6ac-11e8-a86b-6d139f36cad1",
+              "contentType": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "_links": {
+            "conversation": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI"
+              }
+            ],
+            "messages": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages"
+              }
+            ],
+            "read": [
+              {
+                "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/829f0370-e6ad-11e8-bf31-02170d2da05e/read"
+              }
+            ],
+            "self": {
+              "href": "/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/xx_tCdvlTZ4-uQ4TdFxETjwGTrLXOHL-yFLFxXQNFwx_Owesc7Xv0Rzj_E_k84FiN_HitO06S_YuQGutgBJr1TevdMf3s1EJ4yYXYaGLoYjhlq4WBSJat29ycaj3sjzC0i0GKoaOFo-v_0H96RmkgN9ips6nJqMVAO7wh8ehSyI/messages/829f0370-e6ad-11e8-bf31-02170d2da05e"
+            }
+          },
+          "id": "829f0370-e6ad-11e8-bf31-02170d2da05e",
+          "text": "",
+          "type": "ApiTextMessage",
+          "typeAttributes": {},
+          "date": "2018-11-12T19:02:32+0000",
+          "read": true,
+          "partnerRead": false,
+          "outgoing": true,
+          "attachments": [
+            {
+              "path": "80/809a5ab0-e6ad-11e8-a86b-6d139f36cad1",
+              "contentType": "application/pdf"
+            }
+          ]
+        }
+      ]
+    },
+    "items": 7,
+    "size": 50
+  },
   {
-    "id": 3,
-    "test": 0
-  }
+    "id": "wSnItQLZO35C_CCDtGRb67OgDAxNxj36u7nON61482_4raW5JBQVdr7IZ_j0iq39r7WbHxsRBjFITIU-r__MhEqChiv0jiwbLPNdI0_HT_BKZlfVjqNAu7_jjORa69S0UnxyypRF4al9DzGEvJR1me-DBJBFGOgIVUoBRroS44w",
+    "_links":{"conversation":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/wSnItQLZO35C_CCDtGRb67OgDAxNxj36u7nON61482_4raW5JBQVdr7IZ_j0iq39r7WbHxsRBjFITIU-r__MhEqChiv0jiwbLPNdI0_HT_BKZlfVjqNAu7_jjORa69S0UnxyypRF4al9DzGEvJR1me-DBJBFGOgIVUoBRroS44w"}],"first":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/wSnItQLZO35C_CCDtGRb67OgDAxNxj36u7nON61482_4raW5JBQVdr7IZ_j0iq39r7WbHxsRBjFITIU-r__MhEqChiv0jiwbLPNdI0_HT_BKZlfVjqNAu7_jjORa69S0UnxyypRF4al9DzGEvJR1me-DBJBFGOgIVUoBRroS44w/messages"}],"message":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/wSnItQLZO35C_CCDtGRb67OgDAxNxj36u7nON61482_4raW5JBQVdr7IZ_j0iq39r7WbHxsRBjFITIU-r__MhEqChiv0jiwbLPNdI0_HT_BKZlfVjqNAu7_jjORa69S0UnxyypRF4al9DzGEvJR1me-DBJBFGOgIVUoBRroS44w/messages/{messageId}","templated":true}],"self":{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/wSnItQLZO35C_CCDtGRb67OgDAxNxj36u7nON61482_4raW5JBQVdr7IZ_j0iq39r7WbHxsRBjFITIU-r__MhEqChiv0jiwbLPNdI0_HT_BKZlfVjqNAu7_jjORa69S0UnxyypRF4al9DzGEvJR1me-DBJBFGOgIVUoBRroS44w/messages"}},"_embedded":{"messages":[{"_links":{"conversation":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/wSnItQLZO35C_CCDtGRb67OgDAxNxj36u7nON61482_4raW5JBQVdr7IZ_j0iq39r7WbHxsRBjFITIU-r__MhEqChiv0jiwbLPNdI0_HT_BKZlfVjqNAu7_jjORa69S0UnxyypRF4al9DzGEvJR1me-DBJBFGOgIVUoBRroS44w"}],"messages":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/wSnItQLZO35C_CCDtGRb67OgDAxNxj36u7nON61482_4raW5JBQVdr7IZ_j0iq39r7WbHxsRBjFITIU-r__MhEqChiv0jiwbLPNdI0_HT_BKZlfVjqNAu7_jjORa69S0UnxyypRF4al9DzGEvJR1me-DBJBFGOgIVUoBRroS44w/messages"}],"read":[{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/wSnItQLZO35C_CCDtGRb67OgDAxNxj36u7nON61482_4raW5JBQVdr7IZ_j0iq39r7WbHxsRBjFITIU-r__MhEqChiv0jiwbLPNdI0_HT_BKZlfVjqNAu7_jjORa69S0UnxyypRF4al9DzGEvJR1me-DBJBFGOgIVUoBRroS44w/messages/a14cd3d0-89db-11e8-858c-06664aa7219c/read"}],"self":{"href":"/api/hal/bd169779-37d3-4bdc-8f63-eaca8a5b273c/conversations/wSnItQLZO35C_CCDtGRb67OgDAxNxj36u7nON61482_4raW5JBQVdr7IZ_j0iq39r7WbHxsRBjFITIU-r__MhEqChiv0jiwbLPNdI0_HT_BKZlfVjqNAu7_jjORa69S0UnxyypRF4al9DzGEvJR1me-DBJBFGOgIVUoBRroS44w/messages/a14cd3d0-89db-11e8-858c-06664aa7219c"}},"id":"a14cd3d0-89db-11e8-858c-06664aa7219c","text":"Bdjdjdbdnfnd","type":"ApiTextMessage","typeAttributes":{},"date":"2018-07-17T16:08:23+0000","read":true,"partnerRead":true,"outgoing":false,"attachments":[]}]},"items":1,"size":50}
 ]
