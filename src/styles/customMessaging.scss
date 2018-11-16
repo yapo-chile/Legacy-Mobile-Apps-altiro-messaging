@@ -65,6 +65,8 @@ $media_query_tablet_width: 769px;
   
     &__thumbnail {
       background-color: var(--grey-two, #dbdbdb);
+      background-image: url('../assets/no-image.svg');
+      background-size: 21px 22px;
     }
   }
   
