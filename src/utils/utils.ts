@@ -1,4 +1,9 @@
 /* tslint:disable:max-line-length */
+declare global {
+  // tslint:disable-next-line:interface-name
+  interface Window { pulse: any; }
+}
+
 const utils = {
   existOnArray(id: any, arrayId: any[]) {
     return arrayId.indexOf(id) >= 0;
@@ -80,6 +85,16 @@ const utils = {
     const firstChar = word.charAt(0).toLowerCase();
     const remanent = word.substring(1);
     return firstChar + remanent;
+  },
+  checkPulseInstance() {
+    if (!window.pulse) {
+      // a global pulse object has to be present to avoid autoloader errors
+      window.pulse = window.pulse || function pulse() {
+        window.pulse.q = window.pulse.q || [];
+        window.pulse.q.push(arguments);
+      };
+    }
+    window.pulse.q = window.pulse.q || [];
   },
 };
 
