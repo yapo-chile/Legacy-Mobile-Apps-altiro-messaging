@@ -217,6 +217,11 @@ $media_query_tablet_width: 769px;
     &__thumb {
       background-color: var(--grey-two, #dbdbdb);
     }
+
+    &__thumb_not-available {
+      background-image: url('../assets/no-image.svg');
+      background-size: 20px 20px;
+    }
   }
 
   .msg-input {
