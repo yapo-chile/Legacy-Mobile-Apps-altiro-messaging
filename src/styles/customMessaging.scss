@@ -71,6 +71,14 @@ $media_query_tablet_width: 769px;
   .msg-chat {
     background-color: white;
 
+    &__avatar_no-image {
+      background-image: url('../assets/mi-cuenta.svg');
+      background-position: center;
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+      background-color: #bebebe;
+    }
+
     &__bubble {
       border-width: 0.5px;
       color: var(--grey-five, #666);
