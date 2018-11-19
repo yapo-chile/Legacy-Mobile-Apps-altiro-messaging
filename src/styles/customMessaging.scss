@@ -6,7 +6,7 @@ $media_query_tablet_width: 769px;
 
   .msg-list {
     &__avatar_no-image {
-      background-image: url('../assets/mi-cuenta.svg');
+      background-image: url('//static.yapo.cl/projects/altiro-messaging/mi-cuenta.svg');
       background-position: center;
       background-size: 16px 16px;
       background-repeat: no-repeat;
@@ -65,7 +65,7 @@ $media_query_tablet_width: 769px;
   
     &__thumbnail {
       background-color: var(--grey-two, #dbdbdb);
-      background-image: url('../assets/no-image.svg');
+      background-image: url('//static.yapo.cl/projects/altiro-messaging/no-image.svg');
       background-size: 21px 22px;
     }
   }
@@ -74,7 +74,7 @@ $media_query_tablet_width: 769px;
     background-color: white;
 
     &__avatar_no-image {
-      background-image: url('../assets/mi-cuenta.svg');
+      background-image: url('//static.yapo.cl/projects/altiro-messaging/mi-cuenta.svg');
       background-position: center;
       background-size: 16px 16px;
       background-repeat: no-repeat;
@@ -134,7 +134,7 @@ $media_query_tablet_width: 769px;
     display: flex;
     
     &__icon {
-      background-image: url('../assets/attachment-white.svg');
+      background-image: url('//static.yapo.cl/projects/altiro-messaging/attachment-white.svg');
       background-size: 25px 25px;
       height: 100%;
     }
@@ -167,16 +167,16 @@ $media_query_tablet_width: 769px;
   }
 
   .msg-control_settings {
-    background-image: url('../assets/icon.svg');
+    background-image: url('//static.yapo.cl/projects/altiro-messaging/icon.svg');
     background-size: 20px 20px;
   }
 
   .msg-control_close {
-    background-image: url('../assets/close.svg');
+    background-image: url('//static.yapo.cl/projects/altiro-messaging/close.svg');
   }
   
   .msg-control_attachment_icon_clip {
-    background-image: url('../assets/attachment.svg');
+    background-image: url('//static.yapo.cl/projects/altiro-messaging/attachment.svg');
   }
 
   .msg-header {
@@ -228,7 +228,7 @@ $media_query_tablet_width: 769px;
     }
 
     &__thumb_not-available {
-      background-image: url('../assets/no-image.svg');
+      background-image: url('//static.yapo.cl/projects/altiro-messaging/no-image.svg');
       background-size: 20px 20px;
     }
   }
