@@ -40,7 +40,7 @@ export default class TheLanding extends Vue {
       translations: {
         status: {
           message: {
-            error: 'fallo en el envío - toca para reintentar',
+            error: Vue.i18n.translate('MESSAGING_CENTER.ERRORS.DELIVERY_FAILURE', {}),
           },
         },
       },

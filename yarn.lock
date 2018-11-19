@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@Yapo/altiro-i18n@^2.14.1":
-  version "2.21.0"
-  resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/@Yapo/altiro-i18n/-/@Yapo/altiro-i18n-2.21.0.tgz#a66234dbf49fe4e2b921e70d64275fe8892b174a"
+"@Yapo/altiro-i18n@^2.25.0":
+  version "2.25.0"
+  resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/@Yapo/altiro-i18n/-/@Yapo/altiro-i18n-2.25.0.tgz#b161f679b6b961e4918d3cc68e8ccd8b699d3e7f"
 
 "@Yapo/ts-crud@^3.1.0":
   version "3.1.0"
