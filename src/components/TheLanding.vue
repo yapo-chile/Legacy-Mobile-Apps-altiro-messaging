@@ -7,43 +7,52 @@
   </div>
 </template>
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
-  import { Action, State } from 'vuex-class';
-  import { MessagingState } from '@/store/modules/messaging/types';
-  import { config } from '@/assets/messagingConfig';
-  import { messaging } from '@/store/modules/messaging';
-  import { MessagingConfig } from '@/domain/entities/MessagingEntity';
-  import MessagingWidget from './MessagingWidget.vue';
-  import { AuthState } from '@/store/modules/auth/types';
-  const namespace: string = 'the-landing';
+import { Component, Vue } from 'vue-property-decorator';
+import { Action, State } from 'vuex-class';
+import { MessagingState } from '@/store/modules/messaging/types';
+import { config } from '@/assets/messagingConfig';
+import { messaging } from '@/store/modules/messaging';
+import { MessagingConfig } from '@/domain/entities/MessagingEntity';
+import MessagingWidget from './MessagingWidget.vue';
+import { AuthState } from '@/store/modules/auth/types';
+const namespace: string = 'the-landing';
 
-  @Component({
-    components: {
-      MessagingWidget,
-    },
-  })
-  export default class TheLanding extends Vue {
-    @State('messaging')
-    public messaging!: MessagingState;
+@Component({
+  components: {
+    MessagingWidget,
+  },
+})
+export default class TheLanding extends Vue {
+  @State('messaging')
+  public messaging!: MessagingState;
 
-    @State('auth')
-    public auth!: AuthState;
-  
-    @Action('setConfig', { namespace: 'messaging' })
-    private setConfig: any;
+  @State('auth')
+  public auth!: AuthState;
 
-    private async created() {
-      await this.setConfig({ ... config, headers: {
+  @Action('setConfig', { namespace: 'messaging' })
+  private setConfig: any;
+
+  private async created() {
+    await this.setConfig({ ... config,
+      headers: {
         Authorization: this.auth.accSession,
-      }});
-    }
-
-    private clickEvent(type: string) {
-      utag.link({
-        event_name: 'messaging_center_click',
-      });
-    }
+      },
+      translations: {
+        status: {
+          message: {
+            error: 'fallo en el envío - toca para reintentar',
+          },
+        },
+      },
+    });
   }
+
+  private clickEvent(type: string) {
+    utag.link({
+      event_name: 'messaging_center_click',
+    });
+  }
+}
 </script>
 <style scoped>
 </style>

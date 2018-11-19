@@ -96,7 +96,16 @@ $media_query_tablet_width: 769px;
       border-color: var(--grey-three, #bebebe);
       background-color: white;
     }
+
+    &__item_status_error-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M-1-1h22v22H-1z'/%3E%3Cpath fill='%23ff3f3f' d='M10 .833C4.94.833.833 4.94.833 10S4.94 19.167 10 19.167 19.167 15.06 19.167 10 15.06.833 10 .833zm.917 13.75H9.083V12.75h1.834v1.833zm0-3.666H9.083v-5.5h1.834v5.5z'/%3E%3C/g%3E%3C/svg%3E%0A");
+      background-size: 22px;
+    }
   
+    &__item_status_error {
+      color: #ff3f3f;
+    }
+
     &__text {
       font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
       font-size: 15px;
