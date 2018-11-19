@@ -7,52 +7,78 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import { Action, State } from 'vuex-class';
-import { MessagingState } from '@/store/modules/messaging/types';
-import { config } from '@/assets/messagingConfig';
-import { messaging } from '@/store/modules/messaging';
-import { MessagingConfig } from '@/domain/entities/MessagingEntity';
-import MessagingWidget from './MessagingWidget.vue';
-import { AuthState } from '@/store/modules/auth/types';
-const namespace: string = 'the-landing';
+  import { Component, Vue } from 'vue-property-decorator';
+  import { Action, State } from 'vuex-class';
+  import { MessagingState } from '@/store/modules/messaging/types';
+  import { config } from '@/assets/messagingConfig';
+  import { messaging } from '@/store/modules/messaging';
+  import { MessagingConfig } from '@/domain/entities/MessagingEntity';
+  import MessagingWidget from './MessagingWidget.vue';
+  import { AuthState } from '@/store/modules/auth/types';
 
-@Component({
-  components: {
-    MessagingWidget,
-  },
-})
-export default class TheLanding extends Vue {
-  @State('messaging')
-  public messaging!: MessagingState;
+  const namespace: string = 'the-landing';
 
-  @State('auth')
-  public auth!: AuthState;
+  @Component({
+    components: {
+      MessagingWidget,
+    },
+  })
+  export default class TheLanding extends Vue {
+    @State('messaging')
+    public messaging!: MessagingState;
 
-  @Action('setConfig', { namespace: 'messaging' })
-  private setConfig: any;
+    @State('auth')
+    public auth!: AuthState;
 
-  private async created() {
-    await this.setConfig({ ... config,
-      headers: {
-        Authorization: this.auth.accSession,
-      },
-      translations: {
-        status: {
-          message: {
-            error: Vue.i18n.translate('MESSAGING_CENTER.ERRORS.DELIVERY_FAILURE', {}),
+    @Action('setConfig', { namespace: 'messaging' })
+    private setConfig: any;
+
+    private async created() {
+      await this.setConfig({ ... config,
+        format: {
+          messageDate: this.formatMessageDate,
+        },
+        headers: {
+          Authorization: this.auth.accSession,
+        },
+        translations: {
+          status: {
+            message: {
+              error: Vue.i18n.translate('MESSAGING_CENTER.ERRORS.DELIVERY_FAILURE', {}),
+            },
+          },
+          action: {
+            block: 'Bloquear usuario',
+            delete: 'Eliminar conversación',
+          },
+          info: {
+            writeYourMessage: 'Escribe tu mensaje...',
           },
         },
-      },
-    });
-  }
+      });
+    }
 
-  private clickEvent(type: string) {
-    utag.link({
-      event_name: 'messaging_center_click',
-    });
+    private formatMessageDate(data: any): string {
+      let displayedDate;
+
+      if (data.isToday) {
+        displayedDate = `<strong>${data.translator('info.today')}</strong>, ${data.format('hh:mm', data.date)}`;
+      } else {
+        if (data.isYesterday) {
+          displayedDate = `<strong>${data.translator('info.yesterday')}</strong>, ${data.format('hh:mm', data.date)}`;
+        } else {
+          displayedDate = `<strong>${data.format('dd-MM-yyyy', data.date)}</strong>, ${data.format('hh:mm', data.date)}`;
+        }
+      }
+      return displayedDate;
+    }
+
+    private clickEvent(type: string) {
+      utag.link({
+        event_name: 'messaging_center_click',
+      });
+    }
   }
-}
 </script>
 <style scoped>
 </style>

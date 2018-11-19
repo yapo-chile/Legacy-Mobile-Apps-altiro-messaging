@@ -86,6 +86,10 @@ $media_query_tablet_width: 769px;
       color: var(--grey-five, #666);
     }
 
+    &__bubble_image {
+      border: none;
+    }
+
     &__bubble_first-person {
       background-color: var(--sunrise-orange, #ff842c);
       border-color: var(--sunrise-orange, #ff842c);
@@ -130,13 +134,12 @@ $media_query_tablet_width: 769px;
     align-items: center;
     border-color: var(--grey-three, #bebebe);
     color: inherit;
-    height: 56px;
     display: flex;
     
     &__icon {
       background-image: url('//static.yapo.cl/projects/altiro-messaging/attachment-white.svg');
       background-size: 25px 25px;
-      height: 100%;
+      height: 56px !important;
     }
 
     &__label {
@@ -176,7 +179,7 @@ $media_query_tablet_width: 769px;
   }
   
   .msg-control_attachment_icon_clip {
-    background-image: url('//static.yapo.cl/projects/altiro-messaging/attachment.svg');
+    background-image: url('//static.yapo.cl/projects/altiro-messaging/attachment-regular.svg');
   }
 
   .msg-header {
@@ -187,9 +190,10 @@ $media_query_tablet_width: 769px;
     &__title {
       font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
       font-size: 14px;
-      font-weight: normal;
+      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
+      height: inherit;
       line-height: normal;
       letter-spacing: normal;
       color: var(--grey-five, #666);
@@ -237,6 +241,47 @@ $media_query_tablet_width: 769px;
     &__button {
       background-color: var(--endless-blue, #4376b0);
     }
+
+    &__button_disabled {
+      background-color: var(--grey-two, #dbdbdb)
+    }
+
+    &__textarea {
+      font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+    }
+  }
+
+  .msg-dropdown {
+    background-color: var(--grey-one, #eee);
+    &__item {
+      color: var(--grey-five, #666);
+    }
+  }
+}
+
+.msg-modal {
+  &__button {
+    border-radius: 4px;
+    font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+  }
+
+  &__button-ok {
+    background-color: var(--endless-blue, #4376b0);
+  }
+
+  &__button-cancel {
+    color: var(--endless-blue, #4376b0);
+    background-color: transparent;
+  }
+
+  &__dialog {
+    top: 0%;
+  }
+
+  &__dialog_text {
+    color: var(--grey-six, #333);
+    font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+    font-size: 14px;
   }
 }
 
@@ -245,7 +290,19 @@ $media_query_tablet_width: 769px;
     .msg-header {
       &__username {
         border: none;
+        padding-right: 40px;
       }
+
+      &__menu {
+        margin: 8px 0;
+        padding: 12px 16px;
+      }
+    }
+  }
+
+  .msg-modal {
+    &__dialog_text {
+      font-size: 16px;
     }
   }
 }
