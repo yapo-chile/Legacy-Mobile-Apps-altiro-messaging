@@ -208,7 +208,7 @@ $media_query_tablet_width: 769px;
     &__title {
       font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
       font-size: 14px;
-      font-weight: bold;
+      font-weight: normal;
       font-style: normal;
       font-stretch: normal;
       height: inherit;
@@ -265,6 +265,7 @@ $media_query_tablet_width: 769px;
     }
 
     &__textarea {
+      color: var(--grey-five, #666);
       font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
     }
   }
@@ -331,6 +332,10 @@ $media_query_tablet_width: 769px;
       &__username {
         border: none;
         padding-right: 40px;
+      }
+
+      &__title {
+        font-weight: bold;
       }
 
       &__menu {
