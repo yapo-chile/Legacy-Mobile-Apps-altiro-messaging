@@ -1,0 +1,42 @@
+:root {
+  /** PRIMARY COLOR (NAVIGATION) **/
+  --sunrise-orange: #ff842c;
+  --lava-orange: #ff6105;
+  --sunset-orange: #cc4c12;
+  --endless-blue: #4376b0;
+
+  /** SECUNDARY COLOR (BUTTONS, LINKS & ACTIVE STATES) **/
+  --happy-blue: #459ddf;
+  --perfect-blue: #31589e;
+  --happy-orange: #ff9f00;
+
+  /** COMPLEMANTARY COLOR (TEXT & ICONS) **/
+  --grey-one: #eee;
+  --grey-two: #dbdbdb;
+  --grey-three: #bebebe;
+  --grey-four: #999;
+  --grey-five: #666;
+  --grey-six: #333;
+
+  /** COMPLEMANTARY COLOR (BACKGROUNDS) **/
+  --grey-zero: #f8f8f8;
+  --grey-one: #eee;
+
+  /** STATUS USE THE FOLLOWING COLORS ON COMPONENTS THAT REQUIRE A DIFFERENT STATE **/
+  --check-green: #52c300;
+  --mistake-red: #ffb0b0;
+  --error-red: #ff3f3f;
+  --lava-orange: #ff6105;
+
+  /** PRODUCT YAPO.CL **/
+  --gallery-blue: #00b5e2;
+  --store-blue: #3e5c9a;
+  --label-purple: #5f259f;
+  --bump-green: #15b044;
+  --credit-yellow: #f5a623;
+  --star-yellow: #ffd75e;
+
+  /** EXTERNAL COLORS **/
+  --facebook-blue: #3b5998;
+  --greenlemon: #90be20;
+}

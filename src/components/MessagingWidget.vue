@@ -58,11 +58,13 @@
             userId: 'xuser',
           },
         },
-        {},
+        {
+          cssBefore: '#before-css-faast',
+        },
       );
     }
   }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
   @import "../styles/MessagingWidget";
 </style>

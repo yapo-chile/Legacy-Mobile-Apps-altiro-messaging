@@ -1,6 +1,6 @@
 export const config = {
     apiUrl: '/messaging/api/v1',
-    itemUrl: 'https://www2.poya1.cl/mc_widget/get_ads_list_data',
+    itemUrl: '/messaging/api/v1/ads',
     userId: 'xuser',
     lang: 'es_ES',
     baseUrl: process.env.VUE_APP_BASE_URL || '',
@@ -13,7 +13,7 @@ export const config = {
       injectMetaTags: true,
     },
     format: {
-      userProfile: '/user/:userid:',
+      userProfile: undefined,
       price(price: string) {
         return 'Now for only' + price;
       },

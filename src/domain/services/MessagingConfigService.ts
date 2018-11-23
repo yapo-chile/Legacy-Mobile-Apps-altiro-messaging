@@ -20,9 +20,7 @@ export default class MessagingConfigService implements MessagingConfigInterface 
 
   public async save(item: MessagingConfig): Promise<Commit<MessagingConfig>> {
     try {
-      await this.ls.$create(this.lsNameStore, item);
-      const value = await this.ls.$read(this.lsNameStore);
-      return {type: 'CONFIG_UPDATED', payload: value};
+      return {type: 'CONFIG_UPDATED', payload: item};
     } catch (error) {
       return {type: 'STORE_ERROR', payload: error};
     }

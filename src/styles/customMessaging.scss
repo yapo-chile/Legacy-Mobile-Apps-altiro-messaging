@@ -1,0 +1,358 @@
+$media_query_tablet_width: 769px;
+
+.messaging .msg-layout {
+  --msg-font-family: Helvetica, Arial, sans-serif;
+  color: var(--grey-five, #666);
+
+  .msg-list {
+    &__avatar_no-image {
+      background-image: url('//static.yapo.cl/projects/altiro-messaging/mi-cuenta.svg');
+      background-position: center;
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+      background-color: #bebebe;
+    }
+    &__counter {
+      background-color: var(--sunrise-orange, #ff842c);
+      font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+      font-size: 12px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      text-align: center;
+    }
+
+    &__message {
+      color: var(--grey-five, #666);
+      display: inline-block;
+      display: -ms-box;
+      display: -webkit-box;
+      text-align: left;
+      font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+      font-size: 12px;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+    }
+  
+    &__username {
+      font-size: 12px;
+      font-weight: bold;
+      text-align: left;
+      font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+      font-size: 16px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: var(--grey-five, #666);
+    }
+  
+    &__product {
+      font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--grey-five, #666);
+    }
+  
+    &__thumbnail {
+      background-color: var(--grey-two, #dbdbdb);
+      background-image: url('//static.yapo.cl/projects/altiro-messaging/no-image.svg');
+      background-size: 21px 22px;
+    }
+  }
+  
+  .msg-chat {
+    background-color: white;
+
+    &__avatar_no-image {
+      background-image: url('//static.yapo.cl/projects/altiro-messaging/mi-cuenta.svg');
+      background-position: center;
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+      background-color: #bebebe;
+    }
+
+    &__bubble {
+      border-width: 0.5px;
+      color: var(--grey-five, #666);
+    }
+
+    &__bubble_image {
+      border: none;
+    }
+
+    &__bubble_first-person {
+      background-color: var(--sunrise-orange, #ff842c);
+      border-color: var(--sunrise-orange, #ff842c);
+      color: white;
+    }
+  
+    &__bubble_third-person {
+      border-color: var(--grey-three, #bebebe);
+      background-color: white;
+    }
+
+    &__item_status_error-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M-1-1h22v22H-1z'/%3E%3Cpath fill='%23ff3f3f' d='M10 .833C4.94.833.833 4.94.833 10S4.94 19.167 10 19.167 19.167 15.06 19.167 10 15.06.833 10 .833zm.917 13.75H9.083V12.75h1.834v1.833zm0-3.666H9.083v-5.5h1.834v5.5z'/%3E%3C/g%3E%3C/svg%3E%0A");
+      background-size: 22px;
+    }
+  
+    &__item_status_error {
+      color: #ff3f3f;
+    }
+
+    &__text {
+      font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+      font-size: 15px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -0.1px;
+    }
+
+    &__time {
+      font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+      font-size: 12px;
+      font-weight: 300;
+      font-style: normal;
+      text-align: center;
+      color: var(--grey-five, #666);
+    }
+
+    &__loading {
+      -webkit-animation-duration: .75s;
+      animation-duration: .75s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: rotate-forever;
+      animation-name: rotate-forever;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      height: 20px;
+      width: 20px;
+      border: 4px solid var(--endless-blue, #4376b0);
+      border-right-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+  }
+
+  .msg-attachment {
+    align-items: center;
+    border-color: var(--grey-three, #bebebe);
+    color: inherit;
+    display: flex;
+    
+    &__icon {
+      background-image: url('//static.yapo.cl/projects/altiro-messaging/attachment-white.svg');
+      background-size: 25px 25px;
+      height: 56px !important;
+    }
+
+    &__label {
+      font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: inherit;
+    }
+
+    &__cta {
+      font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+      font-size: 11px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+    }
+  }
+  .msg-attachment_blocked .msg-attachment__icon {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLTItMmgyNHYyNEgtMiIvPjxwYXRoIGQ9Ik0xMCAwQzQuNDggMCAwIDQuNDggMCAxMHM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTUuNTIgMCAxMCAwek0yIDEwYzAtNC40MiAzLjU4LTggOC04IDEuODUgMCAzLjU1LjYzIDQuOSAxLjY5TDMuNjkgMTQuOUE3LjkwMiA3LjkwMiAwIDAgMSAyIDEwem04IDhjLTEuODUgMC0zLjU1LS42My00LjktMS42OUwxNi4zMSA1LjFBNy45MDIgNy45MDIgMCAwIDEgMTggMTBjMCA0LjQyLTMuNTggOC04IDh6IiBmaWxsPSIjRkZGIi8+PC9nPjwvc3ZnPg==);
+    background-color: #999999;
+    background-size: 20px 20px;
+  }
+
+  .msg-control_settings {
+    background-image: url('//static.yapo.cl/projects/altiro-messaging/icon.svg');
+    background-size: 20px 20px;
+  }
+
+  .msg-control_close {
+    background-image: url('//static.yapo.cl/projects/altiro-messaging/close.svg');
+  }
+  
+  .msg-control_attachment_icon_clip {
+    background-image: url('//static.yapo.cl/projects/altiro-messaging/attachment-regular.svg');
+  }
+
+  .msg-header {
+    z-index: 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+
+    &__title {
+      font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      height: inherit;
+      line-height: normal;
+      letter-spacing: normal;
+      color: var(--grey-five, #666);
+    }
+
+    &__username {
+      border-bottom: solid 0.5px #cccccc;
+      background-color: #ffffff;
+      max-width: 100%;
+    }
+
+    &__link {
+      color: var(--grey-five, #666);
+      font-family: Helvetica;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+    }
+
+    &__price {
+      font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+      font-size: 13px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: var(--lava-orange, #ff6105);
+    }
+
+    &__product {
+      max-width: 97%;
+    }
+
+    &__thumb {
+      background-color: var(--grey-two, #dbdbdb);
+    }
+
+    &__thumb_not-available {
+      background-image: url('//static.yapo.cl/projects/altiro-messaging/no-image.svg');
+      background-size: 20px 20px;
+    }
+  }
+
+  .msg-input {
+    &__button {
+      background-color: var(--endless-blue, #4376b0);
+    }
+
+    &__button_disabled {
+      background-color: var(--grey-two, #dbdbdb)
+    }
+
+    &__textarea {
+      color: var(--grey-five, #666);
+      font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+    }
+  }
+
+  .msg-dropdown {
+    background-color: var(--grey-one, #eee);
+    &__item {
+      color: var(--grey-five, #666);
+    }
+  }
+
+
+  .msg-empty {
+    &__loading_spinner {
+      -webkit-animation-duration: .75s;
+      animation-duration: .75s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: rotate-forever;
+      animation-name: rotate-forever;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      height: 20px;
+      width: 20px;
+      border: 4px solid var(--endless-blue, #4376b0);
+      border-right-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.msg-modal {
+  &__button {
+    border-radius: 4px;
+    font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+  }
+
+  &__button-ok {
+    background-color: var(--endless-blue, #4376b0);
+  }
+
+  &__button-cancel {
+    color: var(--endless-blue, #4376b0);
+    background-color: transparent;
+  }
+
+  &__dialog {
+    top: 0%;
+  }
+
+  &__dialog_text {
+    color: var(--grey-six, #333);
+    font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
+    font-size: 14px;
+  }
+}
+
+
+@media only screen and (min-width : $media_query_tablet_width) {
+  .messaging .msg-layout {
+    .msg-header {
+      &__username {
+        border: none;
+        padding-right: 40px;
+      }
+
+      &__title {
+        font-weight: bold;
+      }
+
+      &__menu {
+        margin: 8px 0;
+        padding: 12px 16px;
+      }
+    }
+  }
+
+  .msg-modal {
+    &__dialog_text {
+      font-size: 16px;
+    }
+  }
+}

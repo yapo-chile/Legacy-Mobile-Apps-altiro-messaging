@@ -5,4 +5,11 @@ module.exports = {
   productionSourceMap: undefined,
   parallel: undefined,
   css: undefined,
+  devServer: {
+    proxy: {
+      '/messaging/api/v1/': {
+        target: 'http://localhost:8089',
+      }
+    }
+  },
 }

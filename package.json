@@ -12,10 +12,11 @@
     "test:e2e": "vue-cli-service test:e2e",
     "prerelease": "yarn release -- --prerelease test",
     "release": "standard-version",
+    "json-server": "json-server --watch mock/db.js --port 8089 --routes mock/routes.json --middlewares mock/middleware.js ",
     "commit": "git-cz"
   },
   "dependencies": {
-    "@Yapo/altiro-i18n": "^2.14.1",
+    "@Yapo/altiro-i18n": "^2.25.0",
     "@Yapo/ts-crud": "^3.1.0",
     "@faast/faast-client": "^0.7.0",
     "vue": "^2.5.16",
@@ -39,6 +40,7 @@
     "commitizen": "^2.10.1",
     "cz-conventional-changelog": "^2.1.0",
     "jest-junit": "^5.1.0",
+    "json-server": "^0.14.0",
     "lint-staged": "^7.2.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",

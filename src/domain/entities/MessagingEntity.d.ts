@@ -6,7 +6,7 @@ export interface MessagingFeatures {
 }
 
 export interface MessagingFormat {
-  userProfile: string;
+  userProfile: string | undefined;
   price: (params: string) => string;
   messageDate: (params: object) => string;
   conversationDate: (params: object) => string;
@@ -31,4 +31,5 @@ export interface MessagingConfig {
   integrations?: object;
   highlights?: object;
   interaction?: MessagingInteraction;
+  track?: any;
 }

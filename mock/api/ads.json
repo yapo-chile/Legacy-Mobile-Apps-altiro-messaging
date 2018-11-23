@@ -1,0 +1,77 @@
+{
+  "status": "OK",
+  "ads": [
+    {
+      "id": "4964184",
+      "image": "https://img.poya1.cl/thumbs/78/7855574342.jpg",
+      "price": "",
+      "subject": "Profesional Jornada completa",
+      "url": "/vi/4964184",
+      "userId": "1543800"
+    },
+    {
+      "id": "4964880",
+      "image": "https://img.poya1.cl/thumbs/10/1094808801.jpg",
+      "price": "",
+      "subject": "Descripción larga",
+      "url": "/vi/4964880",
+      "userId": "1542705"
+    },
+    {
+      "id": "4964952",
+      "image": "",
+      "price": "",
+      "subject": "Aviso de empleo",
+      "url": "/vi/4964952",
+      "userId": "1543569"
+    },
+    {
+      "id": "4950883",
+      "image": "",
+      "price": "",
+      "subject": "Vuelves a mi",
+      "url": "/vi/4950883",
+      "userId": "1542705"
+    },
+    {
+      "id": "4952382",
+      "image": "",
+      "price": "",
+      "subject": "Prueba rechazo",
+      "url": "/vi/4952382",
+      "userId": "1543353"
+    },
+    {
+      "id": "4952539",
+      "image": "https://img.poya1.cl/thumbs/03/0333821975.jpg",
+      "price": "",
+      "subject": "Cabaña embrujada",
+      "url": "/vi/4952539",
+      "userId": "1543353"
+    },
+    {
+      "id": "4961673",
+      "image": "",
+      "price": "",
+      "subject": "Jobs inserting fee",
+      "url": "/vi/4961673",
+      "userId": "1543354"
+    },
+    {
+      "id": "4964884",
+      "image": "",
+      "price": "",
+      "subject": "Aviso sin teléfono",
+      "url": "/vi/4964884",
+      "userId": "1543929"
+    },
+    {
+      "id": "4965002",
+      "image": "https://img.poya1.cl/thumbs/00/0024058860.jpg",
+      "price": "",
+      "subject": "Casa en Jardín Alto - Enrique Olivares, Santa Ines",
+      "url": "/vi/4965002",
+      "userId": "1543575"
+    }
+  ]
+}
