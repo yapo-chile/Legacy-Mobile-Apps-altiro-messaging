@@ -65,6 +65,9 @@ export default class TheLanding extends Vue {
           adNotAvailable: 'Aviso no disponible',
           uploadFailed: 'Este tipo de archivos no está soportado. Por favor, inténtalo de nuevo con otro archivo.',
         },
+        interaction: {
+          confirmDelete: '¿Estás seguro que quieres borrar esta conversación?',
+        },
       },
     });
   }
