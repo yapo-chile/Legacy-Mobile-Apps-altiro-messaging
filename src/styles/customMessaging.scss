@@ -25,6 +25,9 @@ $media_query_tablet_width: 769px;
 
     &__message {
       color: var(--grey-five, #666);
+      display: inline-block;
+      display: -ms-box;
+      display: -webkit-box;
       text-align: left;
       font-family: var(--msg-font-family, Helvetica, Arial, sans-serif);
       font-size: 12px;

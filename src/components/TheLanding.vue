@@ -42,13 +42,6 @@ export default class TheLanding extends Vue {
         Authorization: this.auth.accSession,
       },
       translations: {
-        attachment: {
-          sentYou: {
-            single: 'Archivo enviado',
-            plural: '%{numberAttachments} archivos enviados',
-          },
-          file: 'Archivo adjunto',
-        },
         status: {
           message: {
             error: Vue.i18n.translate('MESSAGING_CENTER.ERRORS.DELIVERY_FAILURE', {}),
@@ -60,9 +53,17 @@ export default class TheLanding extends Vue {
         },
         info: {
           writeYourMessage: 'Escribe tu mensaje...',
+          attachment: {
+            sentYou: {
+              single: 'Archivo enviado',
+              plural: '%{numberAttachments} archivos enviados',
+            },
+            file: 'Archivo adjunto',
+          },
         },
         error: {
           adNotAvailable: 'Aviso no disponible',
+          uploadFailed: 'Este tipo de archivos no está soportado. Por favor, inténtalo de nuevo con otro archivo.',
         },
       },
     });
