@@ -7,78 +7,88 @@
   </div>
 </template>
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
-  import { Action, State } from 'vuex-class';
-  import { MessagingState } from '@/store/modules/messaging/types';
-  import { config } from '@/assets/messagingConfig';
-  import { messaging } from '@/store/modules/messaging';
-  import { MessagingConfig } from '@/domain/entities/MessagingEntity';
-  import MessagingWidget from './MessagingWidget.vue';
-  import { AuthState } from '@/store/modules/auth/types';
+import { Component, Vue } from 'vue-property-decorator';
+import { Action, State } from 'vuex-class';
+import { MessagingState } from '@/store/modules/messaging/types';
+import { config } from '@/assets/messagingConfig';
+import { messaging } from '@/store/modules/messaging';
+import { MessagingConfig } from '@/domain/entities/MessagingEntity';
+import MessagingWidget from './MessagingWidget.vue';
+import { AuthState } from '@/store/modules/auth/types';
 
-  const namespace: string = 'the-landing';
+const namespace: string = 'the-landing';
 
-  @Component({
-    components: {
-      MessagingWidget,
-    },
-  })
-  export default class TheLanding extends Vue {
-    @State('messaging')
-    public messaging!: MessagingState;
+@Component({
+  components: {
+    MessagingWidget,
+  },
+})
+export default class TheLanding extends Vue {
+  @State('messaging')
+  public messaging!: MessagingState;
 
-    @State('auth')
-    public auth!: AuthState;
+  @State('auth')
+  public auth!: AuthState;
 
-    @Action('setConfig', { namespace: 'messaging' })
-    private setConfig: any;
+  @Action('setConfig', { namespace: 'messaging' })
+  private setConfig: any;
 
-    private async created() {
-      await this.setConfig({ ... config,
-        format: {
-          messageDate: this.formatMessageDate,
-        },
-        headers: {
-          Authorization: this.auth.accSession,
-        },
-        translations: {
-          status: {
-            message: {
-              error: Vue.i18n.translate('MESSAGING_CENTER.ERRORS.DELIVERY_FAILURE', {}),
-            },
+  private async created() {
+    await this.setConfig({ ... config,
+      format: {
+        messageDate: this.formatMessageDate,
+      },
+      headers: {
+        Authorization: this.auth.accSession,
+      },
+      translations: {
+        attachment: {
+          sentYou: {
+            single: 'Archivo enviado',
+            plural: '%{numberAttachments} archivos enviados',
           },
-          action: {
-            block: 'Bloquear usuario',
-            delete: 'Eliminar conversación',
-          },
-          info: {
-            writeYourMessage: 'Escribe tu mensaje...',
+          file: 'Archivo adjunto',
+        },
+        status: {
+          message: {
+            error: Vue.i18n.translate('MESSAGING_CENTER.ERRORS.DELIVERY_FAILURE', {}),
           },
         },
-      });
-    }
-
-    private formatMessageDate(data: any): string {
-      let displayedDate;
-
-      if (data.isToday) {
-        displayedDate = `<strong>${data.translator('info.today')}</strong>, ${data.format('hh:mm', data.date)}`;
-      } else {
-        if (data.isYesterday) {
-          displayedDate = `<strong>${data.translator('info.yesterday')}</strong>, ${data.format('hh:mm', data.date)}`;
-        } else {
-          displayedDate = `<strong>${data.format('dd-MM-yyyy', data.date)}</strong>, ${data.format('hh:mm', data.date)}`;
-        }
-      }
-      return displayedDate;
-    }
-
-    private clickEvent(type: string) {
-      utag.link({
-        event_name: 'messaging_center_click',
-      });
-    }
+        action: {
+          block: 'Bloquear usuario',
+          delete: 'Eliminar conversación',
+        },
+        info: {
+          writeYourMessage: 'Escribe tu mensaje...',
+        },
+        error: {
+          adNotAvailable: 'Aviso no disponible',
+        },
+      },
+    });
   }
+
+  private formatMessageDate(data: any): string {
+    let displayedDate;
+
+    if (data.isToday) {
+      displayedDate = `<strong>${data.translator('info.today')}</strong>, ${data.format('hh:mm', data.date)}`;
+    } else {
+      if (data.isYesterday) {
+        displayedDate = `<strong>${data.translator('info.yesterday')}</strong>, ${data.format('hh:mm', data.date)}`;
+      } else {
+        displayedDate = `<strong>${data.format('dd-MM-yyyy', data.date)}</strong>, ${data.format('hh:mm', data.date)}`;
+      }
+    }
+    return displayedDate;
+  }
+
+  private clickEvent(type: string) {
+    utag.link({
+      event_name: 'messaging_center_click',
+    });
+  }
+}
 </script>
 <style scoped>
 </style>
