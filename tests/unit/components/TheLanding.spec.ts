@@ -20,11 +20,7 @@ describe('TheLanding test', () => {
     state = {
       config,
     };
-    actions = {
-      setText: jest.fn(),
-      getText: jest.fn(),
-      checkStore: jest.fn(),
-    };
+    actions = {};
 
     store = new Vuex.Store({
       modules: {

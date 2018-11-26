@@ -13,8 +13,10 @@ declare global {
 
   interface TealiumOptions {
     event_name: string;
+    data?: any;
   }
   namespace utag {
     function link(opts: TealiumOptions): any;
+    function view(opts: TealiumOptions): any;
   }
 }

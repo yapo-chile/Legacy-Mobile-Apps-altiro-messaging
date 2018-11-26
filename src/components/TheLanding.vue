@@ -68,6 +68,9 @@ export default class TheLanding extends Vue {
         interaction: {
           confirmDelete: '¿Estás seguro que quieres borrar esta conversación?',
         },
+        track: (event: string, payload: any): void => {
+          utag.link({ event_name: 'messaging_center_app', data: {event, payload}});
+        },
       },
     });
   }
