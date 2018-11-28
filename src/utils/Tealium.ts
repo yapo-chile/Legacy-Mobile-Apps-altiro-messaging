@@ -1,7 +1,19 @@
 import utils from '@/utils/utils';
 
 const checkEnv = () => /yapo\.cl/gm.exec(window.location.origin);
+const isTealium: boolean = JSON.parse(process.env.VUE_APP_TEALIUM_ENABLED || 'false');
+let inicialized = false;
 
+const view = (data: TealiumOptions) => {
+  if (isTealium) {
+    utag.view(data);
+  }
+};
+const link = (data: TealiumOptions) => {
+  if (isTealium) {
+    utag.link(data);
+  }
+};
 
 const load = (env: string, callback: () => void) => {
   const url: string = '//tags.tiqcdn.com/utag/schibsted/yapo/' + env + '/utag.js';
@@ -18,23 +30,23 @@ const load = (env: string, callback: () => void) => {
   element.addEventListener('load', callback);
 };
 
-let inicialized = false;
-
 export default {
   install(eventName: string) {
-    if (JSON.parse(process.env.VUE_APP_TEALIUM_ENABLED || 'false') && !inicialized) {
+    if (isTealium && !inicialized) {
       inicialized = true;
       (window as any).utag_cfg_ovrd = {noview : true};
       utils.checkPulseInstance();
       load(!checkEnv ? 'prod' : 'dev', () => {
-        utag.view({
+        view({
           event_name: eventName,
         });
       });
     } else {
-      utag.view({
+      view({
         event_name: eventName,
       });
     }
   },
+  link,
+  view,
 };
