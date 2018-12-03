@@ -7,6 +7,8 @@ import Rollbar from '@/utils/Rollbar';
 
 Vue.config.productionTip = false;
 
+Vue.config.ignoredElements = ['yapo-header', 'yapo-drawer'];
+
 Rollbar.install(Vue);
 
 Tealium.install('messaging_center_app');

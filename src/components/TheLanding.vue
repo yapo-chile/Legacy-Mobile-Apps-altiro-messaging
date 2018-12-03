@@ -1,7 +1,68 @@
 <template>
   <div>
-    <yapo-header publish="Publicar"></yapo-header>
-    <yapo-drawer ></yapo-drawer>
+    <yapo-header
+      :publish="$t('YAPO_HEADER.PUBLISH')"
+      :home-url="homeUrl"
+      :publish-url="publishUrl"
+      :login-url="loginUrl"
+      :account-url="myAccountUrl"
+      :messaging-url="messagingUrl"
+      default-avatar="//static.yapo.cl/shared/icons/header/no-img-user.svg"></yapo-header>
+    <yapo-drawer 
+      :greeting="$t('BUILDERS.HELLO') + ', '"
+      :welcome="'Bienvenido'"
+      :login="'Iniciar sesión'"
+      :login-url="loginUrl">
+      <ul slot="content">
+        <li class="drawer__divisor"></li>
+        <li>
+          <button class="drawer__item drawer__item--selected">
+            <span class="drawer__item-text">
+              {{$t('YAPO_HEADER.MESSAGES')}}
+              <i class="drawer__notification drawer__notification--orange fas fa-circle"></i>
+            </span>
+            <i class="drawer__item-icon fal fa-envelope"></i>
+          </button>
+        </li>
+        <li>
+          <button @click="redirect(myAdsUrl, true)" class="drawer__item" >
+            {{$t('YAPO_HEADER.ADS')}} <i class="drawer__item-icon fal fa-list-alt"></i>
+          </button>
+        </li>
+        <li>
+          <button @click="redirect(myFavoritesUrl, true)" class="drawer__item">
+            {{$t('YAPO_HEADER.FAVORITES')}} <i class="drawer__item-icon custom-icon-favoritos"></i>
+          </button>
+        </li>
+        <li>
+          <button @click="redirect(myAccountUrl, true)" class="drawer__item">
+            {{$t('YAPO_HEADER.ACCOUNT')}} <i class="drawer__item-icon custom-icon-user-bar"></i>
+          </button>
+        </li>
+        <li>
+          <button @click="redirect(yaPesosUrl, true)" class="drawer__item">
+            {{$t('YAPO_HEADER.YAPESOS')}} <i class="drawer__item-icon custom-icon-yapesos"></i>
+          </button>
+        </li>
+        <li>
+          <button @click="redirect(buyUrl, true)" class="drawer__item">
+            {{$t('YAPO_HEADER.BUY')}} <i class="drawer__item-icon fal fa-shopping-cart"></i>
+          </button>
+        </li>
+        <li>
+          <button @click="redirect(publishUrl, false)" class="drawer__item">
+            {{$t('YAPO_HEADER.PUBLISH')}} <i class="drawer__item-icon custom-icon-publicar-aviso"></i>
+          </button>
+        </li>
+        <li v-if="auth.isLoggedIn">
+          <button @click="redirect(logoutUrl, false)" class="drawer__item">
+            {{$t('YAPO_HEADER.CLOSE')}} <i class="drawer__item-icon fal fa-power-off"></i>
+          </button>
+        </li>
+        <li class="drawer__divisor"></li>
+        <li><button @click="redirect(helpUrl, false)" class="drawer__item">{{$t('YAPO_HEADER.HELP')}}</button></li>
+      </ul>
+      </yapo-drawer>
     <MessagingWidget class="landing-messaging" :widgetParams="messaging.config" :faast="messaging.config" /> 
   </div>
 </template>
@@ -15,6 +76,7 @@
   import MessagingWidget from './MessagingWidget.vue';
   import { AuthState } from '@/store/modules/auth/types';
   import tags from '@/utils/Tealium';
+  import utils from '@/utils/utils';
 
   const namespace: string = 'the-landing';
 
@@ -33,6 +95,33 @@
     @Action('setConfig', { namespace: 'messaging' })
     private setConfig: any;
 
+    private homeUrl: string = '';
+    private publishUrl: string = '';
+    private loginUrl: string = '';
+
+    // content variables
+    private messagingUrl: string = '';
+    private myAdsUrl: string = '';
+    private myFavoritesUrl: string = '';
+    private myAccountUrl: string = '';
+    private yaPesosUrl: string = '';
+    private buyUrl: string = '';
+    private logoutUrl: string = '';
+    private helpUrl: string = '';
+
+    private beforeMount() {
+      this.homeUrl = utils.getUrl();
+      this.publishUrl = utils.getSecureUrl() + '/ai/form';
+      this.loginUrl = utils.getSecureUrl() + '/login';
+      this.messagingUrl = utils.getUrl() + '/messaging/app';
+      this.myAdsUrl = utils.getSecureUrl() + '/dashboard';
+      this.myFavoritesUrl = utils.getUrl() + '/favoritos';
+      this.myAccountUrl = utils.getSecureUrl() + '/cuenta/view';
+      this.yaPesosUrl = utils.getSecureUrl() + '/yapesos';
+      this.buyUrl = utils.getSecureUrl() + '/pagos/form/';
+      this.logoutUrl = utils.getSecureUrl() + '/logout?exit=1';
+      this.helpUrl = 'https://ayuda.yapo.cl/hc/es';
+    }
     private async created() {
       await this.setConfig({ ... config,
         format: {
@@ -48,31 +137,39 @@
             },
           },
           action: {
-            block: 'Bloquear usuario',
-            delete: 'Eliminar conversación',
+            block: Vue.i18n.translate('MESSAGING_CENTER.ACTIONS.BLOCK', {}),
+            delete: Vue.i18n.translate('MESSAGING_CENTER.ACTIONS.DELETE', {}),
           },
           info: {
-            writeYourMessage: 'Escribe tu mensaje...',
+            writeYourMessage: Vue.i18n.translate('MESSAGING_CENTER.INFO.WRITE_YOUR_MESSAGE', {}),
             attachment: {
               sentYou: {
-                single: 'Archivo enviado',
-                plural: '%{numberAttachments} archivos enviados',
+                single: Vue.i18n.translate('MESSAGING_CENTER.INFO.SENT_YOU.SINGLE', {}),
+                plural: Vue.i18n.translate('MESSAGING_CENTER.INFO.ATTACHMENT.SENT_YOU.PLURAL', {}),
               },
-              file: 'Archivo adjunto',
+              file: Vue.i18n.translate('MESSAGING_CENTER.INFO.ATTACHMENT.FILE', {}),
             },
           },
           error: {
-            adNotAvailable: 'Aviso no disponible',
-            uploadFailed: 'Este tipo de archivos no está soportado. Por favor, inténtalo de nuevo con otro archivo.',
+            adNotAvailable: Vue.i18n.translate('MESSAGING_CENTER.ERRORS.AD_NOT_AVAILABLE', {}),
+            uploadFailed: Vue.i18n.translate('MESSAGING_CENTER.UPLOAD_FAILED', {}),
           },
           interaction: {
-            confirmDelete: '¿Estás seguro que quieres borrar esta conversación?',
+            confirmDelete:  Vue.i18n.translate('MESSAGING_CENTER.INTERACTION.CONFIRM_DELETE', {}),
           },
         },
         track: (event: string, payload: any): void => {
           utag.link({ event_name: 'messaging_center_app', data: {event, payload}});
         },
       });
+    }
+
+    private redirect(url: string, secure: boolean) {
+      if (!secure || this.auth.isLoggedIn) {
+        window.location.assign(url);
+      } else {
+        window.location.assign(this.loginUrl);
+      }
     }
 
     private formatMessageDate(data: any): string {
@@ -97,5 +194,6 @@
     }
   }
 </script>
-<style scoped>
+<style lang="scss" scoped>
+  @import "../styles/TheLanding";
 </style>
