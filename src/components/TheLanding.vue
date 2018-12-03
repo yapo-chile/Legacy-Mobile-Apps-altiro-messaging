@@ -95,6 +95,9 @@
     @Action('setConfig', { namespace: 'messaging' })
     private setConfig: any;
 
+    @Action('logoutUser', { namespace: 'auth' })
+    private logoutUser: any;
+
     private homeUrl: string = '';
     private publishUrl: string = '';
     private loginUrl: string = '';
@@ -164,8 +167,11 @@
       });
     }
 
-    private redirect(url: string, secure: boolean) {
+    private async redirect(url: string, secure: boolean) {
       if (!secure || this.auth.isLoggedIn) {
+        if (url === this.logoutUrl) {
+          await this.logoutUser();
+        }
         window.location.assign(url);
       } else {
         window.location.assign(this.loginUrl);

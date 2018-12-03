@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router, { RouterOptions } from 'vue-router';
 import TheLanding from '@/components/TheLanding.vue';
 import store from './store';
+import utils from './utils/utils';
 
 Vue.use(Router);
 
@@ -25,7 +26,7 @@ router.beforeEach(async (to, from, next) => {
     next();
   } else {
     if (to.path !== '/login') {
-      window.location.href = '/login';
+      window.location.href = utils.getSecureUrl() + '/login';
     }
     next();
   }
