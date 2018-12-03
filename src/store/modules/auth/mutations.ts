@@ -1,6 +1,9 @@
 import { MutationTree } from 'vuex';
 import { AuthState } from '@/store/modules/auth/types';
 
+const IS_LOGGED_IN = (state: any, update: any) => {
+  state.isLoggedIn = update;
+};
 
 export const mutations: MutationTree<AuthState> = {
   UPDATE_USER_DATA(state, update: any) {
@@ -8,14 +11,12 @@ export const mutations: MutationTree<AuthState> = {
     state.userEmail = update.email;
     state.accSession = update.accSession;
   },
-  IS_LOGGED_IN(state, update: any) {
-    state.isLoggedIn = update;
-  },
+  IS_LOGGED_IN,
   DELETE_USER_DATA(state) {
     state.userName = '';
     state.userEmail = '';
     state.accSession = '';
-    this.IS_LOGGED_IN(state, false);
+    IS_LOGGED_IN(state, false);
   },
 };
 
