@@ -19,7 +19,6 @@
           <button class="drawer__item drawer__item--selected">
             <span class="drawer__item-text">
               {{$t('YAPO_HEADER.MESSAGES')}}
-              <i class="drawer__notification drawer__notification--orange fas fa-circle"></i>
             </span>
             <i class="drawer__item-icon fal fa-envelope"></i>
           </button>
@@ -46,7 +45,10 @@
         </li>
         <li>
           <button @click="redirect(buyUrl, true)" class="drawer__item">
-            {{$t('YAPO_HEADER.BUY')}} <i class="drawer__item-icon fal fa-shopping-cart"></i>
+            <span class="drawer__item-text">
+              {{$t('YAPO_HEADER.BUY')}}
+            </span>
+            <i class="drawer__item-icon fal fa-shopping-cart"></i>
           </button>
         </li>
         <li>
@@ -99,6 +101,8 @@
     private logoutUser: any;
 
     private homeUrl: string = '';
+    private url: string = '';
+    private secureUrl: string = '';
     private publishUrl: string = '';
     private loginUrl: string = '';
 
@@ -113,16 +117,18 @@
     private helpUrl: string = '';
 
     private beforeMount() {
-      this.homeUrl = utils.getUrl();
-      this.publishUrl = utils.getSecureUrl() + '/ai/form';
-      this.loginUrl = utils.getSecureUrl() + '/login';
-      this.messagingUrl = utils.getUrl() + '/messaging/app';
-      this.myAdsUrl = utils.getSecureUrl() + '/dashboard';
-      this.myFavoritesUrl = utils.getUrl() + '/favoritos';
-      this.myAccountUrl = utils.getSecureUrl() + '/cuenta/view';
-      this.yaPesosUrl = utils.getSecureUrl() + '/yapesos';
-      this.buyUrl = utils.getSecureUrl() + '/pagos/form/';
-      this.logoutUrl = utils.getSecureUrl() + '/logout?exit=1';
+      this.url = utils.getUrl();
+      this.secureUrl = utils.getSecureUrl();
+      this.homeUrl = this.url;
+      this.publishUrl = this.secureUrl + '/ai/form';
+      this.loginUrl = this.secureUrl + '/login';
+      this.messagingUrl = this.url + '/messaging/app';
+      this.myAdsUrl = this.secureUrl + '/dashboard';
+      this.myFavoritesUrl = this.url + '/favoritos';
+      this.myAccountUrl = this.secureUrl + '/cuenta/view';
+      this.yaPesosUrl = this.secureUrl + '/yapesos';
+      this.buyUrl = this.secureUrl + '/pagos/form/';
+      this.logoutUrl = this.secureUrl + '/logout?exit=1';
       this.helpUrl = 'https://ayuda.yapo.cl/hc/es';
     }
     private async created() {
