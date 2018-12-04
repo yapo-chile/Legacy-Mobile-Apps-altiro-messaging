@@ -120,7 +120,7 @@
       this.url = utils.getUrl();
       this.secureUrl = utils.getSecureUrl();
       this.homeUrl = this.url;
-      this.publishUrl = this.secureUrl + '/ai/form';
+      this.publishUrl = this.secureUrl + '/ai';
       this.loginUrl = this.secureUrl + '/login';
       this.messagingUrl = this.url + '/messaging/app';
       this.myAdsUrl = this.secureUrl + '/dashboard';
