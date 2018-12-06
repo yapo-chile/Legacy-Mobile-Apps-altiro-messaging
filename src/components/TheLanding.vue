@@ -63,6 +63,11 @@
         </li>
         <li class="drawer__divisor"></li>
         <li><button @click="redirect(helpUrl, false)" class="drawer__item">{{$t('YAPO_HEADER.HELP')}}</button></li>
+        <li>
+          <button class="drawer__item"></button>
+          <button class="drawer__item"></button>
+          <button class="drawer__item"></button>
+        </li>
       </ul>
       </yapo-drawer>
     <MessagingWidget class="landing-messaging" :widgetParams="messaging.config" :faast="messaging.config" /> 
