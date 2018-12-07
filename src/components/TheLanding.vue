@@ -1,6 +1,6 @@
 <template>
   <div>
-    <yapo-header
+    <yapo-header :style="{display: ((auth.isLoggedIn) ? '' : 'none' )}"
       :publish="$t('YAPO_HEADER.PUBLISH')"
       :home-url="homeUrl"
       :publish-url="publishUrl"
@@ -8,7 +8,7 @@
       :account-url="myAccountUrl"
       :messaging-url="messagingUrl"
       default-avatar="//static.yapo.cl/shared/icons/header/no-img-user.svg"></yapo-header>
-    <yapo-drawer 
+    <yapo-drawer
       :greeting="$t('BUILDERS.HELLO') + ', '"
       :welcome="'Bienvenido'"
       :login="'Iniciar sesión'"
