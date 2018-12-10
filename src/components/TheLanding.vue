@@ -17,7 +17,7 @@
         <li class="drawer__divisor"></li>
         <li>
           <button class="drawer__item drawer__item--selected">
-            <div class="drawer__item">
+            <div class="drawer__item-container">
               <span class="drawer__item-text">
                 {{$t('YAPO_HEADER.MESSAGES')}}
               </span>
@@ -27,35 +27,35 @@
         </li>
         <li>
           <button @click="redirect(myAdsUrl, true)" class="drawer__item">
-            <div class="drawer__item">
+            <div class="drawer__item-container">
               {{$t('YAPO_HEADER.ADS')}} <i class="drawer__item-icon fal fa-list-alt"></i>
             </div>
           </button>
         </li>
         <li>
           <button @click="redirect(myFavoritesUrl, true)" class="drawer__item">
-            <div class="drawer__item">
+            <div class="drawer__item-container">
             {{$t('YAPO_HEADER.FAVORITES')}} <i class="drawer__item-icon custom-icon-favoritos"></i>
             </div>
           </button>
         </li>
         <li>
           <button @click="redirect(myAccountUrl, true)" class="drawer__item">
-            <div class="drawer__item">
+            <div class="drawer__item-container">
               {{$t('YAPO_HEADER.ACCOUNT')}} <i class="drawer__item-icon custom-icon-user-bar"></i>
             </div>
           </button>
         </li>
         <li>
           <button @click="redirect(yaPesosUrl, true)" class="drawer__item">
-            <div class="drawer__item">
+            <div class="drawer__item-container">
               {{$t('YAPO_HEADER.YAPESOS')}} <i class="drawer__item-icon custom-icon-yapesos"></i>
             </div>
           </button>
         </li>
         <li>
           <button @click="redirect(buyUrl, true)" class="drawer__item">
-            <div class="drawer__item">
+            <div class="drawer__item-container">
               <span class="drawer__item-text">
                 {{$t('YAPO_HEADER.BUY')}}
               </span>
@@ -65,14 +65,14 @@
         </li>
         <li>
           <button @click="redirect(publishUrl, false)" class="drawer__item">
-            <div class="drawer__item">
+            <div class="drawer__item-container">
               {{$t('YAPO_HEADER.PUBLISH')}} <i class="drawer__item-icon custom-icon-publicar-aviso"></i>
             </div>
           </button>
         </li>
         <li v-if="auth.isLoggedIn">
           <button @click="redirect(logoutUrl, false)" class="drawer__item">
-            <div class="drawer__item">
+            <div class="drawer__item-container">
               {{$t('YAPO_HEADER.CLOSE')}} <i class="drawer__item-icon fal fa-power-off"></i>
             </div>
           </button>
