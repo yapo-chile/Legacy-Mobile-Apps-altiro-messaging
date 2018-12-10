@@ -96,6 +96,23 @@ const utils = {
     }
     window.pulse.q = window.pulse.q || [];
   },
+  getSecureUrl() {
+    const origin = window.location.origin;
+    let secureUrl = '';
+
+    if (origin.includes('www.')) {
+      secureUrl = origin.replace('www.', 'www2.');
+    } else if (origin.includes('m.')) {
+      secureUrl = origin.replace('m.', 'www2.');
+    } else {
+      secureUrl = origin.replace('://', '://www2.');
+    }
+
+    return secureUrl;
+  },
+  getUrl() {
+    return window.location.origin;
+  },
 };
 
 export default utils;
