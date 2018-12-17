@@ -1,5 +1,3 @@
-import utils from '@/utils/utils';
-
 const checkEnv = () => /yapo\.cl/gm.exec(window.location.origin);
 const isTealium: boolean = JSON.parse(process.env.VUE_APP_TEALIUM_ENABLED || 'false');
 let inicialized = false;
@@ -41,6 +39,9 @@ const load = (env: string, callback: () => void) => {
     element2.parentNode.insertBefore( element, element2);
   }
   element.addEventListener('load', callback);
+  element.addEventListener('load', () => {
+    document.dispatchEvent(new CustomEvent('utagjs::loaded', {}));
+  });
 };
 
 export default {
