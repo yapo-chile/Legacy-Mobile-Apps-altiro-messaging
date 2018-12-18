@@ -50,7 +50,7 @@ export default {
     if (isTealium && !inicialized) {
       inicialized = true;
       (window as any).utag_cfg_ovrd = {noview : true};
-      load(!checkEnv ? 'prod' : 'dev', () => {
+      load(checkEnv() ? 'prod' : 'dev', () => {
         view({
           event_name: eventName,
         });
