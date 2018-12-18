@@ -38,8 +38,9 @@ const load = (env: string, callback: () => void) => {
   if (element2 !== null && element2.parentNode !== null) {
     element2.parentNode.insertBefore( element, element2);
   }
-  element.addEventListener('load', callback);
+
   element.addEventListener('load', () => {
+    callback();
     document.dispatchEvent(new CustomEvent('utagjs::loaded', {}));
   });
 };
