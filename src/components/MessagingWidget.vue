@@ -49,9 +49,10 @@
     }
 
     private async getMessaging() {
+      const checkEnv = () => /yapo\.cl/gm.exec(window.location.origin);
       await faast(
         'messaging-widget',
-        'pre',
+        checkEnv() ? 'pro' : 'pre',
         {
           siteName: 'yapo',
           _context: {

@@ -1,5 +1,3 @@
-import utils from '@/utils/utils';
-
 const checkEnv = () => /yapo\.cl/gm.exec(window.location.origin);
 const isTealium: boolean = JSON.parse(process.env.VUE_APP_TEALIUM_ENABLED || 'false');
 let inicialized = false;
@@ -40,7 +38,11 @@ const load = (env: string, callback: () => void) => {
   if (element2 !== null && element2.parentNode !== null) {
     element2.parentNode.insertBefore( element, element2);
   }
-  element.addEventListener('load', callback);
+
+  element.addEventListener('load', () => {
+    callback();
+    document.dispatchEvent(new CustomEvent('utagjs::loaded', {}));
+  });
 };
 
 export default {
@@ -48,7 +50,7 @@ export default {
     if (isTealium && !inicialized) {
       inicialized = true;
       (window as any).utag_cfg_ovrd = {noview : true};
-      load(!checkEnv ? 'prod' : 'dev', () => {
+      load(checkEnv() ? 'prod' : 'dev', () => {
         view({
           event_name: eventName,
         });
