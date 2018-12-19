@@ -25,10 +25,9 @@ router.beforeEach(async (to, from, next) => {
     await store.dispatch('auth/getUserData');
     next();
   } else {
-    // remove login validation to BI test
-    // if (to.path !== '/login') {
-    //  window.location.href = utils.getSecureUrl() + '/login';
-    // }
+    if (to.path !== '/login') {
+      window.location.href = utils.getSecureUrl() + '/login';
+    }
     next();
   }
 });
