@@ -261,6 +261,8 @@ $media_query_tablet_width: 769px;
   }
 
   .msg-input {
+    border-bottom-right-radius: 3px;
+
     &__button {
       background-color: var(--endless-blue, #4376b0);
     }
@@ -333,7 +335,12 @@ $media_query_tablet_width: 769px;
 
 @media only screen and (min-width : $media_query_tablet_width) {
   .messaging .msg-layout {
+    &__primary {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
     .msg-header {
+      border-top-right-radius: 3px;
       &__username {
         border: none;
         padding-right: 40px;

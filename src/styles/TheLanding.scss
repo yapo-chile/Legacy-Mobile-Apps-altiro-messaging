@@ -1,0 +1,39 @@
+@import './colors';
+
+.the-landing {
+  background-color: var(--grey-zero);
+
+  &__title {
+    width: 97px;
+    height: 22px;
+    margin: 18px 0 18px 15px;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var( --grey-five);
+  }
+}
+@media only screen and (min-width : 768px) {
+  .the-landing {
+    background-color: white;
+    width: 998px;
+
+    &__title {
+      margin: 20px 0 16px 10px;
+      width: 94px;
+      height: 26px;
+      font-size: 22px;
+      font-family: var(--font-family, Helvetica, Arial, sans-serif);
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: var( --grey-five);
+    }
+  }
+}

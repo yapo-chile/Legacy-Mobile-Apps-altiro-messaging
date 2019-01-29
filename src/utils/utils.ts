@@ -113,6 +113,22 @@ const utils = {
   getUrl() {
     return window.location.origin;
   },
+  getCookie(cname: string) {
+    const name = cname + '=';
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const ca = decodedCookie.split(';');
+
+    for (const value of ca) {
+        let c = value;
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return '';
+  },
 };
 
 export default utils;

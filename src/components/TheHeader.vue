@@ -1,0 +1,137 @@
+<template>
+  <div>
+    <div class="header">
+      <yapo-header :style="{display: ((auth.isLoggedIn) ? '' : 'none' )}"
+        :publish="$t('YAPO_HEADER.PUBLISH')"
+        :home-url="homeUrl"
+        :publish-url="publishUrl"
+        :login-url="loginUrl"
+        :account-url="myAccountUrl"
+        :messaging-url="messagingUrl"
+        default-avatar="//static.yapo.cl/shared/icons/header/no-img-user.svg"></yapo-header>
+      <yapo-drawer
+        :greeting="$t('BUILDERS.HELLO') + ', '"
+        :welcome="'Bienvenido'"
+        :login="'Iniciar sesión'"
+        :login-url="loginUrl">
+          <drawer-content slot="content" class="yapo-drawer-content"></drawer-content>
+      </yapo-drawer>
+    </div>
+    <div class="legacy-header">
+      <header-container
+        :logged="auth.isLoggedIn"
+        :user-name="auth.userName"
+        :secure-url="secureUrl"
+        :user-image="userImage"
+        @user-logout="handleLogout"
+        @click-home="handleHeaderClick"
+        @click-logo-home="handleHeaderClick"
+        @click-login="handleHeaderClick"
+        @click-account="handleHeaderClick"
+        @click-my-ads="handleHeaderClick"
+        @click-publish="handleHeaderClick"
+        @click-help="handleHeaderClick"
+        @click-search="handleHeaderClick"
+        @click-fav="handleHeaderClick"
+        @click-messages="handleHeaderClick"
+        @click-shop="handleHeaderClick"
+        @click-mobile-fav="handleHeaderClick"
+        @click-mobile-yapesos="handleHeaderClick"
+        @click-mobile-profile="handleHeaderClick"
+        @click-mobile-subscribe="handleHeaderClick"
+      />
+    </div>
+  </div>
+</template>
+<script lang="ts">
+  import { Component, Vue } from 'vue-property-decorator';
+  import { Action, State } from 'vuex-class';
+  import { HeaderContainer } from '@Yapo/altiro-components';
+  import { MessagingState } from '@/store/modules/messaging/types';
+  import { config } from '@/assets/messagingConfig';
+  import { messaging } from '@/store/modules/messaging';
+  import { MessagingConfig } from '@/domain/entities/MessagingEntity';
+  import DrawerContent from './DrawerContent.vue';
+  import { AuthState } from '@/store/modules/auth/types';
+  import tags from '@/utils/Tealium';
+  import utils from '@/utils/utils';
+
+  const namespace: string = 'the-landing';
+
+  @Component({
+    components: {
+      DrawerContent,
+      HeaderContainer,
+    },
+  })
+  export default class TheLanding extends Vue {
+    @State('auth')
+    public auth!: AuthState;
+
+    @Action('setConfig', { namespace: 'messaging' })
+    private setConfig: any;
+
+    @Action('logoutUser', { namespace: 'auth' })
+    private logoutUser: any;
+
+    private homeUrl: string = '';
+    private url: string = '';
+    private secureUrl: string = '';
+    private publishUrl: string = '';
+    private loginUrl: string = '';
+
+    // content variables
+    private messagingUrl: string = '';
+    private myAccountUrl: string = '';
+
+    private userImage: string = '';
+
+    private beforeMount() {
+      this.url = utils.getUrl();
+      this.secureUrl = utils.getSecureUrl();
+      this.homeUrl = this.url;
+      this.publishUrl = this.secureUrl + '/ai';
+      this.loginUrl = this.secureUrl + '/login';
+      this.messagingUrl = '#';
+      this.myAccountUrl = this.secureUrl + '/cuenta/view';
+    }
+    private async created() {
+      this.setUserImage();
+    }
+
+    private setUserImage() {
+      const FBID = utils.getCookie('c_user');
+
+      if (FBID !== '') {
+        this.userImage = `http://graph.facebook.com/${FBID}/picture?type=square`;
+      }
+    }
+
+    private handleLogout(payload: any) {
+      return this.logoutUser().then(() => {
+        window.location.assign(payload.value);
+      });
+    }
+
+    private handleHeaderClick(payload: any) {
+      window.location.assign(payload.value);
+    }
+  }
+</script>
+<style lang="scss" scoped>
+  .legacy-header {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+  @media only screen and (min-width : 768px) {
+    .legacy-header {
+      display: block;
+      height: 103px;
+    }
+    .header {
+      display: none;
+    }
+  }
+</style>
