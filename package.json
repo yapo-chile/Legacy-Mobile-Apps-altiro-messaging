@@ -18,7 +18,7 @@
   "dependencies": {
     "@Yapo/altiro-components": "^2.47.0",
     "@Yapo/altiro-i18n": "^2.27.1",
-    "@Yapo/ts-crud": "^3.1.0",
+    "@Yapo/ts-crud": "^4.0.1",
     "@faast/faast-client": "^0.7.0",
     "vue": "^2.5.16",
     "vue-property-decorator": "^7.0.0",

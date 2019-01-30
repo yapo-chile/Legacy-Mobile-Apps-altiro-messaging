@@ -22,7 +22,7 @@
         :logged="auth.isLoggedIn"
         :user-name="auth.userName"
         :secure-url="secureUrl"
-        :user-image="userImage"
+        :user-image="facebook.userImage"
         @user-logout="handleLogout"
         @click-home="handleHeaderClick"
         @click-logo-home="handleHeaderClick"
@@ -47,16 +47,13 @@
   import { Component, Vue } from 'vue-property-decorator';
   import { Action, State } from 'vuex-class';
   import { HeaderContainer } from '@Yapo/altiro-components';
-  import { MessagingState } from '@/store/modules/messaging/types';
-  import { config } from '@/assets/messagingConfig';
-  import { messaging } from '@/store/modules/messaging';
-  import { MessagingConfig } from '@/domain/entities/MessagingEntity';
   import DrawerContent from './DrawerContent.vue';
   import { AuthState } from '@/store/modules/auth/types';
   import tags from '@/utils/Tealium';
   import utils from '@/utils/utils';
+  import { FacebookDataState } from '@/store/modules/facebook/types';
 
-  const namespace: string = 'the-landing';
+  const namespace: string = 'the-landheadering';
 
   @Component({
     components: {
@@ -64,15 +61,18 @@
       HeaderContainer,
     },
   })
-  export default class TheLanding extends Vue {
+  export default class TheHeader extends Vue {
     @State('auth')
     public auth!: AuthState;
 
-    @Action('setConfig', { namespace: 'messaging' })
-    private setConfig: any;
+    @State('facebookData')
+    public facebook!: FacebookDataState;
 
     @Action('logoutUser', { namespace: 'auth' })
     private logoutUser: any;
+
+    @Action('setUserImage', { namespace: 'facebookData' })
+    private setUserImage: any;
 
     private homeUrl: string = '';
     private url: string = '';
@@ -83,8 +83,6 @@
     // content variables
     private messagingUrl: string = '';
     private myAccountUrl: string = '';
-
-    private userImage: string = '';
 
     private beforeMount() {
       this.url = utils.getUrl();
@@ -97,14 +95,6 @@
     }
     private async created() {
       this.setUserImage();
-    }
-
-    private setUserImage() {
-      const FBID = utils.getCookie('c_user');
-
-      if (FBID !== '') {
-        this.userImage = `http://graph.facebook.com/${FBID}/picture?type=square`;
-      }
     }
 
     private handleLogout(payload: any) {

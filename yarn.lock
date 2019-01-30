@@ -24,9 +24,9 @@
   version "2.27.1"
   resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/@Yapo/altiro-i18n/-/@Yapo/altiro-i18n-2.27.1.tgz#d116b54a37d3194ab6dd9e5fb0c6c7d89ca905db"
 
-"@Yapo/ts-crud@^3.1.0":
-  version "3.1.0"
-  resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/@Yapo/ts-crud/-/@Yapo/ts-crud-3.1.0.tgz#49c75881e84d2ec05e60065b5946568aa424f928"
+"@Yapo/ts-crud@^4.0.1":
+  version "4.0.1"
+  resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/@Yapo/ts-crud/-/@Yapo/ts-crud-4.0.1.tgz#ae1dd80d33aa2a610b4c4211736c02987102c16a"
   dependencies:
     js-cookie "^2.2.0"
 
