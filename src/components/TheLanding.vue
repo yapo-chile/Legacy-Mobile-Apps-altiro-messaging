@@ -1,31 +1,20 @@
 <template>
-  <div>
-    <yapo-header :style="{display: ((auth.isLoggedIn) ? '' : 'none' )}"
-      :publish="$t('YAPO_HEADER.PUBLISH')"
-      :home-url="homeUrl"
-      :publish-url="publishUrl"
-      :login-url="loginUrl"
-      :account-url="myAccountUrl"
-      :messaging-url="messagingUrl"
-      default-avatar="//static.yapo.cl/shared/icons/header/no-img-user.svg"></yapo-header>
-    <yapo-drawer
-      :greeting="$t('BUILDERS.HELLO') + ', '"
-      :welcome="'Bienvenido'"
-      :login="'Iniciar sesión'"
-      :login-url="loginUrl">
-      <drawer-content slot="content" class="yapo-drawer-content"></drawer-content>
-    </yapo-drawer>
+  <div class="the-landing">
+    <the-header></the-header>
+    <h1 class="the-landing__title">Mensajes</h1>
     <MessagingWidget class="landing-messaging" :widgetParams="messaging.config" :faast="messaging.config" /> 
   </div>
 </template>
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
   import { Action, State } from 'vuex-class';
+  import { HeaderContainer } from '@Yapo/altiro-components';
   import { MessagingState } from '@/store/modules/messaging/types';
   import { config } from '@/assets/messagingConfig';
   import { messaging } from '@/store/modules/messaging';
   import { MessagingConfig } from '@/domain/entities/MessagingEntity';
   import MessagingWidget from './MessagingWidget.vue';
+  import TheHeader from './TheHeader.vue';
   import DrawerContent from './DrawerContent.vue';
   import { AuthState } from '@/store/modules/auth/types';
   import tags from '@/utils/Tealium';
@@ -37,6 +26,8 @@
     components: {
       MessagingWidget,
       DrawerContent,
+      HeaderContainer,
+      TheHeader,
     },
   })
   export default class TheLanding extends Vue {
@@ -49,25 +40,6 @@
     @Action('setConfig', { namespace: 'messaging' })
     private setConfig: any;
 
-    private homeUrl: string = '';
-    private url: string = '';
-    private secureUrl: string = '';
-    private publishUrl: string = '';
-    private loginUrl: string = '';
-
-    // content variables
-    private messagingUrl: string = '';
-    private myAccountUrl: string = '';
-
-    private beforeMount() {
-      this.url = utils.getUrl();
-      this.secureUrl = utils.getSecureUrl();
-      this.homeUrl = this.url;
-      this.publishUrl = this.secureUrl + '/ai';
-      this.loginUrl = this.secureUrl + '/login';
-      this.messagingUrl = '#';
-      this.myAccountUrl = this.secureUrl + '/cuenta/view';
-    }
     private async created() {
       await this.setConfig({ ... config,
         format: {
@@ -136,4 +108,5 @@
   }
 </script>
 <style lang="scss" scoped>
+  @import '../styles/TheLanding';
 </style>
