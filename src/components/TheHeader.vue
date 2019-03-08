@@ -14,7 +14,7 @@
         :welcome="'Bienvenido'"
         :login="'Iniciar sesión'"
         :login-url="loginUrl">
-          <drawer-content slot="content" class="yapo-drawer-content"></drawer-content>
+          <drawer-content slot="content" class="yapo-drawer-content" style="display:none"></drawer-content>
       </yapo-drawer>
     </div>
     <div class="legacy-header">
