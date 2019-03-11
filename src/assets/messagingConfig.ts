@@ -1,6 +1,6 @@
 export const config = {
-    apiUrl: '/messaging/api/v1',
-    itemUrl: '/messaging/api/v1/ads',
+    apiUrl: process.env.VUE_APP_API_URL || '',
+    itemUrl: process.env.VUE_APP_API_URL + '/ads',
     userId: 'xuser',
     lang: 'es_ES',
     baseUrl: process.env.VUE_APP_BASE_URL || '',

@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 module.exports = (req, res, next) => {
-  if (req.path === '/messaging/api/v1/api/hal/xuser/attachments/access') {
+  if (req.path === '/api/vi/hal/xuser/attachments/access') {
     const images = require('./api/images.json');
     var img = new Buffer(images[req.query.objectPath], 'base64');
     res.header("Content-Type", "image/png");
