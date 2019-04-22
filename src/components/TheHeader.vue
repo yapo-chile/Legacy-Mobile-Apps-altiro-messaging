@@ -50,7 +50,6 @@
   import { Component, Vue } from 'vue-property-decorator';
   import { Action, State } from 'vuex-class';
   import { HeaderContainer } from '@Yapo/altiro-components';
-  import DrawerContent from './DrawerContent.vue';
   import { AuthState } from '@/store/modules/auth/types';
   import tags from '@/utils/Tealium';
   import utils from '@/utils/utils';
@@ -60,7 +59,6 @@
 
   @Component({
     components: {
-      DrawerContent,
       HeaderContainer,
     },
   })
