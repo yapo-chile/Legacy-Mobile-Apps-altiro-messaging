@@ -7,7 +7,7 @@ import { RootState } from '@/store/types';
 
 export const state: MessagingState = {
   config: {
-    apiUrl: '/messaging/api/v1',
+    apiUrl: JSON.stringify(process.env.VUE_APP_API_URL),
     itemUrl: 'ss',
     userId: 'xuser',
     lang: 'es_ES',
