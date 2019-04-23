@@ -17,7 +17,8 @@
         :mc-active="mcActive" 
         :login-url="loginUrl"
         :base-url="url"
-        :secure-url="secureUrl">
+        :secure-url="secureUrl"
+        :selected-menu="'messaging'">
       </yapo-drawer>
     </div>
     <div class="legacy-header">
