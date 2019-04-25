@@ -8,13 +8,17 @@
         :login-url="loginUrl"
         :account-url="myAccountUrl"
         :messaging-url="messagingUrl"
+        :mc-active="mcActive"
         default-avatar="//static.yapo.cl/shared/icons/header/no-img-user.svg"></yapo-header>
       <yapo-drawer
         :greeting="$t('BUILDERS.HELLO') + ', '"
         :welcome="'Bienvenido'"
         :login="'Iniciar sesión'"
-        :login-url="loginUrl">
-          <drawer-content slot="content" class="yapo-drawer-content"></drawer-content>
+        :mc-active="mcActive" 
+        :login-url="loginUrl"
+        :base-url="url"
+        :secure-url="secureUrl"
+        :selected-menu="'messaging'">
       </yapo-drawer>
     </div>
     <div class="legacy-header">
@@ -47,7 +51,6 @@
   import { Component, Vue } from 'vue-property-decorator';
   import { Action, State } from 'vuex-class';
   import { HeaderContainer } from '@Yapo/altiro-components';
-  import DrawerContent from './DrawerContent.vue';
   import { AuthState } from '@/store/modules/auth/types';
   import tags from '@/utils/Tealium';
   import utils from '@/utils/utils';
@@ -57,7 +60,6 @@
 
   @Component({
     components: {
-      DrawerContent,
       HeaderContainer,
     },
   })
@@ -79,14 +81,15 @@
     private secureUrl: string = '';
     private publishUrl: string = '';
     private loginUrl: string = '';
+    private mcActive: string = 'true';
 
     // content variables
     private messagingUrl: string = '';
     private myAccountUrl: string = '';
 
     private beforeMount() {
-      this.url = utils.getUrl();
-      this.secureUrl = utils.getSecureUrl();
+      this.url = utils.getUrl(window);
+      this.secureUrl = utils.getSecureUrl(window);
       this.homeUrl = this.url;
       this.publishUrl = this.secureUrl + '/ai';
       this.loginUrl = this.secureUrl + '/login';

@@ -26,7 +26,7 @@ router.beforeEach(async (to, from, next) => {
     next();
   } else {
     if (to.path !== '/login') {
-      window.location.href = utils.getSecureUrl() + '/login';
+      window.location.href = utils.getSecureUrl(window) + '/login';
     }
     next();
   }

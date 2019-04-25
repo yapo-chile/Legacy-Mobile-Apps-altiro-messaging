@@ -15,7 +15,6 @@
   import { MessagingConfig } from '@/domain/entities/MessagingEntity';
   import MessagingWidget from './MessagingWidget.vue';
   import TheHeader from './TheHeader.vue';
-  import DrawerContent from './DrawerContent.vue';
   import { AuthState } from '@/store/modules/auth/types';
   import tags from '@/utils/Tealium';
   import utils from '@/utils/utils';
@@ -25,7 +24,6 @@
   @Component({
     components: {
       MessagingWidget,
-      DrawerContent,
       HeaderContainer,
       TheHeader,
     },

@@ -96,22 +96,36 @@ const utils = {
     }
     window.pulse.q = window.pulse.q || [];
   },
-  getSecureUrl() {
-    const origin = window.location.origin;
+  getSecureUrl(windowParam: Window) {
+    const origin = windowParam.location.origin;
     let secureUrl = '';
 
     if (origin.includes('www.')) {
       secureUrl = origin.replace('www.', 'www2.');
     } else if (origin.includes('m.')) {
       secureUrl = origin.replace('m.', 'www2.');
+    } else if (origin.includes('www2.')) {
+      secureUrl = origin;
     } else {
       secureUrl = origin.replace('://', '://www2.');
     }
-
+    secureUrl = secureUrl.replace('http://', 'https://');
     return secureUrl;
   },
-  getUrl() {
-    return window.location.origin;
+  getUrl(windowParam: Window) {
+    const origin = windowParam.location.origin;
+    let baseUrl = '';
+
+    if (origin.includes('://www2.')) {
+      baseUrl = origin.replace('://www2.', '://www.');
+    } else if (origin.includes('://m.')) {
+      baseUrl = origin;
+    } else if (origin.includes('://www.')) {
+      baseUrl = origin;
+    } else {
+      baseUrl = origin.replace('://', '://www.');
+    }
+    return baseUrl.replace('http://', 'https://');
   },
 };
 
