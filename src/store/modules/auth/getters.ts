@@ -4,19 +4,19 @@ import { RootState } from '@/store/types';
 
 export const getters: GetterTree<AuthState, RootState> = {
   avatar(state: AuthState) {
-    return state.avatar;
+    return state.user.avatar;
   },
   userName(state: AuthState) {
-    return state.userName;
+    return state.user.userName;
   },
   shortName(state: AuthState) {
-    return state.shortName;
+    return state.user.shortName;
   },
   userEmail(state: AuthState) {
-    return state.userEmail;
+    return state.user.userEmail;
   },
-  accSession(state: AuthState) {
-    return state.accSession;
+  accSession() {
+    return '';
   },
   isLoggedIn(state: AuthState) {
     return state.isLoggedIn;

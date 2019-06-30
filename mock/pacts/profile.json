@@ -1,0 +1,107 @@
+{
+  "consumer": {
+    "name": "yapo"
+  },
+  "provider": {
+    "name": "profile_provider"
+  },
+  "interactions": [
+    {
+      "description": "Check MS health",
+      "providerState": "",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "method": "GET",
+        "path": "/api/v1/healthcheck"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "status": "OK"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "description": "Check get profile data",
+      "providerState": "",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json",
+          "Authorization": "8697a209d6b0a59271237db36dcdf90c96be37b9",
+          "X-email": "cuentaproconpack@yapo.cl"
+        },
+        "method": "GET",
+        "path": "/api/v1/users"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "id": 10,
+          "roleId": 1,
+          "countryId": 0,
+          "regionId": 15,
+          "communeId": 0,
+          "role": "",
+          "country": "",
+          "region": "",
+          "commune": "",
+          "email": "cuentaproconpack@yapo.cl",
+          "gender": "",
+          "name": "cuentaproconpack",
+          "phone": "",
+          "status": "active"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "description": "Check MS missing parameters",
+      "providerState": "",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json",
+          "Authorization": "8697a209d6b0a59271237db36dcdf90c96be37b9"
+        },
+        "method": "GET",
+        "path": "/api/v1/users"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "description": "Check MS bad parameters",
+      "providerState": "",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json",
+          "Authorization": "8697a209d6b0a59271237db36dcdf90c96be37b9",
+          "X-email": "idontexist@yapo.cl"
+        },
+        "method": "GET",
+        "path": "/api/v1/users"
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

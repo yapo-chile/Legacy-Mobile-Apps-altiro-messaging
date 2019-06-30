@@ -1,0 +1,84 @@
+{
+  "consumer": {
+    "name": "yapo"
+  },
+  "provider": {
+    "name": "profile_provider_v3"
+  },
+  "interactions": [
+    {
+      "description": "Check MS health",
+      "providerState": "",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "method": "GET",
+        "path": "/api/v3/healthcheck"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "status": "OK"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "description": "Check get profile data",
+      "providerState": "",
+      "request": {
+        "headers": {
+          "Cookie": "acc_session=8697a209d6b0a59271237db36dcdf90c96be37b9"
+        },
+        "method": "GET",
+        "path": "/api/v3/users"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+            "id": 945,
+            "roleId": 1,
+            "countryId": 0,
+            "regionId": 15,
+            "communeId": 315,
+            "role": "",
+            "country": "",
+            "region": "",
+            "commune": "",
+            "email": "piero.valdebenito@schibsted.com",
+            "gender": "",
+            "name": "Piero Valdebenito",
+            "phone": "945215551",
+            "status": "active",
+            "uuid": "c96face1-4971-40d7-900c-20d2073123eb",
+            "creationDate": "2018-07-18T17:22:11.666853Z"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "description": "Check MS missing parameters",
+      "providerState": "",
+      "request": {
+        "method": "GET",
+        "path": "/api/v3/users"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

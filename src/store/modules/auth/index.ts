@@ -6,11 +6,12 @@ import { AuthState } from '@/store/modules/auth/types';
 import { RootState } from '@/store/types';
 
 export const state: AuthState = {
-  userName: '',
-  shortName: '',
-  userEmail: '',
-  accSession: '',
-  avatar: '',
+  user: {
+    userName: '',
+    shortName: '',
+    userEmail: '',
+    avatar: '',
+  },
   isLoggedIn: false,
 };
 

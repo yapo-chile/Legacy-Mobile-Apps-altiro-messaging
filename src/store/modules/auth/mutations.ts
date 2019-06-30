@@ -7,15 +7,16 @@ const IS_LOGGED_IN = (state: any, update: any) => {
 
 export const mutations: MutationTree<AuthState> = {
   UPDATE_USER_DATA(state, update: any) {
-    state.userName = update.name;
-    state.userEmail = update.email;
-    state.accSession = update.accSession;
+    state.user = update;
   },
   IS_LOGGED_IN,
   DELETE_USER_DATA(state) {
-    state.userName = '';
-    state.userEmail = '';
-    state.accSession = '';
+    state.user = {
+      avatar: '',
+      userName: '',
+      shortName: '',
+      userEmail: '',
+    };
     IS_LOGGED_IN(state, false);
   },
 };

@@ -20,16 +20,8 @@ const router = new Router({
 });
 
 router.beforeEach(async (to, from, next) => {
-  await store.dispatch('auth/isSetUserData');
-  if (store.getters['auth/isLoggedIn']) {
-    await store.dispatch('auth/getUserData');
-    next();
-  } else {
-    if (to.path !== '/login') {
-      window.location.href = utils.getSecureUrl(window) + '/login';
-    }
-    next();
-  }
+  await store.dispatch('auth/getUserData');
+  next();
 });
 
 export default router;

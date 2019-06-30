@@ -3,8 +3,10 @@ import { ActionTree } from 'vuex';
 import { AuthState } from '@/store/modules/auth/types';
 import { RootState } from '@/store/types';
 import { AuthFactory } from '@/domain/factories/AuthFactory';
+import { ProfileFactory, IProfileService } from '@/domain/factories/ProfileFactory';
 
 const authSrv: AuthInterface = AuthFactory.createService();
+const profileSrv: IProfileService = ProfileFactory.createService();
 
 export const actions: ActionTree<AuthState, RootState> = {
   async isSetUserData({ commit }) {
@@ -17,8 +19,8 @@ export const actions: ActionTree<AuthState, RootState> = {
   },
   async getUserData({ commit }) {
     try {
-      const actionResponse = await authSrv.getUserData();
-      return commit(actionResponse.type, actionResponse.payload);
+      const response = await profileSrv.get();
+      return commit('UPDATE_PROFILE', response);
     } catch (error) {
       throw error;
     }

@@ -44,7 +44,7 @@
           messageDate: this.formatMessageDate,
         },
         headers: {
-          Authorization: this.auth.accSession,
+          Authorization: '',
         },
         translations: {
           status: {

@@ -30,6 +30,12 @@
   dependencies:
     js-cookie "^2.2.0"
 
+"@Yapo/ts-crud@^4.0.3":
+  version "4.0.3"
+  resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/@Yapo/ts-crud/-/@Yapo/ts-crud-4.0.3.tgz#35146870c4350cd43b969e381e3411bd0a103f42"
+  dependencies:
+    js-cookie "^2.2.0"
+
 "@babel/code-frame@7.0.0-beta.47":
   version "7.0.0-beta.47"
   resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/@babel/code-frame/-/code-frame-7.0.0-beta.47.tgz#d18c2f4c4ba8d093a2bcfab5616593bfe2441a27"
@@ -1212,6 +1218,12 @@
   resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
   dependencies:
     any-observable "^0.3.0"
+
+"@ts-services/profile@1.0.4-alpha.1":
+  version "1.0.4-alpha.1"
+  resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/@ts-services/profile/-/@ts-services/profile-1.0.4-alpha.1.tgz#e5eaa55b6b7edc5bc9e8be72492cf68cb66d45f3"
+  dependencies:
+    "@Yapo/ts-crud" "^4.0.3"
 
 "@types/blob-util@1.3.3":
   version "1.3.3"
