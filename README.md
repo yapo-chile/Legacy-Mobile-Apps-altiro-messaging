@@ -50,3 +50,8 @@ yarn test:e2e
 For detailed explanation on how things work, checkout the [guide](https://cli.vuejs.org/).
 
 We are using standard-release, see https://github.com/conventional-changelog/standard-version for more information.
+
+# mock
+
+to use mock you have to execute in the shell the next command:
+`docker run -t -p 8089:8080 -v "$(pwd)/mock/pacts/:/app/pacts" pactfoundation/pact-stub-server -p 8080 -d pacts`

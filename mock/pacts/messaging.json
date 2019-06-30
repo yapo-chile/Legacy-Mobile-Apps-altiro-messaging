@@ -25,14 +25,14 @@
       }
     },
     {
-      "description": "Check get profile data",
+      "description": "get ads",
       "providerState": "",
       "request": {
         "headers": {
           "Cookie": "acc_session=8697a209d6b0a59271237db36dcdf90c96be37b9"
         },
         "method": "GET",
-        "path": "/api/v3/users"
+        "path": "/api/v1/ads?"
       },
       "response": {
         "status": 200,
