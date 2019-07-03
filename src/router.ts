@@ -21,15 +21,17 @@ const router = new Router({
 
 router.beforeEach(async (to, from, next) => {
   await store.dispatch('auth/getLocalUserData');
-  await store.dispatch('auth/getUserData');
-  if (store.getters['auth/isLoggedIn']) {
-    next();
-  } else {
-    if (to.path !== '/login') {
-      window.location.href = utils.getSecureUrl(window) + '/login';
+  if (store.getters['auth/accSession'] !== '') {
+    await store.dispatch('auth/getUserData');
+    if (store.getters['auth/isLoggedIn']) {
+      next();
+      return;
     }
-    next();
   }
+  if (to.path !== '/login') {
+    window.location.href = utils.getSecureUrl(window) + '/login';
+  }
+  next();
 });
 
 export default router;
