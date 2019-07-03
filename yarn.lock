@@ -1189,9 +1189,9 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@ts-services/profile@1.0.4-alpha.3":
-  version "1.0.4-alpha.3"
-  resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/@ts-services/profile/-/@ts-services/profile-1.0.4-alpha.3.tgz#d9434702c077d5f69f92d704693c2dd8ac338817"
+"@ts-services/profile@1.0.4-alpha.4":
+  version "1.0.4-alpha.4"
+  resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/@ts-services/profile/-/@ts-services/profile-1.0.4-alpha.4.tgz#3d4d0bb95a0b66c42afc37848ea5d033ad9e617c"
   dependencies:
     "@yapo/ts-crud" "^5.0.0"
 
