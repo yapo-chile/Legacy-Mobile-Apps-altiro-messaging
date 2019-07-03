@@ -2,6 +2,7 @@
   <div>
     <div class="header">
       <yapo-header :style="{display: ((isLoggedIn) ? '' : 'none' )}"
+        default-avatar="//static.yapo.cl/shared/icons/header/no-img-user.svg"
         :publish="$t('YAPO_HEADER.PUBLISH')"
         :home-url="homeUrl"
         :publish-url="publishUrl"
@@ -11,8 +12,7 @@
         :mc-active="mcActive"
         :user-name="userName"
         :is-logged="isLoggedIn"
-        :avatar="avatar"
-        default-avatar="//static.yapo.cl/shared/icons/header/no-img-user.svg"></yapo-header>
+        :avatar="avatar"></yapo-header>
       <yapo-drawer
         :greeting="$t('BUILDERS.HELLO') + ', '"
         :welcome="'Bienvenido'"
