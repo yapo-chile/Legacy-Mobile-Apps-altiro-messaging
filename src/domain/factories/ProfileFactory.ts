@@ -12,7 +12,7 @@ export class ProfileFactory {
     const authHeaders = {
       Authorization: session,
     };
-    const base = document!.location!.href;
+    const base = document!.location!.origin;
 
     // const base = (document as any).location.href as string;
     const rest: CRUD = new RestDS(`${base}/`, {
