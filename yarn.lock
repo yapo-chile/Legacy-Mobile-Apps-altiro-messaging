@@ -1189,11 +1189,11 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@ts-services/profile@1.0.4-alpha.2":
-  version "1.0.4-alpha.2"
-  resolved "https://artifacts.schibsted.io/artifactory/api/npm/npm-virtual/@ts-services/profile/-/@ts-services/profile-1.0.4-alpha.2.tgz#e230cf38454339a0e720e441aef28ee7339f7b66"
+"@ts-services/profile@1.0.4-alpha.3":
+  version "1.0.4-alpha.3"
+  resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/@ts-services/profile/-/@ts-services/profile-1.0.4-alpha.3.tgz#d9434702c077d5f69f92d704693c2dd8ac338817"
   dependencies:
-    "@Yapo/ts-crud" "^4.0.3"
+    "@yapo/ts-crud" "^5.0.0"
 
 "@types/blob-util@1.3.3":
   version "1.3.3"
