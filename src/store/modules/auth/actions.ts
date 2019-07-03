@@ -3,24 +3,24 @@ import { ActionTree } from 'vuex';
 import { AuthState } from '@/store/modules/auth/types';
 import { RootState } from '@/store/types';
 import { AuthFactory } from '@/domain/factories/AuthFactory';
-import { ProfileFactory, IProfileService } from '@/domain/factories/ProfileFactory';
+import { ProfileFactory, Profile } from '@/domain/factories/ProfileFactory';
 
 const authSrv: AuthInterface = AuthFactory.createService();
-const profileSrv: IProfileService = ProfileFactory.createService();
 
 export const actions: ActionTree<AuthState, RootState> = {
-  async isSetUserData({ commit }) {
+  async getUserData({ commit, getters }) {
     try {
-      const actionResponse = await authSrv.isSetUserData();
-      return commit(actionResponse.type, actionResponse.payload);
+      const profileSrv: Profile = ProfileFactory.createService(getters.accSession);
+      const response = await profileSrv.getUserData();
+      return commit(response.type, response.payload);
     } catch (error) {
       throw error;
     }
   },
-  async getUserData({ commit }) {
+  async getLocalUserData({ commit }) {
     try {
-      const response = await profileSrv.get();
-      return commit('UPDATE_PROFILE', response);
+      const response = await authSrv.getUserData();
+      return commit(response.type, response.payload);
     } catch (error) {
       throw error;
     }

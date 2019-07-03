@@ -1,18 +1,24 @@
-import { CRUD, RestDS } from '@Yapo/ts-crud';
-import ProfileService, { IProfileService } from '@ts-services/profile';
+import { CRUD, RestDS } from '@yapo/ts-crud';
+import ProfileService, { Profile } from '../services/ProfileService';
 
-export { IProfileService };
+export { Profile };
 
 export class ProfileFactory {
-  public static createService(): IProfileService {
+  public static createService(session: string): Profile {
     const contentType = { 'Content-Type': 'application/json' };
     const appHeaders = {
-      'x-app': 'web-app::messaging-center',
+      'x-app': 'web::messaging-center',
     };
-    const base = document.location.href;
+    const authHeaders = {
+      Authorization: session,
+    };
+    const base = document!.location!.href;
+
+    // const base = (document as any).location.href as string;
     const rest: CRUD = new RestDS(base, {
       ...contentType,
       ...appHeaders,
+      ...authHeaders,
     });
     // console.log('profile', ProfileService);
     const service = new ProfileService(rest);

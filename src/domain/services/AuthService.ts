@@ -1,4 +1,4 @@
-import { CRUD, StorageDS } from '@Yapo/ts-crud';
+import { CRUD, StorageDS } from '@yapo/ts-crud';
 import { Commit } from '@/store/types';
 
 export interface AuthInterface {
@@ -35,7 +35,7 @@ export default class StorageAuthService implements AuthInterface {
     try {
       this.ws = await this.selectStorage();
       const result = await this.ws.$read('accountData');
-      return { type: 'UPDATE_USER_DATA', payload: result};
+      return { type: 'UPDATE_USER_SESSION', payload: result};
     } catch (error) {
       throw error;
     }

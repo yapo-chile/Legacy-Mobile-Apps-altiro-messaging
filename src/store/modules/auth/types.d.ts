@@ -1,11 +1,12 @@
 interface UserData {
-  avatar: string;
-  userName: string;
+  socialId: string;
+  name: string;
   shortName: string;
-  userEmail: string;
+  email: string;
 }
 
 export interface AuthState {
+  accSession: string;
   user: UserData;
   isLoggedIn: boolean;
 }

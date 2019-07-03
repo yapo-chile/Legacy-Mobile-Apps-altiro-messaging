@@ -4,19 +4,23 @@ import { RootState } from '@/store/types';
 
 export const getters: GetterTree<AuthState, RootState> = {
   avatar(state: AuthState) {
-    return state.user.avatar;
+    const socialId = (typeof state.user.socialId !== 'undefined') ? state.user.socialId : '';
+    if (socialId !== '') {
+      return `http://graph.facebook.com/${socialId}/picture?type=square`;
+    }
+    return '';
   },
   userName(state: AuthState) {
-    return state.user.userName;
+    return state.user.name;
   },
   shortName(state: AuthState) {
     return state.user.shortName;
   },
   userEmail(state: AuthState) {
-    return state.user.userEmail;
+    return state.user.email;
   },
-  accSession() {
-    return '';
+  accSession(state: AuthState) {
+    return state.accSession;
   },
   isLoggedIn(state: AuthState) {
     return state.isLoggedIn;

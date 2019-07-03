@@ -8,7 +8,7 @@
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
   import { Action, State } from 'vuex-class';
-  import { HeaderContainer } from '@Yapo/altiro-components';
+  import { HeaderContainer } from '@yapo/altiro-components';
   import { MessagingState } from '@/store/modules/messaging/types';
   import { config } from '@/assets/messagingConfig';
   import { messaging } from '@/store/modules/messaging';

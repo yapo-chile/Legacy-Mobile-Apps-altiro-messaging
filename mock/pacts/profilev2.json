@@ -1,9 +1,9 @@
 {
   "consumer": {
-    "name": "yapo"
+    "name": "messaging-center-web"
   },
   "provider": {
-    "name": "profile_provider_v3"
+    "name": "profile_v2"
   },
   "interactions": [
     {
@@ -14,7 +14,7 @@
           "Content-Type": "application/json"
         },
         "method": "GET",
-        "path": "/api/v3/healthcheck"
+        "path": "/api/v2/healthcheck"
       },
       "response": {
         "status": 200,
@@ -31,10 +31,10 @@
       "providerState": "",
       "request": {
         "headers": {
-          "Cookie": "acc_session=8697a209d6b0a59271237db36dcdf90c96be37b9"
+          "Authorization": "8697a209d6b0a59271237db36dcdf90c96be37b9"
         },
         "method": "GET",
-        "path": "/api/v3/users"
+        "path": "/api/v2/user"
       },
       "response": {
         "status": 200,
@@ -54,7 +54,8 @@
             "phone": "945215551",
             "status": "active",
             "uuid": "c96face1-4971-40d7-900c-20d2073123eb",
-            "creationDate": "2018-07-18T17:22:11.666853Z"
+            "creationDate": "2018-07-18T17:22:11.666853Z",
+            "socialId": "20001198"
         },
         "headers": {
           "Content-Type": "application/json"
@@ -66,7 +67,7 @@
       "providerState": "",
       "request": {
         "method": "GET",
-        "path": "/api/v3/users"
+        "path": "/api/v2/users"
       },
       "response": {
         "status": 401,

@@ -1,4 +1,4 @@
-import {CRUD} from '@Yapo/ts-crud';
+import { CRUD } from '@yapo/ts-crud';
 
 export const doneMockDS: CRUD = {
     $read: () => Promise.resolve({text: 'Prueba'}),

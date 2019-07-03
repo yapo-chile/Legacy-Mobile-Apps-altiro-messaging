@@ -16,11 +16,11 @@
     "commit": "git-cz"
   },
   "dependencies": {
-    "@Yapo/altiro-components": "^2.47.0",
-    "@Yapo/altiro-i18n": "^2.27.1",
-    "@Yapo/ts-crud": "^4.0.1",
+    "@yapo/altiro-components": "^2.49.0",
+    "@yapo/altiro-i18n": "^3.0.1",
+    "@yapo/ts-crud": "^5.0.0",
     "@faast/faast-client": "^0.7.0",
-    "@ts-services/profile": "1.0.4-alpha.1",
+    "@ts-services/profile": "1.0.4-alpha.2",
     "vue": "^2.5.16",
     "vue-property-decorator": "^7.0.0",
     "vue-rollbar": "^0.2.3",
