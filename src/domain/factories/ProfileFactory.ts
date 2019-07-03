@@ -15,7 +15,7 @@ export class ProfileFactory {
     const base = document!.location!.href;
 
     // const base = (document as any).location.href as string;
-    const rest: CRUD = new RestDS(base, {
+    const rest: CRUD = new RestDS(`${base}/`, {
       ...contentType,
       ...appHeaders,
       ...authHeaders,
