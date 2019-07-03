@@ -22,7 +22,7 @@ const router = new Router({
 router.beforeEach(async (to, from, next) => {
   await store.dispatch('auth/getLocalUserData');
   await store.dispatch('auth/getUserData');
-  if (store.getters.isLoggedIn) {
+  if (store.getters['auth/isLoggedIn']) {
     next();
   } else {
     if (to.path !== '/login') {
