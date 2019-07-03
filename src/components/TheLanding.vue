@@ -7,7 +7,7 @@
 </template>
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
-  import { Action, State } from 'vuex-class';
+  import { Action, Getter, State } from 'vuex-class';
   import { HeaderContainer } from '@yapo/altiro-components';
   import { MessagingState } from '@/store/modules/messaging/types';
   import { config } from '@/assets/messagingConfig';
@@ -15,7 +15,6 @@
   import { MessagingConfig } from '@/domain/entities/MessagingEntity';
   import MessagingWidget from './MessagingWidget.vue';
   import TheHeader from './TheHeader.vue';
-  import { AuthState } from '@/store/modules/auth/types';
   import tags from '@/utils/Tealium';
   import utils from '@/utils/utils';
 
@@ -32,11 +31,11 @@
     @State('messaging')
     public messaging!: MessagingState;
 
-    @State('auth')
-    public auth!: AuthState;
-
     @Action('setConfig', { namespace: 'messaging' })
     private setConfig: any;
+
+    @Getter('accSession', { namespace: 'auth' })
+    private accSession: any;
 
     private async created() {
       await this.setConfig({ ... config,
@@ -44,7 +43,7 @@
           messageDate: this.formatMessageDate,
         },
         headers: {
-          Authorization: '',
+          Authorization: this.accSession,
         },
         translations: {
           status: {
