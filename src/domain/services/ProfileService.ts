@@ -9,7 +9,6 @@ export interface Profile {
 export default class ProfileService implements Profile {
   private service: IProfileService;
   constructor(rest: CRUD) {
-    // console.log('profile', ProfileService);
     this.service = new Service(rest);
   }
 
