@@ -1,5 +1,5 @@
 import { CRUD } from '@yapo/ts-crud';
-import Service, { IProfileService } from '@ts-services/profile';
+import Service, { IProfileService } from '@yapo-services/profile';
 import { Commit } from '@/store/types';
 
 export interface Profile {

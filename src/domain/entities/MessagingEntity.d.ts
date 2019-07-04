@@ -1,4 +1,4 @@
-import IProfileService from '@ts-services/profile';
+import IProfileService from '@yapo-services/profile';
 
 export { IProfileService };
 
