@@ -20,7 +20,7 @@ export class ProfileFactory {
       ...appHeaders,
       ...authHeaders,
     });
-    // console.log('profile', ProfileService);
+
     const service = new ProfileService(rest);
     return service;
   }
