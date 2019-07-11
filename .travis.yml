@@ -6,7 +6,7 @@ cache:
 
 env:
   global:
-    - DOCKER_REGISTRY="containers.schibsted.io"
+    - DOCKER_REGISTRY="containers.mpi-internal.com"
     - DOCKER_IMAGE="${DOCKER_REGISTRY}/yapo/altiro-messaging"
 
 before_script:
@@ -33,5 +33,5 @@ after_success:
 
 notifications:
   webhooks:
-    - https://devhose.spt-engprod-pro.schibsted.io/devhose/travis
+    - https://devhose.spt-engprod-pro.mpi-internal.com/devhose/travis
 
