@@ -1,10 +1,9 @@
 import Vue from 'vue';
 import Vuex, { StoreOptions } from 'vuex';
 import vuexI18n from 'vuex-i18n';
-import i18nEs from '@Yapo/altiro-i18n';
+import i18nEs from '@yapo/altiro-i18n';
 import { messaging } from '@/store/modules/messaging';
 import { auth } from '@/store/modules/auth';
-import { facebookData } from '@/store/modules/facebook';
 import { RootState } from '@/store/types';
 import { onTranslationNotFound } from '@/store/i18n';
 
@@ -17,7 +16,6 @@ const store: StoreOptions<RootState> = {
   modules: {
     messaging,
     auth,
-    facebookData,
   },
 };
 

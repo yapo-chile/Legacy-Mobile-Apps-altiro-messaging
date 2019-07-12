@@ -1,3 +1,7 @@
+import IProfileService from '@yapo-services/profile';
+
+export { IProfileService };
+
 export interface MessagingFeatures {
   displayAvatar: boolean;
   modalIntegration: boolean;

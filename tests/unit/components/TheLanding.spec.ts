@@ -26,11 +26,13 @@ describe('TheLanding test', () => {
     };
 
     authState = {
-      userName: '',
-      shortName: '',
-      userEmail: '',
       accSession: '',
-      avatar: '',
+      user: {
+        name: '',
+        shortName: '',
+        email: '',
+        socialId: '',
+      },
       isLoggedIn: false,
     };
 

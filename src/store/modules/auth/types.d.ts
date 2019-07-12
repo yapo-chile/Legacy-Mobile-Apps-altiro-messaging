@@ -1,8 +1,12 @@
-export interface AuthState {
-  avatar: string;
-  userName: string;
+interface UserData {
+  socialId: string;
+  name: string;
   shortName: string;
-  userEmail: string;
+  email: string;
+}
+
+export interface AuthState {
   accSession: string;
+  user: UserData;
   isLoggedIn: boolean;
 }

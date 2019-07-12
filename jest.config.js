@@ -14,7 +14,7 @@ module.exports = {
     '^.+\\.js$': 'babel-jest',
   },
   transformIgnorePatterns: [
-    '<rootDir>/node_modules/(?!vuex-i18n|@Yapo/altiro-i18n|@Yapo/altiro-components|@Yapo/ts-crud)',
+    '<rootDir>/node_modules/(?!vuex-i18n|@yapo/altiro-i18n|@yapo/altiro-components|@yapo/ts-crud)',
   ],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',

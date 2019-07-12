@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="header">
-      <yapo-header :style="{display: ((auth.isLoggedIn) ? '' : 'none' )}"
+      <yapo-header :style="{display: ((isLoggedIn) ? '' : 'none' )}"
+        default-avatar="//static.yapo.cl/shared/icons/header/no-img-user.svg"
         :publish="$t('YAPO_HEADER.PUBLISH')"
         :home-url="homeUrl"
         :publish-url="publishUrl"
@@ -9,7 +10,9 @@
         :account-url="myAccountUrl"
         :messaging-url="messagingUrl"
         :mc-active="mcActive"
-        default-avatar="//static.yapo.cl/shared/icons/header/no-img-user.svg"></yapo-header>
+        :user-name="userName"
+        :is-logged="isLoggedIn"
+        :avatar="avatar"></yapo-header>
       <yapo-drawer
         :greeting="$t('BUILDERS.HELLO') + ', '"
         :welcome="'Bienvenido'"
@@ -18,15 +21,17 @@
         :login-url="loginUrl"
         :base-url="url"
         :secure-url="secureUrl"
+        :user-name="userName"
+        :is-logged="isLoggedIn"
         :selected-menu="'messaging'">
       </yapo-drawer>
     </div>
     <div class="legacy-header">
       <header-container
-        :logged="auth.isLoggedIn"
-        :user-name="auth.userName"
+        :logged="isLoggedIn"
+        :user-name="userName"
         :secure-url="secureUrl"
-        :user-image="facebook.userImage"
+        :user-image="avatar"
         @user-logout="handleLogout"
         @click-home="handleHeaderClick"
         @click-logo-home="handleHeaderClick"
@@ -49,12 +54,11 @@
 </template>
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
-  import { Action, State } from 'vuex-class';
-  import { HeaderContainer } from '@Yapo/altiro-components';
+  import { Action, Getter, State } from 'vuex-class';
+  import { HeaderContainer } from '@yapo/altiro-components';
   import { AuthState } from '@/store/modules/auth/types';
   import tags from '@/utils/Tealium';
   import utils from '@/utils/utils';
-  import { FacebookDataState } from '@/store/modules/facebook/types';
 
   const namespace: string = 'the-landheadering';
 
@@ -64,17 +68,17 @@
     },
   })
   export default class TheHeader extends Vue {
-    @State('auth')
-    public auth!: AuthState;
+    @Getter('userName', { namespace: 'auth' })
+    private userName: any;
 
-    @State('facebookData')
-    public facebook!: FacebookDataState;
+    @Getter('avatar', { namespace: 'auth' })
+    private avatar: any;
+
+    @Getter('isLoggedIn', { namespace: 'auth' })
+    private isLoggedIn: any;
 
     @Action('logoutUser', { namespace: 'auth' })
     private logoutUser: any;
-
-    @Action('setUserImage', { namespace: 'facebookData' })
-    private setUserImage: any;
 
     private homeUrl: string = '';
     private url: string = '';
@@ -95,9 +99,6 @@
       this.loginUrl = this.secureUrl + '/login';
       this.messagingUrl = '#';
       this.myAccountUrl = this.secureUrl + '/cuenta/view';
-    }
-    private async created() {
-      this.setUserImage();
     }
 
     private handleLogout(payload: any) {
