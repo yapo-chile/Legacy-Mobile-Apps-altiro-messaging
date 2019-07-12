@@ -37,7 +37,7 @@ export default class StorageAuthService implements AuthInterface {
       const result = await this.ws.$read('accountData');
       return { type: 'UPDATE_USER_SESSION', payload: result};
     } catch (error) {
-      throw error;
+      return { type: 'UPDATE_USER_SESSION', payload: {}};
     }
   }
 
