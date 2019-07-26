@@ -42,7 +42,7 @@
         @click-help="handleHeaderClick"
         @click-search="handleHeaderClick"
         @click-fav="handleHeaderClick"
-        @click-messages="handleHeaderClick"
+        @click-messages="handleHeaderMessagingClick"
         @click-shop="handleHeaderClick"
         @click-mobile-fav="handleHeaderClick"
         @click-mobile-yapesos="handleHeaderClick"
@@ -109,6 +109,10 @@
 
     private handleHeaderClick(payload: any) {
       window.location.assign(payload.value);
+    }
+
+    private handleHeaderMessagingClick(payload: any) {
+      window.location.assign(this.messagingUrl);
     }
   }
 </script>
