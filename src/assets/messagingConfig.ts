@@ -41,4 +41,11 @@ export const config = {
         /* custom alert logic */
       },
     },
+    pulse: {
+      roviderId: 'sdrn:schibsted:client:yapocl',
+      userRealm: 'realm',
+      pulseUserId: 'yapocl',
+      collectorBaseUrl: 'https://collector.mpianalytics.com',
+      cisBaseUrl: 'https://cis.mpianalytics.com',
+    },
 };
