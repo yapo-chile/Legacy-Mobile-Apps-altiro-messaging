@@ -42,7 +42,7 @@ export const config = {
       },
     },
     pulse: {
-      roviderId: 'sdrn:schibsted:client:yapocl',
+      providerId: 'sdrn:schibsted:client:yapocl',
       userRealm: 'realm',
       pulseUserId: 'yapocl',
       collectorBaseUrl: 'https://collector.mpianalytics.com',
