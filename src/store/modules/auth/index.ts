@@ -12,6 +12,7 @@ export const state: AuthState = {
     shortName: '',
     email: '',
     socialId: '',
+    userID: '',
   },
   isLoggedIn: false,
 };

@@ -26,6 +26,7 @@ export const mutations: MutationTree<AuthState> = {
       name: '',
       shortName: '',
       email: '',
+      userID: '',
     };
     IS_LOGGED_IN(state, false);
   },
