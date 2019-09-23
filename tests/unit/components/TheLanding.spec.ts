@@ -32,6 +32,7 @@ describe('TheLanding test', () => {
         shortName: '',
         email: '',
         socialId: '',
+        userID: '',
       },
       isLoggedIn: false,
     };
