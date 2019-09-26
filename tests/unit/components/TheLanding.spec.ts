@@ -32,7 +32,7 @@ describe('TheLanding test', () => {
         shortName: '',
         email: '',
         socialId: '',
-        userID: '',
+        userId: '',
       },
       isLoggedIn: false,
     };
