@@ -37,6 +37,9 @@
     @Getter('accSession', { namespace: 'auth' })
     private accSession: any;
 
+    @Getter('userID', { namespace: 'auth' })
+    private userID: any;
+
     private async created() {
       await this.setConfig({ ... config,
         format: {
@@ -75,6 +78,11 @@
           interaction: {
             confirmDelete:  Vue.i18n.translate('MESSAGING_CENTER.INTERACTION.CONFIRM_DELETE', {}),
           },
+        },
+        pulse: {
+          providerId: 'yapocl',
+          userRealm: 'yapo.cl',
+          pulseUserId: this.userID,
         },
         track: (event: string, payload: any): void => {
           utag.link({ event_name: 'messaging_center_app', data: {event, payload}});

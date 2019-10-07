@@ -3,6 +3,7 @@ interface UserData {
   name: string;
   shortName: string;
   email: string;
+  userId: string;
 }
 
 export interface AuthState {

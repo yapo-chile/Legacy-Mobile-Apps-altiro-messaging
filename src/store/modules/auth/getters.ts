@@ -19,6 +19,9 @@ export const getters: GetterTree<AuthState, RootState> = {
   userEmail(state: AuthState) {
     return state.user.email;
   },
+  userID(state: AuthState) {
+    return state.user.userId;
+  },
   accSession(state: AuthState) {
     return state.accSession;
   },
