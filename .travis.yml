@@ -30,7 +30,7 @@ after_success:
   - reports-publisher
 
 before_deploy:
-  - pip install travis-wait-improved
+  - pip install --user travis-wait-improved
 
 deploy:
   - provider: script
