@@ -22,7 +22,7 @@ before_script:
 install: skip
 
 script:
-  travis_wait make build
+  travis_wait 30 make build
 
 after_failure:
   - reports-publisher
