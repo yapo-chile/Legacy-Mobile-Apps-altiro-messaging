@@ -19,7 +19,7 @@ RUN export NVM_DIR="$HOME/.nvm" && \. $NVM_DIR/nvm.sh && \. $NVM_DIR/bash_comple
 WORKDIR /app
 ADD ./ .
 
-RUN yarn install --frozen-lockfile \
+RUN yarn install --frozen-lockfile --network-timeout 1000000 \
     && yarn lint --fix \
     && yarn test:unit \
     && yarn build
