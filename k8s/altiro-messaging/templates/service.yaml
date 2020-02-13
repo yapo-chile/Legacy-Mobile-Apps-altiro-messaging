@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "altiro-messaging.fullname" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+{{ include "altiro-messaging.labels" . | indent 4 }}
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: {{ include "altiro-messaging.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
