@@ -17,7 +17,7 @@ export DOCKER ?= docker
 export CHART_DIR ?= k8s/${APPNAME}
 
 build:
-  ${DOCKER} build \
+	${DOCKER} build \
     -t ${DOCKER_IMAGE}:${DOCKER_TAG} \
     -f dockerfile \
     --build-arg ARTIFACTORY_NPM_SECRET=${ARTIFACTORY_NPM_SECRET} \
@@ -29,15 +29,15 @@ build:
     --label commit-author=${CREATOR} \
     --label commit-date=${COMMIT_DATE} \
     .
-  ${DOCKER} tag ${DOCKER_IMAGE}:${DOCKER_TAG} ${DOCKER_IMAGE}:${COMMIT_DATE_UTC}
+	${DOCKER} tag ${DOCKER_IMAGE}:${DOCKER_TAG} ${DOCKER_IMAGE}:${COMMIT_DATE_UTC}
 
 docker-publish:
-  ${DOCKER} login --username "${ARTIFACTORY_USER}" --password "${ARTIFACTORY_PWD}" "${DOCKER_REGISTRY}"
-  ${DOCKER} push "${DOCKER_IMAGE}:${DOCKER_TAG}"
-  ${DOCKER} push "${DOCKER_IMAGE}:${COMMIT_DATE_UTC}"
+	${DOCKER} login --username "${ARTIFACTORY_USER}" --password "${ARTIFACTORY_PWD}" "${DOCKER_REGISTRY}"
+	${DOCKER} push "${DOCKER_IMAGE}:${DOCKER_TAG}"
+	${DOCKER} push "${DOCKER_IMAGE}:${COMMIT_DATE_UTC}"
 
 helm-publish:
-  helm lint ${CHART_DIR}
+helm lint ${CHART_DIR}
   helm package ${CHART_DIR}
   jfrog rt u "*.tgz" "helm-local/yapo/" || true
 

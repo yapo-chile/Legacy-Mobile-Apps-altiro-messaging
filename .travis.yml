@@ -19,9 +19,9 @@ before_script:
   - export BUILD_NAME=$(if [ -n "$TRAVIS_TAG" ]; then echo $TRAVIS_TAG; else echo ${TRAVIS_BRANCH//\//_}; fi)
   - echo $BUILD_NAME
 
-install:
+install: skip
 
-script:
+script: skip
 
 after_failure:
   - reports-publisher
