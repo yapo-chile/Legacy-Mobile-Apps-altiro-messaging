@@ -19,7 +19,7 @@ export CHART_DIR ?= k8s/${APPNAME}
 build:
 	${DOCKER} build \
 		-t ${DOCKER_IMAGE}:${DOCKER_TAG} \
-		-f Dockerfile \
+		-f dockerfile \
 		--label appname=${APPNAME} \
 		--label branch=${BRANCH} \
 		--label build-date=${CREATION_DATE} \
