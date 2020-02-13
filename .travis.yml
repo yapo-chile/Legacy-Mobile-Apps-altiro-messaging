@@ -21,7 +21,8 @@ before_script:
 
 install: skip
 
-script: skip
+script:
+  make build
 
 after_failure:
   - reports-publisher
@@ -31,7 +32,7 @@ after_success:
 
 deploy:
   - provider: script
-    script: make build docker-publish
+    script: make docker-publish
     on:
       all_branches: true
       condition: $TRAVIS_PULL_REQUEST = false
