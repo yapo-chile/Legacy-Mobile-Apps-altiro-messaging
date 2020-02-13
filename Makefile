@@ -37,8 +37,8 @@ docker-publish:
 	${DOCKER} push "${DOCKER_IMAGE}:${COMMIT_DATE_UTC}"
 
 helm-publish:
-helm lint ${CHART_DIR}
-  helm package ${CHART_DIR}
-  jfrog rt u "*.tgz" "helm-local/yapo/" || true
+	helm lint ${CHART_DIR}
+	helm package ${CHART_DIR}
+	jfrog rt u "*.tgz" "helm-local/yapo/" || true
 
 .PHONY: build
