@@ -17,11 +17,14 @@ export DOCKER ?= docker
 export CHART_DIR ?= k8s/${APPNAME}
 
 build:
+	yarn install --frozen-lockfile
+	yarn lint --fix
+	yarn test:unit
+	yarn build
+
 	${DOCKER} build \
     -t ${DOCKER_IMAGE}:${DOCKER_TAG} \
     -f dockerfile \
-    --build-arg ARTIFACTORY_NPM_SECRET=${ARTIFACTORY_NPM_SECRET} \
-    --build-arg ARTIFACTORY_USER=${ARTIFACTORY_USER} \
     --label appname=${APPNAME} \
     --label branch=${BRANCH} \
     --label build-date=${CREATION_DATE} \
