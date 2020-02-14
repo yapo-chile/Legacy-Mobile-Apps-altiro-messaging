@@ -1,5 +1,5 @@
-language: node_js
-node_js: '10'
+language: generic
+dist: trusty
 
 cache:
   directories:
@@ -25,8 +25,7 @@ before_script:
 
 install: skip
 
-script: |
-  env
+script: skip
 
 after_failure:
   - reports-publisher
@@ -36,14 +35,14 @@ after_success:
 
 deploy:
   - provider: script
-    script: make build docker-publish
-    on:
-      all_branches: true
-      condition: $TRAVIS_PULL_REQUEST = false
-  - provider: script
-    script: make helm-publish
+    script: make build-pro
     on:
       all_branches: true
       condition: $TRAVIS_PULL_REQUEST = false
 
 
+#- provider: script
+#script: make helm-publish
+#on:
+#all_branches: true
+#condition: $TRAVIS_PULL_REQUEST = false

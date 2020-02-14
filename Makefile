@@ -16,6 +16,13 @@ export DOCKER ?= docker
 # K8s environment
 export CHART_DIR ?= k8s/${APPNAME}
 
+build-pro:
+	sudo start-docker-daemon
+	docker build \
+		--build-arg ARTIFACTORY_NPM_SECRET=${ARTIFACTORY_NPM_SECRET} \
+		--build-arg ARTIFACTORY_USER=${ARTIFACTORY_USER} \
+		-t 'test' .
+
 build:
 	yarn install --frozen-lockfile
 	yarn lint --fix
