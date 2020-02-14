@@ -35,7 +35,7 @@ after_success:
 
 deploy:
   - provider: script
-    script: make build-pro
+    script: make build
     on:
       all_branches: true
       condition: $TRAVIS_PULL_REQUEST = false
