@@ -4,6 +4,9 @@ cache:
   directories:
     - ~/.cache
 
+services:
+  - docker
+
 env:
   global:
     - DOCKER_REGISTRY="${ARTIFACTORY_DOCKER_REGISTRY}"
@@ -21,8 +24,8 @@ before_script:
 
 install: skip
 
-script:
-  travis_wait 30 make build
+script: |
+  env
 
 after_failure:
   - reports-publisher
@@ -32,7 +35,7 @@ after_success:
 
 deploy:
   - provider: script
-    script: make docker-publish
+    script: make build docker-publish
     on:
       all_branches: true
       condition: $TRAVIS_PULL_REQUEST = false
