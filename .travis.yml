@@ -13,7 +13,6 @@ env:
     - DOCKER_REGISTRY="${ARTIFACTORY_DOCKER_REGISTRY}"
     - BRANCH=$([ ${TRAVIS_BRANCH} == master ] && echo latest || echo ${TRAVIS_BRANCH})
     - DOCKER_TAG="${TRAVIS_BRANCH}"
-    - DOCKER=container_cache
 
 before_install:
   - configure_jfrog_client
@@ -35,7 +34,7 @@ after_success:
 
 deploy:
   - provider: script
-    script: make build-pro
+    script: make build
     on:
       all_branches: true
       condition: $TRAVIS_PULL_REQUEST = false

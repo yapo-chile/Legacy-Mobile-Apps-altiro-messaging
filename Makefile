@@ -16,28 +16,19 @@ export DOCKER ?= docker
 # K8s environment
 export CHART_DIR ?= k8s/${APPNAME}
 
-build-pro:
-	container_cache build \
-		--build-arg ARTIFACTORY_NPM_SECRET=${ARTIFACTORY_NPM_SECRET} \
-		--build-arg ARTIFACTORY_USER=${ARTIFACTORY_USER} \
-		-t ${DOCKER_IMAGE}:test .
-
 build:
-	yarn install --frozen-lockfile
-	yarn lint --fix
-	yarn test:unit
-	yarn build
-
 	${DOCKER} build \
-    -t ${DOCKER_IMAGE}:${DOCKER_TAG} \
-    -f dockerfile \
-    --label appname=${APPNAME} \
-    --label branch=${BRANCH} \
-    --label build-date=${CREATION_DATE} \
-    --label commit=${COMMIT} \
-    --label commit-author=${CREATOR} \
-    --label commit-date=${COMMIT_DATE} \
-    .
+	-t ${DOCKER_IMAGE}:${DOCKER_TAG} \
+	-f dockerfile \
+	--build-arg ARTIFACTORY_NPM_SECRET=${ARTIFACTORY_NPM_SECRET} \
+	--build-arg ARTIFACTORY_USER=${ARTIFACTORY_USER} \
+	--label appname=${APPNAME} \
+	--label branch=${BRANCH} \
+	--label build-date=${CREATION_DATE} \
+	--label commit=${COMMIT} \
+	--label commit-author=${CREATOR} \
+	--label commit-date=${COMMIT_DATE} \
+	.
 	${DOCKER} tag ${DOCKER_IMAGE}:${DOCKER_TAG} ${DOCKER_IMAGE}:${COMMIT_DATE_UTC}
 
 docker-publish:
