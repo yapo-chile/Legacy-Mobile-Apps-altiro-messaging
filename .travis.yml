@@ -39,7 +39,7 @@ deploy:
       all_branches: true
       condition: $TRAVIS_PULL_REQUEST = false
   - provider: script
-    script: make build
+    script: make build docker-publish
     on:
       all_branches: true
       condition: $TRAVIS_PULL_REQUEST = false
