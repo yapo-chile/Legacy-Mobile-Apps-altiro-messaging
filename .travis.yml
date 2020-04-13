@@ -10,9 +10,8 @@ services:
 
 env:
   global:
-    - DOCKER_REGISTRY="${ARTIFACTORY_DOCKER_REGISTRY}"
     - BRANCH=$([ ${TRAVIS_BRANCH} == master ] && echo latest || echo ${TRAVIS_BRANCH})
-    - DOCKER_TAG="${TRAVIS_BRANCH}"
+    - DOCKER_REGISTRY="${ARTIFACTORY_DOCKER_REGISTRY}"
 
 before_install:
   - configure_jfrog_client
