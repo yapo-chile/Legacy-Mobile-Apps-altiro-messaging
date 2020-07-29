@@ -32,6 +32,7 @@
         :user-name="userName"
         :secure-url="secureUrl"
         :user-image="avatar"
+        :show-rewards="isProfessional"
         @user-logout="handleLogout"
         @click-home="handleHeaderClick"
         @click-logo-home="handleHeaderClick"
@@ -43,6 +44,7 @@
         @click-search="handleHeaderClick"
         @click-fav="handleHeaderClick"
         @click-messages="handleHeaderMessagingClick"
+        @click-rewards="handleHeaderRewardsClick"
         @click-shop="handleHeaderClick"
         @click-mobile-fav="handleHeaderClick"
         @click-mobile-yapesos="handleHeaderClick"
@@ -77,6 +79,9 @@
     @Getter('isLoggedIn', { namespace: 'auth' })
     private isLoggedIn: any;
 
+    @Getter('isProfessional', { namespace: 'auth' })
+    private isProfessional: any;
+
     @Action('logoutUser', { namespace: 'auth' })
     private logoutUser: any;
 
@@ -89,6 +94,7 @@
 
     // content variables
     private messagingUrl: string = '';
+    private rewardsUrl: string = '';
     private myAccountUrl: string = '';
 
     private beforeMount() {
@@ -98,6 +104,7 @@
       this.publishUrl = this.secureUrl + '/ai';
       this.loginUrl = this.secureUrl + '/login';
       this.messagingUrl = '#';
+      this.rewardsUrl = `${this.url}/yapremios/app`;
       this.myAccountUrl = this.secureUrl + '/cuenta/view';
     }
 
@@ -109,6 +116,10 @@
 
     private handleHeaderClick(payload: any) {
       window.location.assign(payload.value);
+    }
+
+    private handleHeaderRewardsClick(payload: any) {
+      window.location.assign(this.rewardsUrl);
     }
 
     private handleHeaderMessagingClick(payload: any) {

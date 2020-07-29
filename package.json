@@ -16,7 +16,7 @@
     "commit": "git-cz"
   },
   "dependencies": {
-    "@yapo/altiro-components": "^2.49.0",
+    "@yapo/altiro-components": "^v2.50.0",
     "@yapo/altiro-i18n": "^3.0.1",
     "@yapo/ts-crud": "^5.0.0",
     "@faast/faast-client": "^0.7.0",

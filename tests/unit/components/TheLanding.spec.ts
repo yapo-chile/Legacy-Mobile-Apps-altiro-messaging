@@ -33,8 +33,10 @@ describe('TheLanding test', () => {
         email: '',
         socialId: '',
         userId: '',
+        isProFor: [],
       },
       isLoggedIn: false,
+      isProfessional: false,
     };
 
     actions = {};
