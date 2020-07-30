@@ -32,7 +32,7 @@
         :user-name="userName"
         :secure-url="secureUrl"
         :user-image="avatar"
-        :show-rewards="isProfessional"
+        :show-rewards="isProfessional && showRewardsFlag"
         @user-logout="handleLogout"
         @click-home="handleHeaderClick"
         @click-logo-home="handleHeaderClick"
@@ -91,6 +91,7 @@
     private publishUrl: string = '';
     private loginUrl: string = '';
     private mcActive: string = 'true';
+    private showRewardsFlag = false;
 
     // content variables
     private messagingUrl: string = '';
