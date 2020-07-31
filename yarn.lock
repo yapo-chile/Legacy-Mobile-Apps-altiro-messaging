@@ -2,10 +2,6 @@
 # yarn lockfile v1
 
 
-"@Yapo/altiro-i18n@2.28.0":
-  version "2.28.0"
-  resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/@Yapo/altiro-i18n/-/@Yapo/altiro-i18n-2.28.0.tgz#54791e6ce81b9306e7df7807e6bad4a0095a5c1c"
-
 "@babel/code-frame@7.0.0-beta.47":
   version "7.0.0-beta.47"
   resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/@babel/code-frame/-/code-frame-7.0.0-beta.47.tgz#d18c2f4c4ba8d093a2bcfab5616593bfe2441a27"
@@ -1710,12 +1706,14 @@
   dependencies:
     "@yapo/ts-crud" "^5.0.0"
 
-"@yapo/altiro-components@^2.49.0":
-  version "2.49.0"
-  resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/@yapo/altiro-components/-/@yapo/altiro-components-2.49.0.tgz#cc30b1320f49f521614622f256cd141af52cfaec"
+"@yapo/altiro-components@^v2.50.0":
+  version "2.50.0"
+  resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/@yapo/altiro-components/-/@yapo/altiro-components-2.50.0.tgz#072c3f99c69e37e7df18012f2aa3b401d1b40afc"
+  integrity sha1-Byw/mcaeN+ffGAEvKqO0AdG0Cvw=
   dependencies:
-    "@Yapo/altiro-i18n" "2.28.0"
+    "@yapo/altiro-i18n" "^3.0.4"
     ress "^1.2.2"
+    rxjs-compat "^6.5.5"
     typeface-lato "^0.0.44"
     typeface-roboto "^0.0.45"
     vee-validate "^2.0.6"
@@ -1727,6 +1725,11 @@
 "@yapo/altiro-i18n@^3.0.1":
   version "3.0.1"
   resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/@yapo/altiro-i18n/-/@yapo/altiro-i18n-3.0.1.tgz#a0030dfadb08847b67cb8cfa53f69872a29c5780"
+
+"@yapo/altiro-i18n@^3.0.4":
+  version "3.0.8"
+  resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/@yapo/altiro-i18n/-/@yapo/altiro-i18n-3.0.8.tgz#7f845ed282e52402078c253aac42d9e16eea05c5"
+  integrity sha1-f4Re0oLlJAIHjCU6rELZ4W7qBcU=
 
 "@yapo/ts-crud@^5.0.0":
   version "5.0.0"
@@ -9297,6 +9300,11 @@ rut-helpers@^0.1.1:
 rx@^4.1.0:
   version "4.1.0"
   resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/rx/-/rx-4.1.0.tgz#a5f13ff79ef3b740fe30aa803fb09f98805d4782"
+
+rxjs-compat@^6.5.5:
+  version "6.6.0"
+  resolved "https://artifactory.mpi-internal.com/artifactory/api/npm/npm-virtual/rxjs-compat/-/rxjs-compat-6.6.0.tgz#fb86908ca9ea385befd25f6d4e451d1b0154fe5c"
+  integrity sha1-+4aQjKnqOFvv0l9tTkUdGwFU/lw=
 
 rxjs@^5.0.0-beta.11:
   version "5.5.12"

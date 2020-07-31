@@ -40,7 +40,7 @@
         "status": 200,
         "body": {
             "id": 945,
-            "roleId": 1,
+            "roleId": 2,
             "countryId": 0,
             "regionId": 15,
             "communeId": 315,
@@ -55,7 +55,8 @@
             "status": "active",
             "uuid": "c96face1-4971-40d7-900c-20d2073123eb",
             "creationDate": "2018-07-18T17:22:11.666853Z",
-            "socialId": "20001198"
+            "socialId": "20001198",
+            "isProFor":["2020","2040"]
         },
         "headers": {
           "Content-Type": "application/json"

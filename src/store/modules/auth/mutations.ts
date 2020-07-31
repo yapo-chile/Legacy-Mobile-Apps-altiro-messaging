@@ -5,12 +5,23 @@ const IS_LOGGED_IN = (state: any, update: any) => {
   state.isLoggedIn = update;
 };
 
+const IS_PROFESSIONAL = (state: any, update: any) => {
+  state.isProfessional = update;
+};
+
 export const mutations: MutationTree<AuthState> = {
   UPDATE_USER_DATA(state, update: any) {
     state.user = update;
+
     const email = state.user.email || '';
+    const isProFor = state.user.isProFor || [];
+
     if (email !== '') {
       IS_LOGGED_IN(state, true);
+    }
+    if (isProFor.length > 0) {
+      const isProfessional = true;
+      IS_PROFESSIONAL(state, isProfessional);
     }
   },
   UPDATE_USER_SESSION(state, update: any) {
@@ -19,6 +30,7 @@ export const mutations: MutationTree<AuthState> = {
       state.accSession = accSession;
     }
   },
+  IS_PROFESSIONAL,
   IS_LOGGED_IN,
   DELETE_USER_DATA(state) {
     state.user = {
@@ -27,8 +39,10 @@ export const mutations: MutationTree<AuthState> = {
       shortName: '',
       email: '',
       userId: '',
+      isProFor: [],
     };
     IS_LOGGED_IN(state, false);
+    IS_PROFESSIONAL(state, false);
   },
 };
 

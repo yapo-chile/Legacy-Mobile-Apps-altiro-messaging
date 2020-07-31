@@ -13,8 +13,10 @@ export const state: AuthState = {
     email: '',
     socialId: '',
     userId: '',
+    isProFor: [],
   },
   isLoggedIn: false,
+  isProfessional: false,
 };
 
 const namespaced: boolean = true;
