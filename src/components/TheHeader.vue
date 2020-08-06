@@ -32,7 +32,7 @@
         :user-name="userName"
         :secure-url="secureUrl"
         :user-image="avatar"
-        :show-rewards="isProfessional && showRewardsFlag"
+        :show-rewards="canAccessRewards && showRewardsFlag"
         @user-logout="handleLogout"
         @click-home="handleHeaderClick"
         @click-logo-home="handleHeaderClick"
@@ -79,8 +79,8 @@
     @Getter('isLoggedIn', { namespace: 'auth' })
     private isLoggedIn: any;
 
-    @Getter('isProfessional', { namespace: 'auth' })
-    private isProfessional: any;
+    @Getter('canAccessRewards', { namespace: 'auth' })
+    private canAccessRewards: any;
 
     @Action('logoutUser', { namespace: 'auth' })
     private logoutUser: any;

@@ -25,8 +25,8 @@ export const getters: GetterTree<AuthState, RootState> = {
   accSession(state: AuthState) {
     return state.accSession;
   },
-  isProfessional(state: AuthState) {
-    return state.isProfessional;
+  canAccessRewards(state: AuthState) {
+    return state.canAccessRewards;
   },
   isLoggedIn(state: AuthState) {
     return state.isLoggedIn;

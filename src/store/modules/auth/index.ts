@@ -16,7 +16,7 @@ export const state: AuthState = {
     isProFor: [],
   },
   isLoggedIn: false,
-  isProfessional: false,
+  canAccessRewards: false,
 };
 
 const namespaced: boolean = true;
