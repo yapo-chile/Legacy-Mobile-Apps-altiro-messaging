@@ -14,6 +14,7 @@ export const state: AuthState = {
     socialId: '',
     userId: '',
     isProFor: [],
+    isProForMainCategories: [],
   },
   isLoggedIn: false,
   canAccessRewards: false,

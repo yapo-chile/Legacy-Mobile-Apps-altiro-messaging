@@ -28,6 +28,12 @@ export const getters: GetterTree<AuthState, RootState> = {
   canAccessRewards(state: AuthState) {
     return state.canAccessRewards;
   },
+  isProFor(state: AuthState) {
+    return state.user.isProFor;
+  },
+  isProForMainCategories(state: AuthState) {
+    return state.user.isProForMainCategories;
+  },
   isLoggedIn(state: AuthState) {
     return state.isLoggedIn;
   },
