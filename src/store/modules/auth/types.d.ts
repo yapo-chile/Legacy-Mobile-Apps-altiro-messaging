@@ -11,5 +11,5 @@ export interface AuthState {
   accSession: string;
   user: UserData;
   isLoggedIn: boolean;
-  isProfessional: boolean;
+  canAccessRewards: boolean;
 }

@@ -36,7 +36,7 @@ describe('TheLanding test', () => {
         isProFor: [],
       },
       isLoggedIn: false,
-      isProfessional: false,
+      canAccessRewards: false,
     };
 
     actions = {};
