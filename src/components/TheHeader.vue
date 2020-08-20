@@ -91,7 +91,7 @@
     private publishUrl: string = '';
     private loginUrl: string = '';
     private mcActive: string = 'true';
-    private showRewardsFlag = false;
+    private showRewardsFlag = true;
 
     // content variables
     private messagingUrl: string = '';
