@@ -1,4 +1,4 @@
-const checkEnv = () => /(www|m|www2){1}\.yapo\.cl/gm.exec(window.location.origin);
+const checkEnv = (): boolean => /(www|m|www2){1}\.yapo\.cl/gm.exec(window.location.origin) !== null;
 const isTealium: boolean = JSON.parse(process.env.VUE_APP_TEALIUM_ENABLED || 'false');
 let inicialized = false;
 
