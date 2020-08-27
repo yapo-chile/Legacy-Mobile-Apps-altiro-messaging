@@ -59,7 +59,7 @@
   import { Action, Getter, State } from 'vuex-class';
   import { HeaderContainer } from '@yapo/altiro-components';
   import { AuthState } from '@/store/modules/auth/types';
-  import tags from '@/utils/Tealium';
+  import utag from '@/utils/Tealium';
   import utils from '@/utils/utils';
 
   const namespace: string = 'the-landheadering';
@@ -81,6 +81,12 @@
 
     @Getter('canAccessRewards', { namespace: 'auth' })
     private canAccessRewards: any;
+
+    @Getter('isProFor', { namespace: 'auth' })
+    private isProFor: any;
+
+    @Getter('isProForMainCategories', { namespace: 'auth' })
+    private isProForMainCategories: any;
 
     @Action('logoutUser', { namespace: 'auth' })
     private logoutUser: any;
@@ -120,7 +126,22 @@
     }
 
     private handleHeaderRewardsClick(payload: any) {
-      window.location.assign(this.rewardsUrl);
+      try {
+        utag.link({
+          event_name: 'yapremios_landing_button_to_display',
+          data: {
+            category_level1_id: this.isProForMainCategories,
+            category_level2_id: this.isProFor,
+          },
+        });
+      } catch (e) {
+        // tslint:disable-next-line:no-console
+        console.error(e);
+      } finally {
+        setTimeout(() => {
+          window.location.assign(this.rewardsUrl);
+        }, 800);
+      }
     }
 
     private handleHeaderMessagingClick(payload: any) {

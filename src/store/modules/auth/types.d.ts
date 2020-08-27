@@ -5,6 +5,7 @@ interface UserData {
   email: string;
   userId: string;
   isProFor: string[];
+  isProForMainCategories: string[];
 }
 
 export interface AuthState {

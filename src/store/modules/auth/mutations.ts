@@ -8,6 +8,17 @@ function GetAllowedProCategories() {
   return parsedCategories;
 }
 
+function GetProMainCategories(isProFor: string[]) {
+  const firstNumbers = isProFor.map((category) => (
+    category.charAt(0)
+  ));
+  const filteredCategories = firstNumbers.filter((fNumber, i) => (
+    firstNumbers.indexOf(fNumber) === i
+  )).map((fNumber) => fNumber + '000');
+
+  return filteredCategories;
+}
+
 const IS_LOGGED_IN = (state: any, update: any) => {
   state.isLoggedIn = update;
 };
@@ -18,11 +29,14 @@ const CAN_ACCESS_REWARDS = (state: any, update: any) => {
 
 export const mutations: MutationTree<AuthState> = {
   UPDATE_USER_DATA(state, update: any) {
-    state.user = update;
+    const isProFor = update.isProFor || [];
+
+    state.user = {
+      ...update,
+      isProForMainCategories: GetProMainCategories(isProFor),
+    };
 
     const email = state.user.email || '';
-    const isProFor = state.user.isProFor || [];
-
     if (email !== '') {
       IS_LOGGED_IN(state, true);
     }
@@ -30,7 +44,7 @@ export const mutations: MutationTree<AuthState> = {
     let canAccessRewards = false;
     const allowedCategories = GetAllowedProCategories();
 
-    isProFor.forEach((category) => {
+    isProFor.forEach((category: any) => {
       if (allowedCategories.includes(category)) {
         canAccessRewards = true;
       }
@@ -54,6 +68,7 @@ export const mutations: MutationTree<AuthState> = {
       email: '',
       userId: '',
       isProFor: [],
+      isProForMainCategories: [],
     };
     IS_LOGGED_IN(state, false);
     CAN_ACCESS_REWARDS(state, false);

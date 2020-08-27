@@ -34,6 +34,7 @@ describe('TheLanding test', () => {
         socialId: '',
         userId: '',
         isProFor: [],
+        isProForMainCategories: [],
       },
       isLoggedIn: false,
       canAccessRewards: false,
