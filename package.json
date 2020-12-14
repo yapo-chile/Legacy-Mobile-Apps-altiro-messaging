@@ -19,7 +19,7 @@
     "@yapo/altiro-components": "^v2.50.0",
     "@yapo/altiro-i18n": "^3.0.1",
     "@yapo/ts-crud": "^5.0.0",
-    "@faast/faast-client": "^0.7.0",
+    "@faast/faast-client": "^1.1.0",
     "@yapo-services/profile": "1.2.0",
     "vue": "^2.5.16",
     "vue-property-decorator": "^7.0.0",

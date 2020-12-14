@@ -53,5 +53,7 @@ We are using standard-release, see https://github.com/conventional-changelog/sta
 
 # mock
 
-to use mock you have to execute in the shell the next command:
+To use mock you have to execute in the shell the next command:
 `docker run -t -p 8089:8080 -v "$(pwd)/mock/pacts/:/app/pacts" pactfoundation/pact-stub-server -p 8080 -d pacts`
+
+> friendly reminder: there must be localStorage accountData for the mock
