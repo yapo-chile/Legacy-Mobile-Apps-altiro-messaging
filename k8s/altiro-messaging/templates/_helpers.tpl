@@ -12,9 +12,7 @@ We truncate at 63 chars because some Kubernetes name fields are limited to this 
 If release name contains chart name it will be used as a full name.
 */}}
 {{- define "altiro-messaging.fullname" -}}
-{{- if .Values.dontUseReleaseName -}}
-{{- .Chart.Name | trunc 63 | trimSuffix "-" -}}
-{{- else if .Values.fullnameOverride -}}
+{{- if .Values.fullnameOverride -}}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" -}}
 {{- else -}}
 {{- $name := default .Chart.Name .Values.nameOverride -}}
@@ -46,11 +44,10 @@ app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end -}}
 
-
 {{/*
-Generate the host prefix using the env global var
+Provide the env and rewrite in case of "regress"
 */}}
-{{- define "altiro-messaging.hostPrefix" -}}
+{{- define "chart.hostPrefix" -}}
 {{- if eq "reg" .Values.globals.env -}}
 {{- printf "%s.%s.%s" .Chart.Name .Release.Namespace .Values.globals.env -}}
 {{- else -}}

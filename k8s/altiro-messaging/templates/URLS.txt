@@ -1,0 +1,10 @@
+{{- if .Values.generateURLS }}
+{{- if .Values.ingress.enabled }}
+{{- $hostPrefix := include "chart.hostPrefix" . -}}
+{{- range $host := .Values.ingress.hosts }}
+  {{- range .paths }}
+  http{{ if $.Values.ingress.tls }}s{{ end }}://{{ printf "%s.%s" $hostPrefix $host.host }}{{ . }}
+  {{- end }}
+{{- end }}
+{{- end }}
+{{- end }}
